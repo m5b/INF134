@@ -1,0 +1,94 @@
+09:49:57	 From  Tyler Kento Matsunami : sorry can you repeat the question?
+09:49:59	 From  Tyler Kento Matsunami : my audio cut out
+09:50:46	 From  Armin Abaye   to   Mark S. Baldwin(Privately) : Some sort of management system for those living in dorms, to look at dining hall meals/dorm activities/work orders for broken things in room etc
+09:50:48	 From  Angela Thuy Do : Students want to experiment with cooking different recipes?
+09:51:14	 From  Yasvi Patel : Students want to track mindfulness and earn UCI credit?
+09:51:21	 From  Angela Thuy Do : Diet tracking
+09:51:24	 From  Michael Wayne Jr. Collins : maybe also adding a way to track ingredients you own ^
+09:51:55	 From  Armin Abaye : ^^ that’s cool, like inputting food you have at home and it gives a recipe with those ingredients
+09:51:55	 From  Angela Thuy Do : @Michael oo I like that!
+09:52:15	 From  Michael Wayne Jr. Collins : I wish I had something like that :P
+09:52:24	 From  Gabriella Regina Tom : scantron delivery service?
+09:52:29	 From  Shannon Hoang : can we have the description of the application somewhere in the chat or on-screen somewhere too
+09:52:31	 From  Michael Wayne Jr. Collins : ohhh
+09:52:35	 From  Michael Wayne Jr. Collins : I like the scantron idea
+09:52:49	 From  Gabriella Regina Tom : ~when things go back to in person~
+09:53:24	 From  Tyler Kento Matsunami : A service that connects music producers to singers/instrumentalists? I'm seeing a lot of people pick up music production during quarantine
+09:53:29	 From  Dachelle Dainn Alo : Potential genre: health and wellness management
+09:53:44	 From  Tyler Kento Matsunami : oh wait genres... im a fool
+09:54:14	 From  Justin Noah Yi : Fitness Activities
+09:54:14	 From  Shannon Hoang : you are not a fool !
+09:55:11	 From  Matthew Huu-Tri Nguyen : Drone Petr drop service. People can design and purchase petr stickers in bulk and use an app to have a drone pickup up the box of stickers and deliver it to a random location for a petr drop
+09:56:40	 From  Hung Phu Phan : How do we start design notebook week 1 that is due next Monday?
+09:57:01	 From  Tyler Kento Matsunami : @hung there are examples on the assignment page :)
+09:58:23	 From  Hung Phu Phan : It said “No Content” when I clicked on the assignment
+09:58:49	 From  Tyler Kento Matsunami : https://www.ics.uci.edu/~djp3/classes/2011_09_INF133/Assignments/DesignNotebookExamples.pdf
+09:58:55	 From  Hung Phu Phan : thanks
+09:59:18	 From  Yi Luo : it’s on the course website
+09:59:25	 From  Yi Luo : not on canvas
+09:59:42	 From  Gabriella Regina Tom : https://inf134.markbaldw.in/assignments/designnotebook.html
+10:00:38	 From  Tong Ge   to   Mark S. Baldwin(Privately) : Project Finder service. Connect students in different departments and with different skills together to start a project such as making a game, startup, etc.
+10:00:46	 From  Derrick Ka Ho Wong : class registration
+10:01:34	 From  Angela Thuy Do : Activity Hobby
+10:01:55	 From  Michael Collins : as far as the college life management, maybe something like https://omscentral.com/courses that allows people to give reviews of various ICS classes
+10:02:08	 From  Michael Collins : as far as difficulty, workload, rating, etc.
+10:02:19	 From  Angela Thuy Do : Activities/Hobbies finder or monitor? *
+10:04:37	 From  Lesly Abril Alejandre : maybe something related to fashion? helps you put together outfits and gives suggestions based on clothes you have
+10:05:19	 From  Yasvi Patel : thrift shop and fashion swap?
+10:05:42	 From  Matthew Huu-Tri Nguyen : ^ user can input a scenario (aka interview, wedding, etc) and the cloths that they have and the program and suggest and outfit for the event
+10:06:03	 From  Lesly Abril Alejandre : yeah exactly!
+10:06:07	 From  Matthew Huu-Tri Nguyen : *the program can suggest an outfit
+10:07:14	 From  Dachelle Dainn Alo : ^love that idea @lesly! I can even see users inputting their body shape/type and the system can recommend styles and clothing that are flattering for their body
+10:07:21	 From  Angela Thuy Do : ^Or what if it could link you up with "stylists" as well? Kind of like stitchfix
+10:07:30	 From  Yasvi Patel : *can also suggest sustainable fashion ideas
+10:07:57	 From  Dachelle Dainn Alo : We love sustainable and eco-friendly clothing
+10:08:58	 From  Matthew Huu-Tri Nguyen : @Dachelle Or perhaps the user can just take a picture of themselves and the program can determine their body shape/structure
+10:09:20	 From  Michael Collins : what about an app where you can take/use a picture of an outfit and have it reverse image search to find vendors
+10:09:39	 From  Matthew Huu-Tri Nguyen : ^ I like that idea
+10:09:53	 From  Jaime Leal : 😳
+10:09:58	 From  Yingyan Wu : it’s a meme lol
+10:10:00	 From  Gabriella Regina Tom : LOL
+10:10:06	 From  Tyler Kento Matsunami : LOL it was a hyped sticker of our mascot
+10:10:21	 From  Jason Han : need burrito drone service rn
+10:10:24	 From  Tyler Kento Matsunami : people would sprint over in masses to get their hands on the petr stickers
+10:10:31	 From  Yingyan Wu : prob like a thousand ppl ran across campus for the very last drop
+10:10:40	 From  Dachelle Dainn Alo : Petr was legendary
+10:10:54	 From  Tyler Kento Matsunami : exhibit a: https://gyazo.com/c3253c2ca6e684e71f4bf017e0e634f5
+10:14:04	 From  Tiffany Yujie Kong : maybe given an image/model we can reverse search each individual item of clothing? I think was mentioned above?
+10:14:51	 From  Angela Thuy Do : Is there a social platform for discovering music with others?
+10:15:00	 From  Yasvi Patel : ^we connect local shops and students selling/lending outfits for important events
+10:15:18	 From  Yasvi Patel : can*
+10:18:28	 From  Michael Collins : donation pick-ups? use the app to tag items for donation, get approval, choose recipient and someone picks up
+10:18:50	 From  Michael Collins : like for non profits and stuff ^
+10:19:09	 From  Dachelle Dainn Alo : I really like that idea for creating groups ~ I’d like to work on health and wellness / fitness stuff :)
+10:21:05	 From  Yingyan Wu : im sorry so for design notebook 1 we have to have 10 reports total?
+10:21:48	 From  Shannon Hoang : ^ from my memory, we have 10 in total after like five weeks (so for monday, we have 2 reports done)
+10:22:06	 From  Shannon Hoang : if i’m wrong, please correct me :) !!
+10:22:49	 From  Yingyan Wu : ah okay! the wording on the website was rlly confusing lol “You will be required to submit 5 reports by the end of each Monday for the first five weeks of the course. Each submission will consist of a report on two objects that you interacted with during the week.” hmmmm
+10:25:47	 From  Michael Collins : ^ my interpretation is one page-ish per object but a single report of 2 objects
+10:26:07	 From  Angela Thuy Do   to   Mark S. Baldwin(Privately) : Is it called Turntable FM?
+10:26:33	 From  Shannon Hoang : oh yes, sorry - i meant “description of 2 objects” by “2 reports”
+10:26:36	 From  Yingyan Wu : so every monday 1 notebook consisting of 2 reports
+10:27:36	 From  Angela Thuy Do : RIP old internet :'(
+10:27:40	 From  Michael Collins : I remember always getting those AOL free hours disks in the mail when I was younger- if that gives you an idea of my age lol
+10:27:44	 From  Angela Thuy Do : Neopets ftw
+10:27:46	 From  Humberto Lopez Espitia : RIP Limewire
+10:27:52	 From  Michael Collins : oh man I loved neopets
+10:28:03	 From  Michael Collins : so long ago
+10:28:05	 From  Benjamin Matthew Smith : Webkinz > Neopets
+10:28:07	 From  Angela Thuy Do : gotta get them daily omelettes
+10:28:18	 From  Yingyan Wu : disney pixie hollow online </3
+10:28:33	 From  Benjamin Matthew Smith : Toontown Online 😎
+10:29:02	 From  Adam Joseph Karol Sloma : Dang I wanted to raise my hand but I couldn’t figure out how
+10:29:21	 From  Adam Joseph Karol Sloma : So yeah sorry for interrupting
+10:30:30	 From  Yingyan Wu : okay cool ty!
+10:32:50	 From  Adam Joseph Karol Sloma : I don’t
+10:32:52	 From  Angela Thuy Do : Curious if there is a rating system that goes along with this?
+10:33:36	 From  Tiffany Yujie Kong : r we only allowed to choose 1/8?
+10:34:30	 From  Tyler Kento Matsunami : do we have to sign up for the idea we pitched? ahaha
+10:34:47	 From  Michael Collins : yeah I feel bad for 191 profs right now 
+10:34:47	 From  Michael Collins : lol
+10:35:18	 From  Angela Thuy Do : senior project design
+10:35:28	 From  Michael Collins : just a lot of work picking teams 
+10:35:30	 From  Tyler Kento Matsunami : ~160 students
+10:35:37	 From  Tyler Kento Matsunami : and 30 projects
