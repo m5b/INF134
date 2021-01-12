@@ -20,6 +20,3 @@ If you missed the live version of this class, you can catch up watching the reco
 
 [Scenario Building Zoom Recording](https://uci.yuja.com/V/Video?v=2384238&node=8563400&a=1089520396&autoplay=1)
 
-[Scenario Building Zoom Chat Log](https://inf134.markbaldw.in/resources/zoom_chat_1-7-21.txt)
-
-
