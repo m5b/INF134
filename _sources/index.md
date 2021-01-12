@@ -112,7 +112,7 @@ Live Discussion
 1/11/21 - 1/15/21
 
 #### Lecture Topics
-* Brainstorming, Storyboards, Paper Prototypes
+* Design, Brainstorming, and Storyboards
 
 #### Schedule
 ````{panels}
@@ -142,7 +142,7 @@ Team Work Time
 1/18/21 - 1/22/21
 
 #### Lecture Topics
-* Brainstorming, Storyboards, Paper Prototypes, continued...
+* Paper Prototypes 
 * Wire Frames and Fidelity
 
 #### Schedule
