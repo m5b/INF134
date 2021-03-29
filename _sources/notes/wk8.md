@@ -17,9 +17,9 @@ Here are the slides and link to recording for the week 8 live lectures:
 
 
 [Lecture Recording](https://uci.yuja.com/V/Video?v=2641067&node=9561614&a=499998704&autoplay=1)
+
 #### Part 2
 
 <a href="../../resources/INF134_Week_8_User_Interfaces_2.pdf">Lecture Slides</a>
 
 
-[Lecture Recording]()

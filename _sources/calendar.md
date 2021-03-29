@@ -39,7 +39,7 @@ Assignment details will be posted as the quarter progresses. When a new assignme
 For official breakdown of grade percentages and specific due dates please see the Canvas course page.
 ```
 **Team Assignments**:
-* [T1: Web Frameworks and Graphical Toolkits](../assignments/t1)
+* [T1: Graphical Widget Toolkit and IDE](../assignments/t1)
 * [T2: Scenario Story](../assignments/t2)
 * [T3: Progressive Web App](../assignments/t3)
 
@@ -78,3 +78,301 @@ The late submission policy for this course will be tied to your participation sc
 ### Lecture Notes
 
 As we move through each week, we will be adding weekly notes pages that include prerecorded lectures, live lectures, and discussions that we have with each other. New lecture note pages will be posted after the class on Tuesday. The topics we will be discussing each week are listed in the next section. 
+
+## Quarter at a Glance
+
+```{note}
+The following schedule is subject to change throughout the quarter.
+```
+
+We have tried to keep due dates for all assignments consistent throughout the quarter. Individual and team assignments will be due by end of day on Monday with the exception of the skills survey and [assignment 4](../assignments/a4).
+
+### Week 1 
+3/29/21 - 4/2/21
+
+#### Lecture Topics
+* Course Introduction
+* Scenario Building
+* Assignment 1
+* Team Assignment 1
+
+#### Schedule
+````{panels}
+:column: col-4
+:card: border-2
+Monday
+^^^
+
+---
+Tuesday
+^^^
+Live Lecture
+: Course Introduction
+: Design Notebooks
+
+---
+Thursday
+^^^
+**DUE**: Survey
+
+Live Discussion
+: Scenario Building
+````
+### Week 2
+4/05/21 - 4/09/21
+
+#### Lecture Topics
+* Design, Brainstorming, and Storyboards
+
+#### Schedule
+````{panels}
+:column: col-4
+:card: border-2
+Monday
+^^^
+**DUE:** Design Notebooks
+
+**DUE:** Introductions (Zulip)
+
+Team assignments announced
+---
+Tuesday
+^^^
+Live 
+: Lecture
+---
+Thursday
+^^^
+Team Work Time
+:	Scenario Selection
+:	Scenario Development
+````
+
+### Week 3
+4/12/21 - 4/16/21
+
+#### Lecture Topics
+* Paper Prototypes 
+* Wire Frames and Fidelity
+
+#### Schedule
+````{panels}
+:column: col-4
+:card: border-2
+Monday
+^^^
+**DUE:** Design Notebooks
+
+**DUE:** A1: Team Building 
+
+---
+Tuesday
+^^^
+Live 
+: Lecture
+---
+Thursday
+^^^
+Team Work Time
+: Scenario Evaluation
+
+````
+
+
+### Week 4
+4/19/21 - 4/23/21
+
+#### Lecture Topics
+#### Schedule
+````{panels}
+:column: col-4
+:card: border-2
+Monday
+^^^
+**DUE:** Design Notebooks
+
+**DUE:** A2: Scenario Story
+---
+Tuesday
+^^^
+Live
+: Story Critiques
+: Lecture
+---
+Thursday
+^^^
+Team Work Time
+: High Fidelity Prototypes
+````
+### Week 5
+4/26/21 - 4/30/21
+
+#### Lecture Topics
+#### Schedule
+````{panels}
+:column: col-4
+:card: border-2
+Monday
+^^^
+**DUE:** Design Notebooks
+
+---
+Tuesday
+^^^
+Live
+: Lecture
+---
+Thursday
+^^^
+Team Work Time
+: Prototype Evaluation
+````
+
+### Week 6
+5/03/21 - 5/07/21
+
+#### Lecture Topics
+#### Schedule
+````{panels}
+:column: col-4
+:card: border-2
+Monday
+^^^
+**DUE:** A3: High Fidelity Prototypes
+
+**DUE:** Speculative Story Selection
+
+---
+Tuesday
+^^^
+Live
+: Prototype Critique
+: Lecture
+---
+Thursday
+^^^
+Team Work Time
+: Scenario Development
+
+````
+
+### Week 7
+5/10/21 - 5/14/21
+
+#### Lecture Topics
+#### Schedule
+````{panels}
+:column: col-4
+:card: border-2
+Monday
+^^^
+
+---
+Tuesday
+^^^
+Live
+: Lecture
+---
+Thursday
+^^^
+Team Work Time
+: Scenario Development
+````
+
+### Week 8
+5/17/21 - 5/21/21
+
+#### Lecture Topics
+#### Schedule
+````{panels}
+:column: col-4
+:card: border-2
+Monday
+^^^
+**DUE:** A4: Functional Mobile
+---
+Tuesday
+^^^
+Live
+: Mobile Critiques
+: Lecture
+---
+Thursday
+^^^
+Team Work Time
+: Scenario Development
+
+````
+
+### Week 9
+5/24/21 - 5/28/21
+
+#### Lecture Topics
+#### Schedule
+````{panels}
+:column: col-4
+:card: border-2
+Monday
+^^^
+
+---
+Tuesday
+^^^
+Live
+: Lecture
+
+---
+Thursday
+^^^
+Team Work Time
+: Scenario Development
+
+Personal Work Time
+: Speculative Interface
+````
+
+### Week 10
+5/31/21 - 6/4/21
+
+#### Lecture Topics
+#### Schedule
+````{panels}
+:column: col-4
+:card: border-2
+Monday
+^^^
+**DUE:** A5: Functional Web
+
+---
+Tuesday
+^^^
+Live
+: Web Critiques
+: Lecture
+
+---
+Thursday
+^^^
+Personal Work Time
+: Speculative Interface
+````
+
+### Finals Week
+6/7/21 - 6/11/21
+#### Schedule
+````{panels}
+:column: col-4
+:card: border-2
+Monday
+^^^
+---
+Tuesday
+^^^
+---
+Thursday
+^^^
+**DUE:** Speculative Story
+
+%Presentation Extra Credit 
+````
+
