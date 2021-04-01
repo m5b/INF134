@@ -15,4 +15,4 @@ Keep an eye weekly pages as they might be updated throughout the week.
 
 ### Thursday
 
-Coming Soon!
+<a href="../resources/INF_134_Week_1_Th.pdf">Slides</a>
