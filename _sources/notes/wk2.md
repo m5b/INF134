@@ -9,7 +9,7 @@ Keep an eye weekly pages as they might be updated throughout the week.
 
 ### Tuesday
 
-[Live Recording]()
+[Live Recording](https://uci.yuja.com/V/Video?v=2893264&node=10088240&a=1924713193&autoplay=1)
 
 <a href="../resources/INF_134_Week_2_Tu.pdf">Slides</a>
 
