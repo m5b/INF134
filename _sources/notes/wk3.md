@@ -15,5 +15,7 @@ Keep an eye weekly pages as they might be updated throughout the week.
 
 ### Thursday
 
-[Live Recording]()
+[Live Recording](https://uci.yuja.com/V/Video?v=2945532&node=10199162&a=1180952639&autoplay=1)
+
+Slides for Thursday's presentations are on Zulip.
 
