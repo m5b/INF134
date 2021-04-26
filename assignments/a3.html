@@ -254,6 +254,55 @@
    Overview
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-details">
+   Assignment Details
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#widget-requirements">
+     Widget Requirements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-requirements">
+     Additional Requirements
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#theme">
+       Theme
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#state-tables">
+       State Tables
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#documentation">
+       Documentation
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#demo-program">
+       Demo Program
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submission">
+   Submission
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grading">
+   Grading
+  </a>
+ </li>
 </ul>
 
         </nav>
@@ -267,13 +316,211 @@
                 
   <div class="section" id="a3-custom-graphical-toolkit">
 <h1>A3: Custom Graphical Toolkit<a class="headerlink" href="#a3-custom-graphical-toolkit" title="Permalink to this headline">¶</a></h1>
-<div class="warning admonition">
-<p class="admonition-title">Prepublished Version</p>
-<p>This assignment is currently in prepublish format. All content is subject to change prior to the assignment kickoff in lecture. Changes made after kickoff will be highlighted with text block similar to this one. You are free to read through this assignment now, but be sure to check back once the assignment officially starts.</p>
-</div>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>Today we have a vast ecosystem of toolkits and frameworks to draw (pun intended, sort of.) from when building a software user interface. Frameworks like Angular and React rely upon layers of abstraction to render visual components to a particular viewstate. While these abstractions make it possible for us to quickly build powerful user interfaces, they mask the underlying logic required to perform the most basic interactions. In this assignment, we will be peeling back the layers to improve our understanding of the fundamental logic that make graphical widgets work.</p>
+<p>Today we have a vast ecosystem of toolkits and frameworks to draw (pun intended, sort of.) upon when building a software user interface. Frameworks like Angular and React rely upon layers of abstraction to render visual components to a particular viewstate. While these abstractions make it possible for us to quickly build powerful user interfaces, they mask the underlying logic required to perform the most basic interactions. In this assignment, we will be peeling back the layers to improve our understanding of the fundamental logic that make graphical widgets work.</p>
+</div>
+<div class="section" id="assignment-details">
+<h2>Assignment Details<a class="headerlink" href="#assignment-details" title="Permalink to this headline">¶</a></h2>
+<p>When you build a user interface, you might decide that you need a button, a checkbox, a way to capture text input, or one of the many other widgets provided to you by your chosen toolkit. To accomplish this task, you will likely create that widget by writing some code similar to the following (assuming our toolkit of choice is HTML):</p>
+<div class="highlight-code notranslate"><div class="highlight"><pre><span></span> &lt;button type=&quot;button&quot;&gt;Click&lt;/button&gt; 
+</pre></div>
+</div>
+<p>When rendered in a browser we would see something similar to this:</p>
+<p><button type="button">Click</button></p>
+<p>Pretty straightforward, right? Write some code, build it, and view it. The end result is a nice graphical widget that changes in visual appearance when we interact with it using a mouse or keyboard. But how is this widget actually created?</p>
+<p>Clearly, it is a graphical element displayed on a screen, but the <code class="docutils literal notranslate"><span class="pre">button</span></code> HTML tag does not describe it’s shape, colors, and behaviors. What operations take place to compose a button into what we see and interact with on the screen? For this assignment you will answer these questions by building your own widget toolkit using drawing primitives.</p>
+<p>Although there are many tools available for building a widget toolkit, you will be required to use the Javascript library for Scalable Vector Graphics called <a class="reference external" href="https://svgjs.com/">SVG.js</a>. Your widgets, therefore, will be rendered in a browser. If you haven’t yet, review the week 4 lecture for an overview on how to get started.</p>
+<p>You must build 7 widgets (discussed below) using a basic state machine similar to the one we covered in lecture. You may incorporate the starter code for the button widget discussed in the lecture, and provided below, into your toolkit.</p>
+<p>Your widgets should be confined to a single JavaScript file that other programmers can import and use in their own projects. For example, in the following starter code for a button widget notice how the actual toolkit is imported into the <strong><code class="docutils literal notranslate"><span class="pre">demo.js</span></code></strong> file, allowing consuming code to use it without knowing anything about the underlying button code (similar to the earlier HTML button example):</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// File name: demo.js</span>
+
+<span class="kr">import</span> <span class="p">{</span><span class="nx">MyToolkit</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./mytoolkit.js&#39;</span><span class="p">;</span>
+
+<span class="c1">// Implement a MyToolkit Button</span>
+<span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MyToolkit</span><span class="p">.</span><span class="nx">Button</span><span class="p">;</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">move</span><span class="p">(</span><span class="mf">100</span><span class="p">,</span><span class="mf">100</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">onclick</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// File name: mytoolkit.js</span>
+
+<span class="kr">import</span> <span class="p">{</span><span class="nx">SVG</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./svg.min.js&#39;</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">MyToolkit</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">Button</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="kd">var</span> <span class="nx">draw</span> <span class="o">=</span> <span class="nx">SVG</span><span class="p">().</span><span class="nx">addTo</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">).</span><span class="nx">size</span><span class="p">(</span><span class="s1">&#39;100%&#39;</span><span class="p">,</span><span class="s1">&#39;100%&#39;</span><span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nx">draw</span><span class="p">.</span><span class="nx">rect</span><span class="p">(</span><span class="mf">100</span><span class="p">,</span><span class="mf">50</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+        <span class="kd">var</span> <span class="nx">clickEvent</span> <span class="o">=</span> <span class="kc">null</span>
+
+        <span class="nx">rect</span><span class="p">.</span><span class="nx">mouseover</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">fill</span><span class="p">({</span> <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;blue&#39;</span><span class="p">})</span>
+        <span class="p">})</span>
+        <span class="nx">rect</span><span class="p">.</span><span class="nx">mouseout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">fill</span><span class="p">({</span> <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;red&#39;</span><span class="p">})</span>
+        <span class="p">})</span>
+        <span class="nx">rect</span><span class="p">.</span><span class="nx">mouseup</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">fill</span><span class="p">({</span> <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;red&#39;</span><span class="p">})</span>
+        <span class="p">})</span>
+        <span class="nx">rect</span><span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">fill</span><span class="p">({</span> <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;pink&#39;</span><span class="p">})</span>
+            <span class="k">if</span><span class="p">(</span><span class="nx">clickEvent</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">)</span>
+                <span class="nx">clickEvent</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span>
+        <span class="p">})</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="nx">move</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">rect</span><span class="p">.</span><span class="nx">move</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">);</span>
+            <span class="p">},</span>
+            <span class="nx">onclick</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">eventHandler</span><span class="p">){</span>
+                <span class="nx">clickEvent</span> <span class="o">=</span> <span class="nx">eventHandler</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="k">return</span> <span class="p">{</span><span class="nx">Button</span><span class="p">}</span>
+<span class="p">}());</span>
+
+<span class="kr">export</span><span class="p">{</span><span class="nx">MyToolkit</span><span class="p">}</span>
+</pre></div>
+</div>
+<div class="section" id="widget-requirements">
+<h3>Widget Requirements<a class="headerlink" href="#widget-requirements" title="Permalink to this headline">¶</a></h3>
+<p>Your final toolkit must include the following 7 widgets (visit Wikipedia’s <a class="reference external" href="https://en.wikipedia.org/wiki/Graphical_widget">Graphical widget</a> page detailed descriptions):</p>
+<ul class="simple">
+<li><p>Button</p></li>
+<li><p>Check Box</p></li>
+<li><p>Radio Button</p></li>
+<li><p>Text Box</p></li>
+<li><p>Scroll Bar</p></li>
+<li><p>Progress Bar</p></li>
+<li><p>Custom (your choice, can be anything!)</p></li>
+</ul>
+<p>You are free to add as many features to your widgets as you like. In addition to matching the basic rules of these widgets (e.g., a button depresses, a scroll thumb slides, etc), to receive full credit your widgets must support the following features:</p>
+<dl class="simple myst">
+<dt>Button</dt><dd><p>Visually change for at least three states (e.g., color change on hover).</p>
+</dd>
+<dd><p>Expose a custom label property to set the text on the button.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the button is clicked.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the widget state has changed.</p>
+</dd>
+<dt>Check Box</dt><dd><p>Visually support checked and unchecked states.</p>
+</dd>
+<dd><p>Expose a custom label property to set the text that appears to the <strong>right</strong> of the check box.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the checked state has changed.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the widget state has changed.</p>
+</dd>
+<dt>Radio Button</dt><dd><p>Visually support checked and unchecked states.</p>
+</dd>
+<dd><p>Support 2 to <strong>n</strong> number of buttons, where <strong>n</strong> is set by the consuming code, with minimum of two, positioned vertically.</p>
+</dd>
+<dd><p>Ensure that only one button can be checked at a time.</p>
+</dd>
+<dd><p>Expose a custom label property to set the text that appears to the <strong>right</strong> of each button.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the checked state has changed and which <strong>n</strong> has been checked.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the widget state has changed.</p>
+</dd>
+<dt>Text Box</dt><dd><p>Visually support a caret <code class="docutils literal notranslate"><span class="pre">|</span></code> that informs the user about the position of the cursor. The caret should only be visually present when the widget has hover focus.</p>
+</dd>
+<dd><p>Expose a custom property to get the text entered by the user.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the text has changed.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the widget state has changed.</p>
+</dd>
+<dt>Scroll Bar</dt><dd><p>Expose a custom property to set the height of the scroll bar.</p>
+</dd>
+<dd><p>Expose a custom property to get the position of the scroll thumb.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the scroll thumb has moved and in which direction.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the widget state has changed.</p>
+</dd>
+<dt>Progress Bar</dt><dd><p>Expose a custom property to set the width of the progress bar.</p>
+</dd>
+<dd><p>Expose a custom property to set the increment value of the progress bar.</p>
+</dd>
+<dd><p>Expose a custom property to get the increment value of the progress bar.</p>
+</dd>
+<dd><p>Expose a custom method to increment the value of the progress bar. The method should support an arbitrary numerical value from 0-100.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the progress bar has incremented.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the widget state has changed.</p>
+</dd>
+<dt>Custom (your choice)</dt><dd><p>There are no requirements for this widget. You are free to create anything you want. Model your custom widget after something that already exists or design something novel.</p>
+</dd>
+</dl>
+<p>In addition to the features listed above, ALL widgets should be positionable by consuming code (see the <strong><code class="docutils literal notranslate"><span class="pre">move</span></code></strong> function in the starter code). A programmer should be able to add your widget to a document and specify using X and Y coordinates where on the document it should be placed.</p>
+</div>
+<div class="section" id="additional-requirements">
+<h3>Additional Requirements<a class="headerlink" href="#additional-requirements" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="theme">
+<h4>Theme<a class="headerlink" href="#theme" title="Permalink to this headline">¶</a></h4>
+<p>You must create and apply a consistent theme to your toolkit. Your widgets, when rendered in the browser, should visually appear as if they belong together. Your design does not have to be groundbreaking! Your design skills are not going to be evaluated in this class, however, we are looking to see that you have thoughtfully applied the core principles of user centered design that you have been learning in your Informatics coursework.</p>
+</div>
+<div class="section" id="state-tables">
+<h4>State Tables<a class="headerlink" href="#state-tables" title="Permalink to this headline">¶</a></h4>
+<p>Since each widget is required to raise state change events, you will need to create a state machine for each widget. Your first step in creating a state machine is to identify and define the states and transitions required for each widget. The best way to record this information is through a state table, like the one we discussed in the week 4 lecture. You must include each of these state tables in your submission.</p>
+</div>
+<div class="section" id="documentation">
+<h4>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h4>
+<p>Your widget code should be documented using the <a class="reference external" href="https://jsdoc.app/">JSDoc</a> format. There are plugins for tools like VS Code that can simplify a lot of the work through auto generation. When you have finished your toolkit, you will use JSDoc to output your documentation to HTML.</p>
+</div>
+<div class="section" id="demo-program">
+<h4>Demo Program<a class="headerlink" href="#demo-program" title="Permalink to this headline">¶</a></h4>
+<p>Once your toolkit is complete, you will assemble all of your widgets into a single program to demonstrate their functionality. This program does not have to do anything in particular, it just needs to enable us to interact with your widgets. Your demo program should listen to all the exposed event handlers that you created for your widgets and output the information they pass to the browser console. When we grade your assignment, we will open the console and look for these messages to assess whether or not the feature has been implemented.</p>
+<div class="warning admonition">
+<p class="admonition-title">For Your Consideration</p>
+<p>There is a lot of work to complete here! Although things may look easy at first, pay attention to the details. To complete this assignment there are many small tasks that you must take into account. Get started early, and make incremental progress on your work every day. You have a lot of time to complete this assignment because we want you to be thoughtful in how you implement the required features. A task that appears obvious at first glance will likely give you trouble as you work on it, so even though you have a lot of time, do not wait until the last week.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="submission">
+<h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">¶</a></h2>
+<p>For this assignment you will submit your materials in two ways:</p>
+<ol class="simple">
+<li><p>Your state tables should be listed by widget in a single PDF document. Your state table document should have a cover page with a screen shot of your demo program and link to the URL where your demo program is running.</p></li>
+<li><p>Your toolkit, HTML documentation, and demo program should be maintained in a public GitHub repository (you can make it private after you receive your grade, if you like). If you don’t have a GitHub account you will need to create one. Your HTML documentation should be accessible via a link from your demo program. Your demo program and documentation must be hosted on a public web server that we can access.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">For Your Consideration</p>
+<p>A good practice to make habit is to regularly commit your code to a source control system like GitHub as you make progress. You are free to use your github repository as often as you like as you work on the assignment, however, if you need assistance from the course instructors we will ask that you provide us with a link to your GitHub repository and a running instance of your program first.</p>
+</div>
+</div>
+<div class="section" id="grading">
+<h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">¶</a></h2>
+<p>Your assignment will be given an overall grade that is based on the completeness of the following items:</p>
+<ul class="simple">
+<li><p>All materials submitted on time: 0.5 pts</p></li>
+<li><p>Submission format requirements met: 0.5 pts</p></li>
+<li><p>Completeness of toolkit (2 pts/widget): 14 pts</p>
+<ul>
+<li><p>Are all required widgets complete?</p></li>
+<li><p>Are all required widget features complete?</p></li>
+</ul>
+</li>
+<li><p>Toolkit and Demo program: 2.5 pts</p>
+<ul>
+<li><p>Are all required features complete?</p></li>
+<li><p>Are all widgets visually consistent?</p></li>
+</ul>
+</li>
+<li><p>Documentation: 2.5 pts</p>
+<ul>
+<li><p>Are all widgets supported by a state table?</p></li>
+<li><p>Are all public facing features documented?</p></li>
+</ul>
+</li>
+</ul>
+<p>Total: 20 pts</p>
 </div>
 </div>
 
