@@ -5,16 +5,17 @@ Week 5 Notes
 Keep an eye weekly pages as they might be updated throughout the week.
 ```
 
-## Lecture Materials
+## Class Materials
 
-Here are the slides and link to recording for the week 4 live lecture:
+### Tuesday
 
-### Evaluations 2/2/21
-<a href="../../resources/INF134_Week_5_Evaluations.pdf" >Lecture Slides</a>
+[Live Recording]()
+
+<a href="../resources/INF_134_Week_5_Tu.pdf">Slides</a>
+
+### Thursday
+
+[Live Recording]()
 
 
-[Lecture Recording](https://uci.yuja.com/V/Video?v=2517642&node=9144775&a=459557355&autoplay=1)
 
-### Links from Lecture
-
-[More information on conducting cognitive walkthroughs](https://www.usabilitybok.org/cognitive-walkthrough)
