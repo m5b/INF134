@@ -17,5 +17,6 @@ Keep an eye weekly pages as they might be updated throughout the week.
 
 [Live Recording]()
 
+<a href="../resources/INF_134_Week_5_Th.pdf">Slides</a>
 
 
