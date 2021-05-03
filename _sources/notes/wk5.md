@@ -15,7 +15,7 @@ Keep an eye weekly pages as they might be updated throughout the week.
 
 ### Thursday
 
-[Live Recording]()
+[Live Recording](https://uci.yuja.com/V/Video?v=3027346&node=10371033&a=417237596&autoplay=1)
 
 <a href="../resources/INF_134_Week_5_Th.pdf">Slides</a>
 
