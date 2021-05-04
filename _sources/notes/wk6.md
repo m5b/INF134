@@ -5,16 +5,18 @@ Week 6 Notes
 Keep an eye weekly pages as they might be updated throughout the week.
 ```
 
-## Lecture Materials
+## Class Materials
 
-Here are the slides and link to recording for the week 6 live lecture:
+### Tuesday
 
-### User Interfaces 2/11/21
-<a href="../../resources/INF134_Week_6_User_Interfaces.pdf" >Lecture Slides</a>
+[Live Recording]()
 
+<a href="../resources/INF_134_Week_6_Tu.pdf">Slides</a>
 
-[Lecture Recording](https://uci.yuja.com/V/Video?v=2577430&node=9297416&a=485145505&autoplay=1)
+### Thursday
 
+[Live Recording]()
 
-### Links from Lecture
+<a href="../resources/INF_134_Week_6_Th.pdf">Slides</a>
+
 
