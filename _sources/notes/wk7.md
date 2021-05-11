@@ -5,15 +5,16 @@ Week 7 Notes
 Keep an eye weekly pages as they might be updated throughout the week.
 ```
 
-## Lecture Materials
+## Class Materials
 
-Here are the slides and link to recording for the week 7 live lectures:
+### Tuesday
 
-### The Importance of Accessibility 2/17/21
-<a href="../../resources/Importance of Accessibility.pdf">Lecture Slides</a>
+[Live Recording]()
 
+<a href="../resources/INF_134_Week_7_Tu.pdf">Slides</a>
 
-[Lecture Recording](https://uci.yuja.com/V/Video?v=2607620&node=9357202&a=1906188052&autoplay=1)
+### Thursday
 
-### Links from Lecture
+[Live Recording]()
+
 
