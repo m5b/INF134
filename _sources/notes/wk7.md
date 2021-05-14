@@ -15,6 +15,8 @@ Keep an eye weekly pages as they might be updated throughout the week.
 
 ### Thursday
 
-[Live Recording]()
+[Live Recording](https://uci.yuja.com/V/Video?v=3083930&node=10485294&a=972793765&autoplay=1)
+
+No slides today for in-class group project critiques.
 
 
