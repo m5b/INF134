@@ -5,15 +5,15 @@ Week 9 Notes
 Keep an eye weekly pages as they might be updated throughout the week.
 ```
 
-## Lecture Materials
+## Class Materials
 
-Here are the slides and link to recording for the week 9 live lectures:
+### Tuesday
 
-### Software User Interfaces 3/2/21 - 3/4/21
+[Live Recording]()
 
+<a href="../resources/INF_134_Week_9_Tu.pdf">Slides</a>
 
-<a href="../../resources/INF134_Week_9_User_Interface_tools.pdf">Lecture Slides</a>
+### Thursday
 
-
-[Lecture Recording](https://uci.yuja.com/V/Video?v=2730206&node=9712265&a=1599939937&autoplay=1)
+[Live Recording]()
 
