@@ -13,6 +13,7 @@ Class recordings, handouts, and other materials will be posted here.
 
 [Live Recording]()
 
+<a href="../resources/INF_134_Week_1_Introduction.pdf">Slides</a>
 
 ### Thursday
 
