@@ -17,6 +17,6 @@ Class recordings, handouts, and other materials will be posted here.
 
 ### Thursday
 
-[Live Recording]()
+[Live Recording](https://uci.zoom.us/rec/share/MmUxxQ6ODNOdXM73UtSkKKtPM7wNVXheCbJOrX0HQ8naw5trrI8YXUWehmwXQDhN.Bp36e-wfiQJjOrmU )
 
 <a href="../resources/INF_134_Week_1_Th.pdf">Slides</a>
