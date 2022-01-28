@@ -17,5 +17,5 @@ Presentation slide decks can be found in Zulip
 
 ### Thursday
 
-[Live Recording]()
+[Live Recording](https://uci.zoom.us/rec/share/eCeER1cOqcpho8qOD8Lykrc2VYcSa-nvZD5XxIbNTj2HKJTJoHD1qJVU0DN6mhos.CXLgxE792ukA-V7g?startTime=1643320595000)
 
