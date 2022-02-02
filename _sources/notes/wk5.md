@@ -14,6 +14,7 @@ Class recordings, handouts, and other materials will be posted here.
 [Live Recording](https://uci.zoom.us/rec/share/29H4wnycbgTQeuXQfXe4N5Wv1ymyRtOUUv8W4DhDN_il5ZyBh63NPykh-3WmrnM.XOnpJMJmrrRnAH1c?startTime=1643752783000)
 
 <a href="../resources/INF_134_W22_Week_5_Tu.pdf">Slides</a>
+<a href="../resources/button.ts">Button Demo Code</a>
 
 The following two lectures pick up where we left off after my battery died during live class:
 
