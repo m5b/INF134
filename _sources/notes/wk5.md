@@ -24,6 +24,6 @@ The following two lectures pick up where we left off after my battery died durin
 
 ### Thursday
 
-[Live Recording]()
-posted on 2/3
+[Live Recording](https://uci.zoom.us/rec/share/qdidCug4UuLEF0KAVvgpRoFCdfoIVoLekjPPH4DIdy6JYmA4pYmvwGgrMZsF-znb.ty11BGPKQuxsKsIO?startTime=1643925477000)
 
+Files discussed in lecture have been updated in the assignment 3 repository and posted to Zulip a3 stream.
