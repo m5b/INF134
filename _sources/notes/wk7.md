@@ -1,4 +1,4 @@
-Week 7 Notes
+Week 6 Notes
 ============================
 
 ```{note}
@@ -7,16 +7,15 @@ Keep an eye weekly pages as they might be updated throughout the week.
 
 ## Class Materials
 
+Class recordings, handouts, and other materials will be posted here.
+
 ### Tuesday
 
-[Live Recording](https://uci.yuja.com/V/Video?v=3075732&node=10468100&a=516318658&autoplay=1)
+[Live Recording](https://uci.zoom.us/rec/share/57nLtdmyZRP4k01rBJRpGotC07k_4FbA8bHpo1c3p9AzATrBth1L5IQPGuSbvQw.noPCGbCqx6I7tCmM?startTime=1644357531000)
 
-<a href="../resources/INF_134_Week_7_Tu.pdf">Slides</a>
 
 ### Thursday
 
-[Live Recording](https://uci.yuja.com/V/Video?v=3083930&node=10485294&a=972793765&autoplay=1)
+[Live Recording](https://uci.zoom.us/rec/share/6Ym6noDxYc46XAgd_9m1D64RmMc-e4iorqi6WFShr6mpItHwINO1X1zngB2fBybr.AQvS5LcjHNDfd2Kf?startTime=1644529465000)
 
-No slides today for in-class group project critiques.
-
-
+<a href="../resources/INF_134_W22_Week_6_Th.pdf">Slides</a>

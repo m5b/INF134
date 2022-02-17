@@ -11,11 +11,10 @@ Class recordings, handouts, and other materials will be posted here.
 
 ### Tuesday
 
-[Live Recording](https://uci.zoom.us/rec/share/57nLtdmyZRP4k01rBJRpGotC07k_4FbA8bHpo1c3p9AzATrBth1L5IQPGuSbvQw.noPCGbCqx6I7tCmM?startTime=1644357531000)
-
+In class team evaluations
 
 ### Thursday
 
-[Live Recording](https://uci.zoom.us/rec/share/6Ym6noDxYc46XAgd_9m1D64RmMc-e4iorqi6WFShr6mpItHwINO1X1zngB2fBybr.AQvS5LcjHNDfd2Kf?startTime=1644529465000)
+[Live Recording]()
 
-<a href="../resources/INF_134_W22_Week_6_Th.pdf">Slides</a>
+<a href="../resources/INF_134_W22_Week_7_Th.pdf">Slides</a>
