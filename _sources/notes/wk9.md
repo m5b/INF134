@@ -19,5 +19,5 @@ In-class evaluations.
 
 [Live Recording]()
 
-Lecture recording will post on 3/3.
+<a href="../resources/INF_134_W22_Week_9_Th.pdf">Slides</a>
 
