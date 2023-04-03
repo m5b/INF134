@@ -9,14 +9,8 @@ Keep an eye weekly pages as they might be updated throughout the week.
 
 Class recordings, handouts, and other materials will be posted here.
 
-### Tuesday
+### Monday
 
-[Live Recording](https://uci.zoom.us/rec/share/w6Ha0U3_Jox05obxZ0gUtwoNuyOhOZcdja1prfT8d-5wX3-hsEk1Wg0Z64WlqRgc.PgKpYrPuz8-O5lKU)
 
-<a href="../resources/INF_134_Week_1_Introduction.pdf">Slides</a>
+### Wednesday
 
-### Thursday
-
-[Live Recording](https://uci.zoom.us/rec/share/MmUxxQ6ODNOdXM73UtSkKKtPM7wNVXheCbJOrX0HQ8naw5trrI8YXUWehmwXQDhN.Bp36e-wfiQJjOrmU )
-
-<a href="../resources/INF_134_Week_1_Th.pdf">Slides</a>

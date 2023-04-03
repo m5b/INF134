@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>T3: Mobile First App &#8212; INF 134 Winter 2022</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>T3: Mobile First App &#8212; INF 134 Spring 2023</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,41 +20,38 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Week 1 Notes" href="../notes/wk1.html" />
-    <link rel="prev" title="T2: Scenario Story" href="t2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -60,7 +59,21 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -69,9 +82,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -81,7 +95,7 @@
       <img src="../_static/logo_stacked.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">INF 134 Winter 2022</h1>
+      <h1 class="site-logo" id="site-title">INF 134 Spring 2023</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -89,37 +103,23 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../index.html">
-   Project in User Interaction Software
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Project in User Interaction Software
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Individual Assignments
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="a1.html">
-   Assignment 1
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="a2.html">
-   Assignment 2
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="a3.html">
-   Assignment 3
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="a4.html">
-   Assignment 4
+  <a class="reference internal" href="a0.html">
+   Assignment 0
   </a>
  </li>
 </ul>
@@ -128,20 +128,10 @@
   Team Assignments
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="t1.html">
-   Team Assignment 1
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="t2.html">
-   Team Assignment 2
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Team Assignment 3
+  <a class="reference internal" href="t0.html">
+   Team Assignment 0
   </a>
  </li>
 </ul>
@@ -156,46 +146,6 @@
    Week 1
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk2.html">
-   Week 2
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk3.html">
-   Week 3
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk4.html">
-   Week 4
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk5.html">
-   Week 5
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk6.html">
-   Week 6
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk7.html">
-   Week 7
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk8.html">
-   Week 8
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk9.html">
-   Week 9
-  </a>
- </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -204,11 +154,6 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../calendar.html">
-   Calendar
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="../resources.html">
    Resources
   </a>
@@ -216,12 +161,17 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -229,61 +179,117 @@
 
 
           
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+    <div class="header-article row sticky-top noprint">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/assignments/t3.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/assignments/t3.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#overview">
    Overview
@@ -369,63 +375,164 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>T3: Mobile First App</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-details">
+   Assignment Details
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-1-medium-fidelity-prototype">
+     Part 1: Medium Fidelity Prototype
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#features">
+       Features
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#scope">
+       Scope
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#class-critique">
+       Class Critique
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-2-functional-prototype">
+     Part 2: Functional Prototype
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Class Critique
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-3-user-evaluation">
+     Part 3: User Evaluation
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#task-planning">
+       Task Planning
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#data-collection">
+       Data Collection
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#analysis-of-results">
+       Analysis of Results
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#class-presentations">
+       Class Presentations
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submission">
+   Submission
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grading">
+   Grading
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="t3-mobile-first-app">
-<h1>T3: Mobile First App<a class="headerlink" href="#t3-mobile-first-app" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="t3-mobile-first-app">
+<h1>T3: Mobile First App<a class="headerlink" href="#t3-mobile-first-app" title="Permalink to this headline">#</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
 <p>Finally, the moment you have all been waiting for: functional prototypes! In this assignment, you will be building upon everything you have learned about your scenario, users, and interface design to assemble a functional prototype mobile-first web application. Your prototype will allow you to clearly demonstrate how, through the iterative design process, you have selected an interface and interaction design space optimized for your users.</p>
 <p>A functional prototype should serve as the final point of reference (hypothetically, of course) for the eventual implementation of your product. It should also enable you to further refine any remaining obstacles that will affect usability before you move into production.</p>
-</div>
-<div class="section" id="assignment-details">
-<h2>Assignment Details<a class="headerlink" href="#assignment-details" title="Permalink to this headline">¶</a></h2>
-<p>For this assignment you will be building a functional prototype of the program you envisioned for your scenario story. Your program will build upon the work you completed in <a class="reference internal" href="t2.html"><span class="doc std std-doc">T2</span></a>. Since our emphasis for the team assignments is on mobile first design, your prototype should focus on how your program will function on a mobile device.</p>
+</section>
+<section id="assignment-details">
+<h2>Assignment Details<a class="headerlink" href="#assignment-details" title="Permalink to this headline">#</a></h2>
+<p>For this assignment you will be building a functional prototype of the program you envisioned for your scenario story. Your program will build upon the work you completed in <span class="xref myst">T2</span>. Since our emphasis for the team assignments is on mobile first design, your prototype should focus on how your program will function on a mobile device.</p>
 <p>You are not required to build an end to end product that incorporates many of the common features across mobile applications. User flows like registration, profile management, and checkout, already have fairly standardized user interface and interaction paradigms. Instead, your focus should be on the core features of your program and the interactions required to implement those features. The goal of this assignment is not to copy existing UI patterns, but rather create innovative and original interface elements.</p>
 <p>Your first priority should be to iterate on your initial vision by integrating the feedback you received from your peer evaluations. You will bring together any changes you made based on peer feedback with the artifacts that you have created to develop medium-fidelity prototypes. You will then use these prototypes to develop a functional implementation of your scenario using a web framework of your choosing.</p>
-<div class="section" id="part-1-medium-fidelity-prototype">
-<h3>Part 1: Medium Fidelity Prototype<a class="headerlink" href="#part-1-medium-fidelity-prototype" title="Permalink to this headline">¶</a></h3>
+<section id="part-1-medium-fidelity-prototype">
+<h3>Part 1: Medium Fidelity Prototype<a class="headerlink" href="#part-1-medium-fidelity-prototype" title="Permalink to this headline">#</a></h3>
 <p>For part 1, you will be creating medium fidelity prototypes of your program. As a team, you should decide how you prefer to communicate the intended functionality of your program and user interface. Since this will be your first attempt at a prototype, we would encourage you to avoid spending too much time perfecting every aspect of your interface as you would in a high fidelity prototype. Rather, you should focus on the basics like content, arrangement, and interaction. Remember you are not graded on visual design in this course.</p>
 <p>If you would like to use a prototyping tool like Figma or Sketch for this part of the assignment, feel free. Although, you can also create medium-fidelity prototypes in other tools such as presentation software or drawing programs.</p>
 <p>Your medium fidelity prototype will demonstrate the intended functionality of your program. You will explore the novel ways you envision your users interacting with your interface. If your team has different visions on how a particular widget or set of widgets should be implemented. You should create a prototype for each vision and elicit feedback from your peers during the class critique.</p>
-<div class="section" id="features">
-<h4>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h4>
+<section id="features">
+<h4>Features<a class="headerlink" href="#features" title="Permalink to this headline">#</a></h4>
 <p>Most of the user interface patterns you interact with today have evolved over time through iterative cycles of the design, deploy, and evaluative process. Interaction paradigms like the cascading menu, <a class="reference external" href="https://en.wikipedia.org/wiki/Cover_Flow">cover flow</a>, the collapsible scroll bar, and many others were not always as ubiquitous as they are today. Although many of these interactions now seem natural and expected, they were at one point considered ground breaking and novel.</p>
 <p>For this assignment your goal will be to extend and improve existing interaction paradigms or envision something entirely new. In addition to the widgets and interactions common across user interfaces today, you must create <strong>two</strong> new ways to interact with content in your user interface. Unlike the widget toolkit you are creating for A3, you are not required to build your interface elements from primitives. Rather, you are free to make use of existing widgets (e.g., HTML, Bootstrap, etc.) as necessary.</p>
 <p>For example, for a drone burrito delivery service, you might create an aggregate widget that lets you guide the drone to your exact location using only your thumb.</p>
-</div>
-<div class="section" id="scope">
-<h4>Scope<a class="headerlink" href="#scope" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="scope">
+<h4>Scope<a class="headerlink" href="#scope" title="Permalink to this headline">#</a></h4>
 <p>As we have discussed, the output of this assignment is not supposed to be a fully featured program. You are only required to create enough user interfaces to satisfy the requirements of your scenario. It may be possible to build out your entire prototype in a single page. However, you may find that your prototype is better suited to exist across several individual pages. If your scope is too small, we will ask you to add additional features. Conversely, if your scope is too large, we will encourage you to scale down a bit so that you have enough time to build a robust functional prototype.</p>
 <p>We will settle on final scope during in-class critiques.</p>
-</div>
-<div class="section" id="class-critique">
-<h4>Class Critique<a class="headerlink" href="#class-critique" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="class-critique">
+<h4>Class Critique<a class="headerlink" href="#class-critique" title="Permalink to this headline">#</a></h4>
 <p>On Tuesday, 2/15, your team will present your medium fidelity prototypes to the class. Although there is no official due date for Part 1 in Canvas, you will be required to present your work to date.</p>
-</div>
-</div>
-<div class="section" id="part-2-functional-prototype">
-<h3>Part 2: Functional Prototype<a class="headerlink" href="#part-2-functional-prototype" title="Permalink to this headline">¶</a></h3>
-<p>For part 2 of the assignment you will be required to develop a functional prototype from the work completed in part 1. Your functional prototype will be programmed using one of the web frameworks that we learned about in <a class="reference internal" href="t1.html"><span class="doc std std-doc">T1</span></a> (you may pick something else not covered in class, but you must discuss with the instructor first).</p>
+</section>
+</section>
+<section id="part-2-functional-prototype">
+<h3>Part 2: Functional Prototype<a class="headerlink" href="#part-2-functional-prototype" title="Permalink to this headline">#</a></h3>
+<p>For part 2 of the assignment you will be required to develop a functional prototype from the work completed in part 1. Your functional prototype will be programmed using one of the web frameworks that we learned about in <span class="xref myst">T1</span> (you may pick something else not covered in class, but you must discuss with the instructor first).</p>
 <p>The functional prototype must be <em>functional</em>! You do not have to provide a back-end or create middleware to support your interface, but a user should be able to interact with your prototype sufficiently enough to evaluate its functionality.</p>
 <p>For example, the aforementioned drone burrito delivery control widget does not have to literally control a drone, but the interactor used by the thumb and any corresponding response from the user interface should be functional.</p>
 <p>A user should be able to freely explore your interface without having to perform certain actions in a particular order to achieve an outcome. If you need to support elements of your interface with data, you should use facilities like <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API">web storage</a> or javascript data objects rather than a server database.</p>
 <p>Your interface should appear as realistic as possible. All placeholders, lorem ipsum text, joke data, etc., should be replaced with the type of content you would expect to see during real world use of your product.</p>
 <p>Once your functional prototypes are complete, you are ready to conduct your final evaluation.</p>
-<div class="section" id="id1">
-<h4>Class Critique<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<section id="id1">
+<h4>Class Critique<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h4>
 <p>On Tuesday, 3/1, your team will present your functional prototypes to the class. Although there is no official due date for Part 2 in Canvas, you will be required to present your work to date.</p>
-</div>
-</div>
-<div class="section" id="part-3-user-evaluation">
-<h3>Part 3: User Evaluation<a class="headerlink" href="#part-3-user-evaluation" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="part-3-user-evaluation">
+<h3>Part 3: User Evaluation<a class="headerlink" href="#part-3-user-evaluation" title="Permalink to this headline">#</a></h3>
 <p>For the user evaluation you will be assessing the usability of the interface that you designed by conducting a study using the Think Aloud protocol discussed in lecture. Your study should be designed such that participants have an opportunity to interact with at least one aspect of your user interface.</p>
 <p>Each team member is responsible for arranging at least one participant for the study. All team members should participate in each study.</p>
 <p>For each participant you will collect the following demographics:</p>
@@ -435,12 +542,12 @@
 <li><p>Preferred web browser, computer operating system, and mobile operating system</p></li>
 <li><p>Recruiter (team member name)</p></li>
 </ul>
-<div class="section" id="task-planning">
-<h4>Task Planning<a class="headerlink" href="#task-planning" title="Permalink to this headline">¶</a></h4>
+<section id="task-planning">
+<h4>Task Planning<a class="headerlink" href="#task-planning" title="Permalink to this headline">#</a></h4>
 <p>You will plan a series of tasks for your user to complete using your program. Each task should have a clear description, goal, and end-point. You should write as many tasks as you feel are necessary to adequately evaluate the usability of your interface. Since this number will vary greatly depending on your scenario, it is difficult to predict how many each team will need. In general, if you have a sufficiently complex user interface and only prepare 1 or 2 tasks, then it is safe to say that you have not fully evaluated your user interface.</p>
-</div>
-<div class="section" id="data-collection">
-<h4>Data Collection<a class="headerlink" href="#data-collection" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="data-collection">
+<h4>Data Collection<a class="headerlink" href="#data-collection" title="Permalink to this headline">#</a></h4>
 <p>With your testing plan in hand, you will start conducting your usability tests. Present each participant with the exact same introduction (scope, purpose, session detail, etc.) and tasks. If you discover an error with your first participant, do not fix it for the remaining participants unless it is critical to the success of your study (more on this below).</p>
 <p>For each user evaluation session, you will collect the following data:</p>
 <ul class="simple">
@@ -470,9 +577,9 @@
 </li>
 </ul>
 <p>Finally, before you conduct your first study, be sure to run at least 1 pilot evaluation with your group. You want to be absolutely sure that everything will work as intended and consistently across all of your participants. A good approach is to pick a member to act as participant and guide them through each task. Try to think about the different ways that someone new to your work might interact with your prototype to ensure that all interactions work properly.</p>
-</div>
-<div class="section" id="analysis-of-results">
-<h4>Analysis of Results<a class="headerlink" href="#analysis-of-results" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="analysis-of-results">
+<h4>Analysis of Results<a class="headerlink" href="#analysis-of-results" title="Permalink to this headline">#</a></h4>
 <p>For your analysis, you will divide your results into two categories: quantitative and qualitative. Your quantitative results will include task completion results, errors, and time per task. These should fit nicely within a table or spreadsheet so that you can get a holistic view of your results across all participants. Once your data is aggregated, you will summarize the results using the following metrics:</p>
 <ol class="simple">
 <li><p>Average time per task</p></li>
@@ -480,15 +587,15 @@
 <li><p>Average user error per task</p></li>
 </ol>
 <p>Your qualitative results will include your observation notes and reflection with each participant. Since this is qualitative data, you will need to use your expertise to develop insights about your user interface. Were there common points in your interface where participants stumbled? Was there a feature that participants liked or disliked? Did you observe any unexpected participant behavior that could be improved through changes to your UI? If so, summarize your qualitative analysis in one or two paragraphs and list out the changes you have decided to make. NOTE: You do not have to make these changes!</p>
-</div>
-<div class="section" id="class-presentations">
-<h4>Class Presentations<a class="headerlink" href="#class-presentations" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="class-presentations">
+<h4>Class Presentations<a class="headerlink" href="#class-presentations" title="Permalink to this headline">#</a></h4>
 <p>Each team will present their final prototype and study results during the last week of class. We will discuss the process for these presentations in more detail as the quarter progresses.</p>
-</div>
-</div>
-</div>
-<div class="section" id="submission">
-<h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="submission">
+<h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">#</a></h2>
 <p>For this assignment you will submit your materials in two ways:</p>
 <ol>
 <li><p>All materials developed in <em>part 1, 2, and 3</em> combined into a single PDF document divided into three sections:</p>
@@ -505,9 +612,9 @@
 </li>
 <li><p>Your functional prototype must be hosted on a public web server that is accessible to the class.</p></li>
 </ol>
-</div>
-<div class="section" id="grading">
-<h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="grading">
+<h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Some portion of your team must participate during the critique and presentation class activities to get credit for this assignment. Those who actively participate during live class time will receive 4 participation points. If you are unable to attend, you will be able to make up participation points by creating your own presentation or critique videos and submitting them on Canvas.</p>
@@ -522,8 +629,8 @@
 </ul>
 <p>Total: 20 pts</p>
 <p>You will also be required to individually complete a peer review survey to evaluate the contributions of each of your group members. If you receive a particularly low score, it will effect your participation grade for the course. So make sure that you are effectively contributing to all aspects of this assignment.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -547,44 +654,34 @@
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="t2.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">T2: Scenario Story</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="../notes/wk1.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Week 1 Notes</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
 </div>
-        
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Mark S. Baldwin<br/>
-        
-            &copy; Copyright 2022.<br/>
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Mark S. Baldwin<br/>
+  
+      &copy; Copyright 2023.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

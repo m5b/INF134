@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A3: Custom Graphical Toolkit &#8212; INF 134 Winter 2022</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>A3: Custom Graphical Toolkit &#8212; INF 134 Spring 2023</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,41 +20,38 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="A4: Speculative Story" href="a4.html" />
-    <link rel="prev" title="A2: Five and Five" href="a2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -60,7 +59,21 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -69,9 +82,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -81,7 +95,7 @@
       <img src="../_static/logo_stacked.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">INF 134 Winter 2022</h1>
+      <h1 class="site-logo" id="site-title">INF 134 Spring 2023</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -89,59 +103,23 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../index.html">
-   Project in User Interaction Software
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Project in User Interaction Software
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Individual Assignments
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="a1.html">
-   Assignment 1
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="a2.html">
-   Assignment 2
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Assignment 3
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="a4.html">
-   Assignment 4
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Team Assignments
- </span>
-</p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="t1.html">
-   Team Assignment 1
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="t2.html">
-   Team Assignment 2
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="t3.html">
-   Team Assignment 3
+  <a class="reference internal" href="a0.html">
+   Assignment 0
   </a>
  </li>
 </ul>
@@ -154,46 +132,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../notes/wk1.html">
    Week 1
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk2.html">
-   Week 2
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk3.html">
-   Week 3
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk4.html">
-   Week 4
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk5.html">
-   Week 5
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk6.html">
-   Week 6
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk7.html">
-   Week 7
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk8.html">
-   Week 8
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notes/wk9.html">
-   Week 9
   </a>
  </li>
 </ul>
@@ -216,12 +154,17 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -229,61 +172,117 @@
 
 
           
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+    <div class="header-article row sticky-top noprint">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/assignments/a3.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/assignments/a3.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#overview">
    Overview
@@ -374,23 +373,129 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>A3: Custom Graphical Toolkit</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-introduction">
+   Assignment Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-details">
+   Assignment Details
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#starter-code">
+     Starter Code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#repository-structure">
+     Repository Structure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#file-overview">
+     File Overview
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-your-workspace">
+     Setting up your Workspace
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-requirements">
+   Assignment Requirements
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-requirements">
+     Additional Requirements
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#theme">
+       Theme
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#state-tables">
+       State Tables
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#demo-program">
+       Demo Program
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submission">
+   Submission
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-1">
+     Part 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-2">
+     Part 2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grading">
+   Grading
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="a3-custom-graphical-toolkit">
-<h1>A3: Custom Graphical Toolkit<a class="headerlink" href="#a3-custom-graphical-toolkit" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="a3-custom-graphical-toolkit">
+<h1>A3: Custom Graphical Toolkit<a class="headerlink" href="#a3-custom-graphical-toolkit" title="Permalink to this headline">#</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
 <p>Today we have a vast ecosystem of toolkits and frameworks to draw (pun intended, sort of.) upon when building a software user interface. Frameworks like Angular and React rely upon layers of abstraction to render visual components to a particular viewstate. While these abstractions make it possible for us to quickly build powerful user interfaces, they mask the underlying logic required to perform the most basic interactions. In this assignment, we will be peeling back the layers to improve our understanding of the fundamental logic that make graphical widgets work.</p>
-</div>
-<div class="section" id="assignment-introduction">
-<h2>Assignment Introduction<a class="headerlink" href="#assignment-introduction" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="assignment-introduction">
+<h2>Assignment Introduction<a class="headerlink" href="#assignment-introduction" title="Permalink to this headline">#</a></h2>
 <p>When you build a user interface, you might decide that you need a button, a checkbox, a way to capture text input, or one of the many other widgets provided to you by your chosen toolkit. To accomplish this task, you will likely create that widget by writing some code similar to the following (assuming our toolkit of choice is HTML):</p>
 <div class="highlight-code notranslate"><div class="highlight"><pre><span></span> &lt;button type=&quot;button&quot;&gt;Click&lt;/button&gt; 
 </pre></div>
@@ -404,25 +509,25 @@
 <p class="admonition-title">Note</p>
 <p>If you are not sure where to start, review the week 5 lectures for an overview on SVG.js and getting started with a simple button.</p>
 </div>
-</div>
-<div class="section" id="assignment-details">
-<h2>Assignment Details<a class="headerlink" href="#assignment-details" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="assignment-details">
+<h2>Assignment Details<a class="headerlink" href="#assignment-details" title="Permalink to this headline">#</a></h2>
 <p>You must build 7 widgets (discussed below) using the starter framework provided below. You will write each of your widgets in its own TypeScript file, following the conventions established in the <strong><code class="docutils literal notranslate"><span class="pre">button.ts</span></code></strong> file.</p>
-<div class="section" id="starter-code">
-<h3>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">¶</a></h3>
+<section id="starter-code">
+<h3>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">#</a></h3>
 <p>A <a class="reference external" href="https://classroom.github.com/a/BLeOlYOJ">starter repository</a> has been created for you and is available on GitHub Classroom.</p>
 <p>If you are not familiar with how to use GitHub Classroom repositories, we will go over the setup process during the week 5 lecture.</p>
-</div>
-<div class="section" id="repository-structure">
-<h3>Repository Structure<a class="headerlink" href="#repository-structure" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="repository-structure">
+<h3>Repository Structure<a class="headerlink" href="#repository-structure" title="Permalink to this headline">#</a></h3>
 <p>The repository contains some basic files to help get you started. You are free to explore all of them, but you should only need to directly edit <strong><code class="docutils literal notranslate"><span class="pre">button.ts</span></code></strong> and the other widget files that you create.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>SVG.js has been through a few updates since this code was last written. Although we have tested the current code, it’s possible that we find a bug or two along the way. Any updates to the core code will be released via GitHub and announced here and on Zulip.</p>
 </div>
-</div>
-<div class="section" id="file-overview">
-<h3>File Overview<a class="headerlink" href="#file-overview" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="file-overview">
+<h3>File Overview<a class="headerlink" href="#file-overview" title="Permalink to this headline">#</a></h3>
 <dl class="simple myst">
 <dt>Files you do not have to edit</dt><dd><p><strong><code class="docutils literal notranslate"><span class="pre">dist/bundle.js</span></code></strong>: The bundled javascript that contains all code necessary to deploy your program. This file is autogenerated by webpack and won’t appear until you build.</p>
 </dd>
@@ -437,9 +542,9 @@
 <dd><p><strong><code class="docutils literal notranslate"><span class="pre">src/[your_widget].ts</span></code></strong>: Consider ‘your_widget’ a placeholder for each of the widget files you will create. You will create six additional widgets to complete your toolkit.</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="setting-up-your-workspace">
-<h3>Setting up your Workspace<a class="headerlink" href="#setting-up-your-workspace" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="setting-up-your-workspace">
+<h3>Setting up your Workspace<a class="headerlink" href="#setting-up-your-workspace" title="Permalink to this headline">#</a></h3>
 <p>The repository makes use of <strong><code class="docutils literal notranslate"><span class="pre">npm</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">webpack</span></code></strong>, and <strong><code class="docutils literal notranslate"><span class="pre">TypeScript</span></code></strong> to function. So the first thing you will want to do after cloning the repository is install these tools. All of the config files are prepared for you, so you should only need to install the tools in order to run the project. We will install these tools using NPM. If you do not have NPM installed, follow these instructions to install npm: <a class="reference external" href="https://www.npmjs.com/get-npm">npm installation instructions</a>.</p>
 <p>After cloning the repository, open it up in your prefered code editing tool. If you are using an editor with a built-in terminal, then you can enter the following commands from within your tool. Otherwise, you will have to open your OS’s default terminal and CD into the directory where you placed the repository.</p>
 <p>First, install webpack. A detailed overview of getting started with webpack can be found at their website: <a class="reference external" href="https://webpack.js.org/guides/getting-started/">Getting Started | webpack</a></p>
@@ -470,10 +575,10 @@ webpack 5.68.0 compiled successfully in 1973 ms
 </pre></div>
 </div>
 <p>You are now ready to run the program. The simplest way is to open the <strong><code class="docutils literal notranslate"><span class="pre">index.html</span></code></strong> file in the <strong><code class="docutils literal notranslate"><span class="pre">dist</span></code></strong> directory. However, you may prefer to setup a live server to host your program. We will cover how to do this in class, so if you miss it, please check the lecture recordings for week 5!</p>
-</div>
-</div>
-<div class="section" id="assignment-requirements">
-<h2>Assignment Requirements<a class="headerlink" href="#assignment-requirements" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="assignment-requirements">
+<h2>Assignment Requirements<a class="headerlink" href="#assignment-requirements" title="Permalink to this headline">#</a></h2>
 <p>Your final toolkit must include the following 7 widgets (visit Wikipedia’s <a class="reference external" href="https://en.wikipedia.org/wiki/Graphical_widget">Graphical widget</a> page detailed descriptions):</p>
 <ul class="simple">
 <li><p>Button</p></li>
@@ -547,40 +652,40 @@ webpack 5.68.0 compiled successfully in 1973 ms
 </dd>
 </dl>
 <p>In addition to the features listed above, ALL widgets must implement the abstract methods required by the <strong><code class="docutils literal notranslate"><span class="pre">Widget</span></code></strong> class in the <strong><code class="docutils literal notranslate"><span class="pre">core.js</span></code></strong> file. For example, after implementing the <strong><code class="docutils literal notranslate"><span class="pre">move</span></code></strong> method, your widget should be positionable by consuming code (e.g., a programmer should be able to add your widget to a document and specify using X and Y coordinates where on the document it should be placed).</p>
-<div class="section" id="additional-requirements">
-<h3>Additional Requirements<a class="headerlink" href="#additional-requirements" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="theme">
-<h4>Theme<a class="headerlink" href="#theme" title="Permalink to this headline">¶</a></h4>
+<section id="additional-requirements">
+<h3>Additional Requirements<a class="headerlink" href="#additional-requirements" title="Permalink to this headline">#</a></h3>
+<section id="theme">
+<h4>Theme<a class="headerlink" href="#theme" title="Permalink to this headline">#</a></h4>
 <p>You must create and apply a consistent theme to your toolkit. Your widgets, when rendered in the browser, should visually appear as if they belong together. Your design does not have to be groundbreaking! Your design skills are not going to be evaluated in this class, however, we are looking to see that you have thoughtfully applied the core principles of user centered design that you have been learning in your Informatics coursework. Spend some time to get to know the ins and outs of SVG.js. Learn its capabilities (pretty much anything you can do with vectors can be done with SVG.js) and decide what you want your theme to look like.</p>
-</div>
-<div class="section" id="state-tables">
-<h4>State Tables<a class="headerlink" href="#state-tables" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="state-tables">
+<h4>State Tables<a class="headerlink" href="#state-tables" title="Permalink to this headline">#</a></h4>
 <p>Since each widget is required to raise state change events, you will need to create a state machine for each widget. Your first step in creating a state machine is to identify and define the states and transitions required for each widget. The best way to record this information is through a state table, like the one we discussed in the week 3 lecture. You must include each of these state tables in your submission.</p>
-</div>
-<div class="section" id="demo-program">
-<h4>Demo Program<a class="headerlink" href="#demo-program" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="demo-program">
+<h4>Demo Program<a class="headerlink" href="#demo-program" title="Permalink to this headline">#</a></h4>
 <p>Once your toolkit is complete, you will assemble all of your widgets into a single program to demonstrate their functionality. This program does not have to do anything in particular, it just needs to enable us to interact with your widgets. Your demo program should listen to all the exposed event handlers that you created for your widgets and output the information they pass to the browser console. When we grade your assignment, we will open the console and look for these messages to assess whether or not the feature has been implemented.</p>
 <div class="warning admonition">
 <p class="admonition-title">For Your Consideration</p>
 <p>There is a lot of work to complete here! Although things may look easy at first, pay attention to the details. To complete this assignment there are many small tasks that you must take into account. Get started early, and make incremental progress on your work every day. You have a lot of time to complete this assignment because we want you to be thoughtful in how you implement the required features. A task that appears obvious at first glance will likely give you trouble as you work on it, so even though you have a lot of time, do not wait until the last week.</p>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="submission">
-<h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="submission">
+<h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">#</a></h2>
 <p>For this assignment you will submit your materials in two parts:</p>
-<div class="section" id="part-1">
-<h3>Part 1<a class="headerlink" href="#part-1" title="Permalink to this headline">¶</a></h3>
+<section id="part-1">
+<h3>Part 1<a class="headerlink" href="#part-1" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>Your state tables should be listed by widget in a single document. Your state table document should have a cover page with your name, a brief description, and name of your toolkit.</p></li>
 <li><p>Your theme should, at the very least, be roughly sketched out before implementation. It does not have to have the polish of a visual designer, but should look consistent across all widgets.</p></li>
 <li><p>A description and sketch of your planned custom widget. Your description should include an explanation of why you selected the widget. Note: you will not be bound to this widget in your final submission, but if you do change, please let us know.</p></li>
 </ol>
 <p>Combine your state tables, theme, and custom widget selection into a single PDF document and submit by the deadline specified on Canvas.</p>
-</div>
-<div class="section" id="part-2">
-<h3>Part 2<a class="headerlink" href="#part-2" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="part-2">
+<h3>Part 2<a class="headerlink" href="#part-2" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>Your final toolkit and demo program should be submitted as a single <strong><code class="docutils literal notranslate"><span class="pre">.zip</span></code></strong> file by the deadline specified on Canvas.</p></li>
 </ol>
@@ -588,10 +693,10 @@ webpack 5.68.0 compiled successfully in 1973 ms
 <p class="admonition-title">For Your Consideration</p>
 <p>A good practice to make habit is to regularly commit your code to a source control system like GitHub as you make progress. You are free to use your github repository as often as you like as you work on the assignment, however, if you need assistance from the course instructors we will ask that you provide us with a link to your GitHub repository and a running instance of your program first.</p>
 </div>
-</div>
-</div>
-<div class="section" id="grading">
-<h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="grading">
+<h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">#</a></h2>
 <p>Your assignment will be given an overall grade that is based on the completeness of the following items:</p>
 <ul class="simple">
 <li><p>All materials submitted on time: 0.5 pts</p></li>
@@ -618,8 +723,8 @@ webpack 5.68.0 compiled successfully in 1973 ms
 </li>
 </ul>
 <p>Total: 20 pts</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -643,44 +748,34 @@ webpack 5.68.0 compiled successfully in 1973 ms
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="a2.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">A2: Five and Five</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="a4.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">A4: Speculative Story</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
 </div>
-        
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Mark S. Baldwin<br/>
-        
-            &copy; Copyright 2022.<br/>
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Mark S. Baldwin<br/>
+  
+      &copy; Copyright 2023.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
