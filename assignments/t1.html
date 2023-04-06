@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>T1: Web Frameworks and Graphical Toolkits &#8212; INF 134 Spring 2023</title>
+    <title>T1: App Concept, Framework, and Problem Statement &#8212; INF 134 Spring 2023</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -125,6 +125,18 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
+  Team Assignments
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="t0.html">
+   Team Assignment 0
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
   Lecture Notes
  </span>
 </p>
@@ -141,11 +153,6 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../calendar.html">
-   Calendar
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../resources.html">
    Resources
@@ -284,30 +291,42 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview">
-   Overview
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#assignment-details">
    Assignment Details
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-is-a-web-framework">
-     What is a Web Framework?
+    <a class="reference internal nav-link" href="#part-1-select-a-framework">
+     Part 1: Select a Framework
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-is-a-native-graphical-toolkit">
-     What is a Native Graphical Toolkit?
+    <a class="reference internal nav-link" href="#part-2-app-concept-and-problem-statement">
+     Part 2: App Concept and Problem Statement
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#getting-started">
+       Getting Started
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#developing-content">
+       Developing Content
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#evaluation-notes">
+       Evaluation Notes
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#presentation">
-   Presentation
+  <a class="reference internal nav-link" href="#requirements">
+   Requirements
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -329,7 +348,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>T1: Web Frameworks and Graphical Toolkits</h1>
+                <h1>T1: App Concept, Framework, and Problem Statement</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -340,30 +359,42 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview">
-   Overview
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#assignment-details">
    Assignment Details
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-is-a-web-framework">
-     What is a Web Framework?
+    <a class="reference internal nav-link" href="#part-1-select-a-framework">
+     Part 1: Select a Framework
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-is-a-native-graphical-toolkit">
-     What is a Native Graphical Toolkit?
+    <a class="reference internal nav-link" href="#part-2-app-concept-and-problem-statement">
+     Part 2: App Concept and Problem Statement
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#getting-started">
+       Getting Started
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#developing-content">
+       Developing Content
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#evaluation-notes">
+       Evaluation Notes
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#presentation">
-   Presentation
+  <a class="reference internal nav-link" href="#requirements">
+   Requirements
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -386,73 +417,114 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="t1-web-frameworks-and-graphical-toolkits">
-<h1>T1: Web Frameworks and Graphical Toolkits<a class="headerlink" href="#t1-web-frameworks-and-graphical-toolkits" title="Permalink to this headline">#</a></h1>
-<section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
-<p>The landscape for building graphical software is filled with a myriad of solutions designed to support the development of mobile and desktop interfaces. Deciding which one to use is often filled with numerous variables that must be taken into consideration. Understanding the differences between web and native tools, frameworks and toolkits, and their underlying designs is an important step in the software user interface development process. For your first team assignment, you will be conducting a survey of user interface web frameworks and native graphical toolkits. You will collectively decide on 1 web framework and 1 native graphical toolkit to report on. Once your team has settled on a framework and toolkit, you will put together a brief slide deck and present your findings in class.</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="t1-app-concept-framework-and-problem-statement">
+<h1>T1: App Concept, Framework, and Problem Statement<a class="headerlink" href="#t1-app-concept-framework-and-problem-statement" title="Permalink to this headline">#</a></h1>
+<p>Now that you have a rough idea of your overal concept in place, it’s time to start developing your idea into something that you can build over the next nine weeks. For this assignment, you will be required to establish a regular meeting time with your team, refine your concept from what you developed in class, and determine the features and implementation of your final prototype.</p>
 <section id="assignment-details">
 <h2>Assignment Details<a class="headerlink" href="#assignment-details" title="Permalink to this headline">#</a></h2>
-<p>Each team is responsible for reporting on 1 web framework and 1 native graphical toolkit. A good approach to deciding on your tools is to spend some time individually investigating what exists. Identify two or three examples and share them with your team. When ready, get together and discuss which framework and toolkit you would like to report on to the class.</p>
-<section id="what-is-a-web-framework">
-<h3>What is a Web Framework?<a class="headerlink" href="#what-is-a-web-framework" title="Permalink to this headline">#</a></h3>
-<p>For this assignment we will define a web framework as tooling that enables someone to develop graphical user interfaces that run in a web browser. You may encounter some frameworks that refer to themselves as libraries rather than web frameworks, generally, this is a semantic distinction. While frameworks do tend to be larger and more feature rich, as long as the tool makes it possible to build an interface for the web, it is perfectly acceptable to report on it.</p>
-</section>
-<section id="what-is-a-native-graphical-toolkit">
-<h3>What is a Native Graphical Toolkit?<a class="headerlink" href="#what-is-a-native-graphical-toolkit" title="Permalink to this headline">#</a></h3>
-<p>A native toolkit is a type of tooling that enables someone to develop graphical user interfaces that run natively in a computing environment. You are free to report on native toolkits for desktop computing or mobile devices.</p>
-<p>Once you have settled on your tooling, be sure to sign up using the course spreadsheet (This is the same sheet we have been using for project team assignments. The link has been sent as a Canvas announcement and shared on Zulip). Each team must report on unique tools for both web frameworks and native toolkits. So before you start working on your report, check the spreadsheet to make sure your topics have not already been selected!</p>
+<section id="part-1-select-a-framework">
+<span id="part1"></span><h3>Part 1: Select a Framework<a class="headerlink" href="#part-1-select-a-framework" title="Permalink to this headline">#</a></h3>
+<p>For part 1 of this assignment, you will also want to decide how you will go about implementing your functional prototype.</p>
+<p>As you learned through <a class="reference internal" href="#"><span class="doc std std-doc">T0</span></a> presentations, there are many IDE’s and toolkits available for you to use.</p>
+<p>You are free to stick with the tooling you presented, switch to something new that you learned about from your classmates, and run with something entirely different. It’s up to you to decide which you will use, but you should consider the skills, interests, and desires of your entire team.</p>
+<p>Once you have settled on a scenario and tooling, you will submit a document in the PDF format to Canvas that includes the following information:</p>
+<dl class="simple myst">
+<dt>Overview</dt><dd><p>A high level description of your project. Start with the scenario that you selected followed by an overview that conveys the project’s purpose in one 3-5 sentence paragraph. You should describe at a high level what you intend to build (e.g., a tweet analysis application), what technologies your project will use (e.g., JavaScript, TypeScript, and Bootstrap), and its purpose (e.g., to help researchers analyze tweets). This is where you should start to mold your chosen scenario into something unique to your group. It is not sufficient to simply restate the scenario. You should build upon it and make it your own.</p>
+</dd>
+<dt>Requirements</dt><dd><p>A low level detailed overview of the features you intend to implement. The requirements section is where you will need to focus most of your attention for this part of the final project. You must be specific enough so that if you were to hand off your requirements to a classmate, they would be able to build your project as you envision it. Do your best to assess what you can complete in the time that remains.</p>
+</dd>
+<dt>Team</dt><dd><p>The names and roles of each member in your group. A good approach to managing your project is to assign responsibilities to each member. So for example:</p>
+<p>Mark: Write all the HTML/CSS required for the project.</p>
+<p>Samantha: Write the Tweet API using jQuery and JavaScript.</p>
+<p>Dylan: Design and layout</p>
+</dd>
+</dl>
+<p>For now, don’t worry too much about scope. We will work together to refine your requirements as we move throughout the quarter. You are not expected to get this type of document right the first time. A more accurate representation of what you will build will develop as you move through the quarter. So do your best for now to think about the actions that will need to be completed to fulfill the goals of your chosen scenario.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You are not allowed to report on a web framework or native toolkit that has already been selected by another team! Check the course spreadsheet and enter your desired tooling before you start working on your report.</p>
+<p>Part 1 is due a week earlier than part 2, so be sure to check Canvas for dates!</p>
 </div>
 </section>
+<section id="part-2-app-concept-and-problem-statement">
+<span id="part2"></span><h3>Part 2: App Concept and Problem Statement<a class="headerlink" href="#part-2-app-concept-and-problem-statement" title="Permalink to this headline">#</a></h3>
+<p>For this part of the assignment, you will be identifying the content needed to fulfill your requirements from <a class="reference internal" href="#part1"><span class="std std-ref">Part 1</span></a> and flesh out how it will be presented to end users. We will be applying a mobile first approach to product design and development, so thinking through the core needs of a mobile user should be your starting point.</p>
+<section id="getting-started">
+<h4>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">#</a></h4>
+<p>At this point you should have a rough idea of the direction you plan to head with your scenario. To help you refine that direction you will start by applying the user centered design and evaluation methods we reviewed in lecture. Your goal here should be to generate as many assets as possible to help guide your direction. These assets may include sketches and notes, but should also include storyboards.</p>
+<p>Think about the different situations in which you might envision a person using your product. Are there any that you are unsure about? Any that you could benefit from some evaluation? If so, explore these situations through storyboards. For example, for a Drone Burrito Delivery Service (DBDS) one might need to determine the best way to get the burrito from the drone to the customer. So we might create a series of storyboards that explore this situation:</p>
+<ul class="simple">
+<li><p>Delivery stations?</p></li>
+<li><p>Drop and go?</p></li>
+<li><p>Table service?</p></li>
+</ul>
+<p>Once you have a few assets together (such as storyboards), spend some time asking those around you for their thoughts. You can discuss with your team, friends and family, and other groups during class work time. Take note of who you asked to evaluate, the evaluation method you used, and the data that you generated.</p>
 </section>
-<section id="presentation">
-<h2>Presentation<a class="headerlink" href="#presentation" title="Permalink to this headline">#</a></h2>
-<p>Each team will present their report to the class on Thursday 4/15. You should plan on talking for 5 minutes. If your presentation exceeds 5 minutes you will be stopped, so be sure to practice with your team a few times to make sure you are able to say everything you want within the time limit. This presentation opportunity will contribute to your participation points for the course, so while all team members do not have to speak, you are encouraged to take the mic for at least one slide!</p>
+<section id="developing-content">
+<h4>Developing Content<a class="headerlink" href="#developing-content" title="Permalink to this headline">#</a></h4>
+<p>Once you have received some feedback on your preliminary ideas, you will start thinking about the type of content your product will need.</p>
+<p>Starting with a mobile first approach, you will start by assembling a list of the content that will be presented to users in your mobile interface. This might be as simple as a bulleted list of one or two word descriptions. For example, with DBDS we might start with the following list:</p>
+<ul class="simple">
+<li><p>App Name</p></li>
+<li><p>Menu items</p></li>
+<li><p>Delivery location</p></li>
+<li><p>Special deals</p></li>
+<li><p>Where’s my burrito?</p></li>
+<li><p>Fly it myself</p></li>
+</ul>
+<p>Identifying content is a good group exercise, so you will likely want to find time to work together on this part of the assignment. Keep in mind, that we are interested in exploring novel user interfaces in this class, so do your best to avoid more standardized UI features like:</p>
+<ul class="simple">
+<li><p>Checkout/pay</p></li>
+<li><p>Account/login</p></li>
+<li><p>Profile management</p></li>
+</ul>
+<p>As you work through your content, remember, at this stage content selection can be fluid. As you work towards functional prototypes you may decide to add or remove these items. So you don’t have to get it right the first time through.</p>
+</section>
+<section id="evaluation-notes">
+<h4>Evaluation Notes<a class="headerlink" href="#evaluation-notes" title="Permalink to this headline">#</a></h4>
+<p>As you spend time in and out of class communicating your story with other people, you should be taking notes on the feedback that you receive. As a team, you will aggregate these notes into a single document that includes the following:</p>
+<ul class="simple">
+<li><p>A description of which assets you shared with the evaluating team.</p></li>
+<li><p>A list of the feedback that you received and an anonymized description of the person that provided the feedback.</p></li>
+<li><p>A summary of how you plan to handle the feedback:</p>
+<ul>
+<li><p>What will you change? Why?</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">#</a></h2>
+<p>Your team must have at least three assets per team member, though a thorough story should not be limited by attempting to fulfill the bare minimum. If you are ideating and sketching ideas both individually and collaboratively, you should have no problem generating more than three assets.</p>
+<p>Your completed story must contain the following items:</p>
+<ul class="simple">
+<li><p>Artifacts from your ideation process (sketches, notes, pictures, etc., identified by individual team members)</p></li>
+<li><p>At least 1 prototype (storyboard, wireframe, paper, etc.) per team member (everyone must create a prototype, if you create a prototype collaboratively then add the names of all members involved)</p></li>
+</ul>
 </section>
 <section id="submission">
 <h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">#</a></h2>
-<p>Your final report should be created using a presentation tool such as Microsoft PowerPoint or Google Slides. Your slide deck should include the following:</p>
-<dl class="simple myst">
-<dt>History</dt><dd><p>When was it launched?</p>
-</dd>
-<dd><p>Why was it launched (<em>e.g.,</em> what perceived problem was it created to solve)?</p>
-</dd>
-<dd><p>What tool(s) are used for development?</p>
-</dd>
-<dd><p>What OSes does it run on (if native)</p>
-</dd>
-<dd><p>What is the license (<em>e.g.,</em> commercial or open source, if open source, which one)?</p>
-</dd>
-<dd><p>Who created and/or supports it? The answer to this question will vary, but generally either a group of engineers or an organization is behind maintaining and advancing the tool. Tell us who.</p>
-</dd>
-<dt>Features</dt><dd><p>What programming language(s) does it use?</p>
-</dd>
-<dd><p>What are its advantages over similar tools?</p>
-</dd>
-<dd><p>What are its trade-offs?</p>
-</dd>
-<dt>Sample Code</dt><dd><p>Show some sample code and screen shots that describe how someone would create a button and associated event handler with it.</p>
-</dd>
-</dl>
-<p>Export your final slide deck as a PDF and submit to canvas by the deadline specified on Canvas.</p>
-<div class="tip admonition">
-<p class="admonition-title">Presenting vs. Submitting</p>
-<p>Note that you will be graded on the thoroughness of your slide deck, not your presentation. If you find that you are unable to cover the entirety of your slide deck within the allotted five minutes, DO NOT remove content from the deck that you submit to Canvas. Rather, you should adjust your presentation by either skipping or summarizing slides that you deem less critical for your audience.</p>
-</div>
+<p>To submit your scenario story, appoint one member of your group to be responsible for assembling your final deliverable into a single packet in the PDF format. The packet must start with a cover page that includes:</p>
+<ul class="simple">
+<li><p>Your team name</p></li>
+<li><p>Scenario summary (one sentence that describes your product)</p></li>
+<li><p>Team member names</p></li>
+<li><p>Date</p></li>
+</ul>
+<p>You must also identify each asset that you created in some way. One approach might be to put your name at the bottom of the page (e.g., created by Mark Baldwin). Alternatively, you may group assets by team member and start each section with an introduction page that includes your name. We are not particularly concerned with how you identify your assets, but simply that you do.</p>
 </section>
 <section id="grading">
 <h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">#</a></h2>
-<p>Your team will be assigned a grade based on the following criteria:</p>
+<p>Your team will be given an overall grade that is based on thoroughness and thoughtfulness of your story. It is fairly easy to identify rushed or poorly thought out work, so do not wait to the last minute to finalize your assets.</p>
 <ul class="simple">
-<li><p>All materials submitted on time and in the correct format: 0.5 pt</p></li>
-<li><p>Presentation of tooling is unique: 0.5 pt</p></li>
-<li><p>All requirements specified for the assignment are met: 2 pt</p></li>
+<li><p>All materials submitted on time: 0.5 pts</p></li>
+<li><p>Submission format requirements met: 0.5 pts</p></li>
+<li><p>Completeness of assignment Part 1: 1 pt</p></li>
+<li><p>Completeness of assignment Part 2: 13 pts</p></li>
 </ul>
-<p>Total: 3 pts</p>
+<p>Total: 15 pts</p>
+<p>We will not be penalizing your team for the absence of individual member materials. Missing assets for individual members will be assessed through the participation grade.</p>
 </section>
 </section>
 
