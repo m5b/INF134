@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Week 1 Notes" href="../notes/wk1.html" />
+    <link rel="prev" title="T0: Team and Project Overview" href="t0.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -128,10 +130,15 @@ const thebe_selector_output = ".output, .cell_output"
   Team Assignments
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="t0.html">
    Team Assignment 0
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Team Assignment 1
   </a>
  </li>
 </ul>
@@ -304,35 +311,8 @@ title="Print to PDF"
     <a class="reference internal nav-link" href="#part-2-app-concept-and-problem-statement">
      Part 2: App Concept and Problem Statement
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#getting-started">
-       Getting Started
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#developing-content">
-       Developing Content
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#evaluation-notes">
-       Evaluation Notes
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#requirements">
-   Requirements
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#submission">
-   Submission
-  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#grading">
@@ -372,35 +352,8 @@ title="Print to PDF"
     <a class="reference internal nav-link" href="#part-2-app-concept-and-problem-statement">
      Part 2: App Concept and Problem Statement
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#getting-started">
-       Getting Started
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#developing-content">
-       Developing Content
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#evaluation-notes">
-       Evaluation Notes
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#requirements">
-   Requirements
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#submission">
-   Submission
-  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#grading">
@@ -419,112 +372,53 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="t1-app-concept-framework-and-problem-statement">
 <h1>T1: App Concept, Framework, and Problem Statement<a class="headerlink" href="#t1-app-concept-framework-and-problem-statement" title="Permalink to this headline">#</a></h1>
-<p>Now that you have a rough idea of your overal concept in place, it’s time to start developing your idea into something that you can build over the next nine weeks. For this assignment, you will be required to establish a regular meeting time with your team, refine your concept from what you developed in class, and determine the features and implementation of your final prototype.</p>
+<p>Now that you have a rough idea of your overall concept in place, it’s time to start developing your idea into something concrete. For this assignment, you will be required to establish a regular meeting time with your team, refine your concept from what you developed in class, and determine the features and implementation of your final prototype.</p>
+<p>As you assemble your plan, keep in mind that the goal of this project (and the class) is not to build an end-to-end solution for your concept. We are focused on the user interface for the entirety of the class. To that end, your eventual design will be valued on its adherence and adoption of the principles of good interface design that we cover in class. Try to envision a product that will lead to a rich, novel, and engaging exploration of user interaction. If your final prototype has a registration flow and a swipe left or right user experience, then it will likely fall short of the level interaction we are expecting to see in this course.</p>
+<p>For now, focus on refining a concept that has the potential for the characteristics described above.</p>
 <section id="assignment-details">
 <h2>Assignment Details<a class="headerlink" href="#assignment-details" title="Permalink to this headline">#</a></h2>
 <section id="part-1-select-a-framework">
 <span id="part1"></span><h3>Part 1: Select a Framework<a class="headerlink" href="#part-1-select-a-framework" title="Permalink to this headline">#</a></h3>
-<p>For part 1 of this assignment, you will also want to decide how you will go about implementing your functional prototype.</p>
-<p>As you learned through <a class="reference internal" href="#"><span class="doc std std-doc">T0</span></a> presentations, there are many IDE’s and toolkits available for you to use.</p>
-<p>You are free to stick with the tooling you presented, switch to something new that you learned about from your classmates, and run with something entirely different. It’s up to you to decide which you will use, but you should consider the skills, interests, and desires of your entire team.</p>
-<p>Once you have settled on a scenario and tooling, you will submit a document in the PDF format to Canvas that includes the following information:</p>
-<dl class="simple myst">
-<dt>Overview</dt><dd><p>A high level description of your project. Start with the scenario that you selected followed by an overview that conveys the project’s purpose in one 3-5 sentence paragraph. You should describe at a high level what you intend to build (e.g., a tweet analysis application), what technologies your project will use (e.g., JavaScript, TypeScript, and Bootstrap), and its purpose (e.g., to help researchers analyze tweets). This is where you should start to mold your chosen scenario into something unique to your group. It is not sufficient to simply restate the scenario. You should build upon it and make it your own.</p>
-</dd>
-<dt>Requirements</dt><dd><p>A low level detailed overview of the features you intend to implement. The requirements section is where you will need to focus most of your attention for this part of the final project. You must be specific enough so that if you were to hand off your requirements to a classmate, they would be able to build your project as you envision it. Do your best to assess what you can complete in the time that remains.</p>
-</dd>
-<dt>Team</dt><dd><p>The names and roles of each member in your group. A good approach to managing your project is to assign responsibilities to each member. So for example:</p>
-<p>Mark: Write all the HTML/CSS required for the project.</p>
-<p>Samantha: Write the Tweet API using jQuery and JavaScript.</p>
-<p>Dylan: Design and layout</p>
-</dd>
-</dl>
-<p>For now, don’t worry too much about scope. We will work together to refine your requirements as we move throughout the quarter. You are not expected to get this type of document right the first time. A more accurate representation of what you will build will develop as you move through the quarter. So do your best for now to think about the actions that will need to be completed to fulfill the goals of your chosen scenario.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Part 1 is due a week earlier than part 2, so be sure to check Canvas for dates!</p>
-</div>
+<p>For part 1 of this assignment, you will decide how you will go about implementing your functional prototype.</p>
+<p>There are many IDE’s, frameworks, and toolkits available for you to use. If the only frameworks your team has experience with are those learned in INF 133, then sticking with what you know might be the safest and least stressful path. If you have familiarity with a different framework OR are simply eager to learn something new (and willing to put in the time this quarter) then there are lots of great options. Keep in mind, you are not required to use a web framework (Angular, React, etc)! If you would like to use Java Swing or .Net, for example, go for it. There are also some great browser containers that can render a desktop like experience (Electron, Tauri).</p>
+<p>Ultimately, it’s up to you to decide what you will use, but you should consider the skills, interests, and desires of your entire team.</p>
+<p>Once you have settled on a build environment, take note of the following data points and include them in your submission document:</p>
+<ol class="simple">
+<li><p>The name of the tool (e.g., Angular, GTK4, Electron, Flutter)</p></li>
+<li><p>A brief description of why you choose it (e.g., “it’s cool”, “we have expertise”, “want to learn”)</p></li>
+<li><p>A list of challenges and obstacles that you might encounter while using the tool.</p></li>
+<li><p>A brief description of the backup plan in case you run into project ending problems.</p></li>
+</ol>
+<p>Add your responses to each of the following items under a section title <code class="docutils literal notranslate"><span class="pre">**Framework</span> <span class="pre">and</span> <span class="pre">Build</span> <span class="pre">Plan**</span></code></p>
 </section>
 <section id="part-2-app-concept-and-problem-statement">
 <span id="part2"></span><h3>Part 2: App Concept and Problem Statement<a class="headerlink" href="#part-2-app-concept-and-problem-statement" title="Permalink to this headline">#</a></h3>
-<p>For this part of the assignment, you will be identifying the content needed to fulfill your requirements from <a class="reference internal" href="#part1"><span class="std std-ref">Part 1</span></a> and flesh out how it will be presented to end users. We will be applying a mobile first approach to product design and development, so thinking through the core needs of a mobile user should be your starting point.</p>
-<section id="getting-started">
-<h4>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">#</a></h4>
-<p>At this point you should have a rough idea of the direction you plan to head with your scenario. To help you refine that direction you will start by applying the user centered design and evaluation methods we reviewed in lecture. Your goal here should be to generate as many assets as possible to help guide your direction. These assets may include sketches and notes, but should also include storyboards.</p>
-<p>Think about the different situations in which you might envision a person using your product. Are there any that you are unsure about? Any that you could benefit from some evaluation? If so, explore these situations through storyboards. For example, for a Drone Burrito Delivery Service (DBDS) one might need to determine the best way to get the burrito from the drone to the customer. So we might create a series of storyboards that explore this situation:</p>
-<ul class="simple">
-<li><p>Delivery stations?</p></li>
-<li><p>Drop and go?</p></li>
-<li><p>Table service?</p></li>
-</ul>
-<p>Once you have a few assets together (such as storyboards), spend some time asking those around you for their thoughts. You can discuss with your team, friends and family, and other groups during class work time. Take note of who you asked to evaluate, the evaluation method you used, and the data that you generated.</p>
+<p>For part 2, you will be refining the concept you developed in T0, forming a problem statement, and starting to identify the basic requirements for completing your product.</p>
+<dl class="simple myst">
+<dt>Overview</dt><dd><p>A high level description of your project. Start with the scenario that you selected followed by an overview that conveys the project’s purpose in one 3-5 sentence paragraph. You should describe at a high level what you intend to build (e.g., a tweet analysis application), what technologies your project will use (e.g., JavaScript, TypeScript, and Bootstrap), and its purpose (e.g., to help researchers analyze tweets). This is where you should start to mold your chosen scenario into something unique to your group. It is not sufficient to simply restate the scenario. You should build upon it and make it your own.</p>
+</dd>
+</dl>
+<p>Yes, this is the same requirement for T0! If you remain satisfied with your original concept, than just copy and paste it into this assignment. If you have decided to ‘pivot’ then create a revised overview representative if your new direction.</p>
+<dl class="simple myst">
+<dt>Problem Statement</dt><dd><p>A strong problem statement should provide a concise and clear articulation of a specific problem or opportunity that your product/concept is intended to solve or address. It outlines the key issues or pain points that the product aims to alleviate, and provides a framework for the design and development process. A well-crafted problem statement helps to ensure that product development efforts are focused on solving the right problems, and that product features and functionality align with user needs and goals.</p>
+</dd>
+<dt>Requirements</dt><dd><p>A low level detailed overview of the features you intend to implement. The requirements section is where you will need to focus most of your attention for this part of the team project. You must be specific enough so that if you were to hand off your requirements to a classmate, they would be able to build your project as you envision it. Do your best to assess what you can complete in the time that remains in the quarter.</p>
+</dd>
+</dl>
+<p>Combine the three items above into a section called <code class="docutils literal notranslate"><span class="pre">**App</span> <span class="pre">Concept</span> <span class="pre">and</span> <span class="pre">Problem</span> <span class="pre">Statement**</span></code> and add to your document for submission.</p>
 </section>
-<section id="developing-content">
-<h4>Developing Content<a class="headerlink" href="#developing-content" title="Permalink to this headline">#</a></h4>
-<p>Once you have received some feedback on your preliminary ideas, you will start thinking about the type of content your product will need.</p>
-<p>Starting with a mobile first approach, you will start by assembling a list of the content that will be presented to users in your mobile interface. This might be as simple as a bulleted list of one or two word descriptions. For example, with DBDS we might start with the following list:</p>
-<ul class="simple">
-<li><p>App Name</p></li>
-<li><p>Menu items</p></li>
-<li><p>Delivery location</p></li>
-<li><p>Special deals</p></li>
-<li><p>Where’s my burrito?</p></li>
-<li><p>Fly it myself</p></li>
-</ul>
-<p>Identifying content is a good group exercise, so you will likely want to find time to work together on this part of the assignment. Keep in mind, that we are interested in exploring novel user interfaces in this class, so do your best to avoid more standardized UI features like:</p>
-<ul class="simple">
-<li><p>Checkout/pay</p></li>
-<li><p>Account/login</p></li>
-<li><p>Profile management</p></li>
-</ul>
-<p>As you work through your content, remember, at this stage content selection can be fluid. As you work towards functional prototypes you may decide to add or remove these items. So you don’t have to get it right the first time through.</p>
-</section>
-<section id="evaluation-notes">
-<h4>Evaluation Notes<a class="headerlink" href="#evaluation-notes" title="Permalink to this headline">#</a></h4>
-<p>As you spend time in and out of class communicating your story with other people, you should be taking notes on the feedback that you receive. As a team, you will aggregate these notes into a single document that includes the following:</p>
-<ul class="simple">
-<li><p>A description of which assets you shared with the evaluating team.</p></li>
-<li><p>A list of the feedback that you received and an anonymized description of the person that provided the feedback.</p></li>
-<li><p>A summary of how you plan to handle the feedback:</p>
-<ul>
-<li><p>What will you change? Why?</p></li>
-</ul>
-</li>
-</ul>
-</section>
-</section>
-</section>
-<section id="requirements">
-<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">#</a></h2>
-<p>Your team must have at least three assets per team member, though a thorough story should not be limited by attempting to fulfill the bare minimum. If you are ideating and sketching ideas both individually and collaboratively, you should have no problem generating more than three assets.</p>
-<p>Your completed story must contain the following items:</p>
-<ul class="simple">
-<li><p>Artifacts from your ideation process (sketches, notes, pictures, etc., identified by individual team members)</p></li>
-<li><p>At least 1 prototype (storyboard, wireframe, paper, etc.) per team member (everyone must create a prototype, if you create a prototype collaboratively then add the names of all members involved)</p></li>
-</ul>
-</section>
-<section id="submission">
-<h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">#</a></h2>
-<p>To submit your scenario story, appoint one member of your group to be responsible for assembling your final deliverable into a single packet in the PDF format. The packet must start with a cover page that includes:</p>
-<ul class="simple">
-<li><p>Your team name</p></li>
-<li><p>Scenario summary (one sentence that describes your product)</p></li>
-<li><p>Team member names</p></li>
-<li><p>Date</p></li>
-</ul>
-<p>You must also identify each asset that you created in some way. One approach might be to put your name at the bottom of the page (e.g., created by Mark Baldwin). Alternatively, you may group assets by team member and start each section with an introduction page that includes your name. We are not particularly concerned with how you identify your assets, but simply that you do.</p>
 </section>
 <section id="grading">
 <h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">#</a></h2>
-<p>Your team will be given an overall grade that is based on thoroughness and thoughtfulness of your story. It is fairly easy to identify rushed or poorly thought out work, so do not wait to the last minute to finalize your assets.</p>
+<p>Your team will be given an overall grade that is based on thoroughness and thoughtfulness of your work. It is fairly easy to identify rushed or poorly thought out work, so do not wait to the last minute to finalize your plan.</p>
 <ul class="simple">
 <li><p>All materials submitted on time: 0.5 pts</p></li>
 <li><p>Submission format requirements met: 0.5 pts</p></li>
-<li><p>Completeness of assignment Part 1: 1 pt</p></li>
-<li><p>Completeness of assignment Part 2: 13 pts</p></li>
+<li><p>Completeness of assignment Part 1: 2 pt</p></li>
+<li><p>Completeness of assignment Part 2: 3 pts</p></li>
 </ul>
-<p>Total: 15 pts</p>
-<p>We will not be penalizing your team for the absence of individual member materials. Missing assets for individual members will be assessed through the participation grade.</p>
+<p>Total: 5 pts</p>
+<p>Note that we expect everyone on your team to participate in this assignment. Period check-ins by the course staff and final survey will determine whether or not each team member earned full credit. Penalties, should they arise, will be applied to each persons overall participation score.</p>
 </section>
 </section>
 
@@ -555,6 +449,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="t0.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">T0: Team and Project Overview</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../notes/wk1.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Week 1 Notes</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
