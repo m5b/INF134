@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>A0: Introductions and Survey &#8212; INF 134 Spring 2023</title>
+    <title>A1: Roll Your Own - Button &#8212; INF 134 Spring 2023</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="T0: Team and Project Overview" href="t0.html" />
+    <link rel="prev" title="A0: Meet and Greet" href="a0.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -116,10 +118,37 @@ const thebe_selector_output = ".output, .cell_output"
   Individual Assignments
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="a0.html">
    Assignment 0
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Assignment 1
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Team Assignments
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="t0.html">
+   Team Assignment 0
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="t1.html">
+   Team Assignment 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="t2.html">
+   Team Assignment 2
   </a>
  </li>
 </ul>
@@ -134,6 +163,11 @@ const thebe_selector_output = ".output, .cell_output"
    Week 1
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk2.html">
+   Week 2
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -141,11 +175,6 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../calendar.html">
-   Calendar
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../resources.html">
    Resources
@@ -284,13 +313,45 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introductions">
-   Introductions
+  <a class="reference internal nav-link" href="#overview">
+   Overview
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#survey">
-   Survey
+  <a class="reference internal nav-link" href="#assignment-introduction">
+   Assignment Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-details">
+   Assignment Details
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#starter-code">
+     Starter Code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#repository-structure">
+     Repository Structure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#file-overview">
+     File Overview
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-your-workspace">
+     Setting up your Workspace
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-requirements">
+   Assignment Requirements
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -312,7 +373,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>A0: Introductions and Survey</h1>
+                <h1>A1: Roll Your Own - Button</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -323,13 +384,45 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introductions">
-   Introductions
+  <a class="reference internal nav-link" href="#overview">
+   Overview
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#survey">
-   Survey
+  <a class="reference internal nav-link" href="#assignment-introduction">
+   Assignment Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-details">
+   Assignment Details
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#starter-code">
+     Starter Code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#repository-structure">
+     Repository Structure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#file-overview">
+     File Overview
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-your-workspace">
+     Setting up your Workspace
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-requirements">
+   Assignment Requirements
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -352,34 +445,146 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="a0-introductions-and-survey">
-<h1>A0: Introductions and Survey<a class="headerlink" href="#a0-introductions-and-survey" title="Permalink to this headline">#</a></h1>
-<section id="introductions">
-<h2>Introductions<a class="headerlink" href="#introductions" title="Permalink to this headline">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="a1-roll-your-own-button">
+<h1>A1: Roll Your Own - Button<a class="headerlink" href="#a1-roll-your-own-button" title="Permalink to this headline">#</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
+<p>Today we have a vast ecosystem of toolkits and frameworks to draw (pun intended, sort of.) upon when building a software user interface. Frameworks like Angular and React rely upon layers of abstraction to render visual components to a particular viewstate. While these abstractions make it possible for us to quickly build powerful user interfaces, they mask the underlying logic required to perform the most basic interactions. In this assignment, we will be peeling back the layers to improve our understanding of the fundamental logic that make graphical widgets work.</p>
+</section>
+<section id="assignment-introduction">
+<h2>Assignment Introduction<a class="headerlink" href="#assignment-introduction" title="Permalink to this headline">#</a></h2>
+<p>When you build a user interface, you might decide that you need a button, a checkbox, a way to capture text input, or one of the many other widgets provided to you by your chosen toolkit. To accomplish this task, you will likely create that widget by writing some code similar to the following (assuming our toolkit of choice is HTML):</p>
+<div class="highlight-code notranslate"><div class="highlight"><pre><span></span> &lt;button type=&quot;button&quot;&gt;Click&lt;/button&gt; 
+</pre></div>
+</div>
+<p>When rendered in a browser we would see something similar to this:</p>
+<p><button type="button">Click</button></p>
+<p>Pretty straightforward, right? Write some code, build it, and view it. The end result is a nice graphical widget that changes in visual appearance when we interact with it using a mouse or keyboard. But how is this widget actually created?</p>
+<p>Clearly, it is a graphical element displayed on a screen, but the <code class="docutils literal notranslate"><span class="pre">button</span></code> HTML tag does not describe it’s shape, colors, and behaviors. What operations take place to compose a button into what we see and interact with on the screen? For this assignment you will answer these questions by building your own custom button widget using drawing primitives.</p>
+<p>Although there are many tools available for building a button widget, we will use the Javascript library for Scalable Vector Graphics called <a class="reference external" href="https://svgjs.dev/docs/3.1/">SVG.js</a>. SVG.js provides us with the basic primitives that we need to create custom widgets in a nice programmatic library that renders to the browser.</p>
+</section>
+<section id="assignment-details">
+<h2>Assignment Details<a class="headerlink" href="#assignment-details" title="Permalink to this headline">#</a></h2>
+<p>This is the first of a series of assignments through which you will develop a mini graphical toolkit. Eventually, you will expand your toolkit to include common widgets like a text box, scroll bar, check box, and radio buttons. But for now, your goal is to focus on a <strong>design style</strong> and <strong>visual aesthetic</strong> for your toolkit.</p>
+<p>A starter repository has been created for you that includes a basic graphical toolkit framework, a widget template, a simple heading widget, and a functional button widget.</p>
+<section id="starter-code">
+<h3>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">#</a></h3>
+<p>A <a class="reference external" href="https://classroom.github.com/a/S0wwt-Nd">starter repository</a> has been created for you and is available on GitHub Classroom.</p>
+<p>If you are not familiar with how to use GitHub Classroom repositories, we will go over the setup process in class.</p>
+</section>
+<section id="repository-structure">
+<h3>Repository Structure<a class="headerlink" href="#repository-structure" title="Permalink to this headline">#</a></h3>
+<p>The repository contains some basic files to help get you started. You are free to explore all of them, but you should only need to directly edit <strong><code class="docutils literal notranslate"><span class="pre">button.ts</span></code></strong> for this assignment.</p>
+</section>
+<section id="file-overview">
+<h3>File Overview<a class="headerlink" href="#file-overview" title="Permalink to this headline">#</a></h3>
+<dl class="simple myst">
+<dt>Files you do not have to edit</dt><dd><p><strong><code class="docutils literal notranslate"><span class="pre">dist/bundle.js</span></code></strong>: The bundled javascript that contains all code necessary to deploy your program. This file is autogenerated by webpack and won’t appear until you build.</p>
+</dd>
+<dd><p><strong><code class="docutils literal notranslate"><span class="pre">dist/index.html</span></code></strong>: The HTML page used to load your widgets into the browser. This simply provides an HTML wrapper for bundle.js, you should not have to edit (but you might want to if you think of a name for you toolkit).</p>
+</dd>
+<dd><p><strong><code class="docutils literal notranslate"><span class="pre">src/core/ui.ts</span></code></strong>: The base classes required to build a widget. You will eventually import from this file but you should not have to change it.</p>
+</dd>
+<dd><p><strong><code class="docutils literal notranslate"><span class="pre">src/widgets/template.ts</span></code></strong>: A minimal widget implementation. You can use this file as a reference (or copy, paste, and rename) for all new widgets that you create.</p>
+</dd>
+<dd><p><strong><code class="docutils literal notranslate"><span class="pre">src/widgets/heading.ts</span></code></strong>: A simple heading widget.</p>
+</dd>
+<dt>Files you do have to edit</dt><dd><p><strong><code class="docutils literal notranslate"><span class="pre">src/index.ts</span></code></strong>: This file is used to build your ‘GUI’. You will instantiate and use your widgets from this file.</p>
+</dd>
+<dd><p><strong><code class="docutils literal notranslate"><span class="pre">src/widdgets/button.ts</span></code></strong>: A single button type widget. The <strong><code class="docutils literal notranslate"><span class="pre">button</span></code></strong> class in this file is incomplete, but we will walkthrough how to get it working together in class.</p>
+</dd>
+</dl>
+</section>
+<section id="setting-up-your-workspace">
+<h3>Setting up your Workspace<a class="headerlink" href="#setting-up-your-workspace" title="Permalink to this headline">#</a></h3>
+<p>The repository makes use of <strong><code class="docutils literal notranslate"><span class="pre">npm</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">webpack</span></code></strong>, and <strong><code class="docutils literal notranslate"><span class="pre">TypeScript</span></code></strong> to function. So the first thing you will want to do after cloning the repository is install these tools. All of the config files are prepared for you, so you should only need to install the tools in order to run the project. We will install these tools using NPM. If you do not have NPM installed, follow these instructions to install npm: <a class="reference external" href="https://www.npmjs.com/get-npm">npm installation instructions</a>.</p>
+<p>After cloning the repository, open it up in your prefered code editing tool. If you are using an editor with a built-in terminal, then you can enter the following commands from within your tool. Otherwise, you will have to open your OS’s default terminal and CD into the directory where you placed the repository.</p>
+<p>First, install webpack. A detailed overview of getting started with webpack can be found at their website: <a class="reference external" href="https://webpack.js.org/guides/getting-started/">Getting Started | webpack</a></p>
+<div class="highlight-code notranslate"><div class="highlight"><pre><span></span>npm install webpack webpack-cli --save-dev
+</pre></div>
+</div>
+<p>If all goes well you should not see any critical errors in the post-installation output. If you do, reach out to your instructors for assistance. Next, install TypeScript and the TypeScript loader:</p>
+<div class="highlight-code notranslate"><div class="highlight"><pre><span></span>npm install typescript ts-loader --save-dev
+</pre></div>
+</div>
+<p>Again, you should not see any critical errors after install. Once complete, you should be able to run the project using <strong><code class="docutils literal notranslate"><span class="pre">npm</span></code></strong>:</p>
+<div class="highlight-code notranslate"><div class="highlight"><pre><span></span>npm run build
+</pre></div>
+</div>
+<p>This command might take a few seconds the first time you run it, but when complete you should see something similar to the following:</p>
+<div class="highlight-code notranslate"><div class="highlight"><pre><span></span>
+&gt; erasmas@1.0.0 build
+&gt; webpack
+
+asset bundle.js 510 KiB [compared for emit] (name: main)
+runtime modules 670 bytes 3 modules
+cacheable modules 186 KiB
+  ./src/index.ts 272 bytes [built] [code generated]
+  ./src/core/ui.ts 6.54 KiB [built] [code generated]
+  ./src/widgets/button.ts 5.62 KiB [built] [code generated]
+  ./node_modules/@svgdotjs/svg.js/dist/svg.esm.js 173 KiB [built] [code generated]
+webpack 5.68.0 compiled successfully in 1973 ms
+</pre></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>To learn more about how to join Zulip, read the course syllabus on Canvas.</p>
+<p>In the output above, the name “erasmas” is the name of the professor’s version of the toolkit. If you would like to personalize the name of your toolkit, you can edit the <strong><code class="docutils literal notranslate"><span class="pre">name</span></code></strong> property in the <strong><code class="docutils literal notranslate"><span class="pre">package.json</span></code></strong> file of the starter code.</p>
 </div>
-<p>Learning in a virtual remote setting makes getting to know each other quite challenging. So to facilitate our engagement with one another, you should first introduce yourself in Zulip.</p>
-<p>We have created an #introductions stream in our Zulip workspace. So before our live class on on Jan. 4, join the introductions channel and provide us with one or two fun and interesting facts about yourself.</p>
+<p>You are now ready to run the program. The simplest way is to open the <strong><code class="docutils literal notranslate"><span class="pre">index.html</span></code></strong> file in the <strong><code class="docutils literal notranslate"><span class="pre">dist</span></code></strong> directory. However, you may prefer to setup a live server to host your program. To save you from having to build after every change, you can issue the following command, which takes advantage of the <strong><code class="docutils literal notranslate"><span class="pre">watch</span></code></strong> feature of webpack to keep your transpiled JavaScript file up to date.</p>
+<div class="highlight-code notranslate"><div class="highlight"><pre><span></span>npm run watch 
+</pre></div>
+</div>
 </section>
-<section id="survey">
-<h2>Survey<a class="headerlink" href="#survey" title="Permalink to this headline">#</a></h2>
-<p>So that we can build the best teams possible, take a few minutes to complete the Skills Survey on Canvas. Your answers will help us ensure that every team has a good mixture of skills and interests, while also be located in reasonably close time zones.</p>
-<p>Survey responses are due by the end of the second day of class (Jan 6th). We will announce team assignments the following Monday.</p>
+</section>
+<section id="assignment-requirements">
+<h2>Assignment Requirements<a class="headerlink" href="#assignment-requirements" title="Permalink to this headline">#</a></h2>
+<p>For this assignment, you will primarily be tasked with learning how to make use of the toolkit and the <a class="reference external" href="https://svgjs.dev/">SVG.js</a> library. So rather than ask you to build your own widget from scratch, you will only be required <em>customize</em> the appearance of the button widget.</p>
+<p>You are free to add as many features to your button widget as you like, but to receive full credit your button must support the following features:</p>
+<dl class="simple myst">
+<dt>Button</dt><dd><p>Be visually distinct from the default button provided in the starter code.</p>
+</dd>
+<dd><p>Visually change for at least three states (e.g., color change on hover).</p>
+</dd>
+<dd><p>Expose a custom label property to get and set the text on the button.</p>
+</dd>
+<dd><p>Expose a custom size property to get and set the height and width of the button.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the button is clicked.</p>
+</dd>
+<dd><p>Apply the event handler to a <strong><code class="docutils literal notranslate"><span class="pre">heading</span></code></strong> widget to indicate the click event occurred from the user interface.</p>
+</dd>
+</dl>
 </section>
 <section id="submission">
 <h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">#</a></h2>
-<p>This assignment does not have a traditional submission. Instead, you must sign up for Zulip and introduce yourself, and complete the survey on Canvas.</p>
+<p>For this assignment you will submit the following items as a zip file to Canvas:</p>
+<ol class="simple">
+<li><p>Your completed widget <strong><code class="docutils literal notranslate"><span class="pre">.ts</span></code></strong> file along with the rest of the starter code as a zip file to Canvas.</p></li>
+<li><p>A screenshot of your widget and UI as it is rendered in the browser. Name your screenshot <strong><code class="docutils literal notranslate"><span class="pre">widget_demo.png</span></code></strong> (or .jpg, .gif, etc) and place it in the root of your project folder.</p></li>
+</ol>
+<p>Remember to delete all generated files during the setup process (e.g., node_modules) to keep your file size small.</p>
+<div class="tip admonition">
+<p class="admonition-title">For Your Consideration</p>
+<p>A good practice to make habit is to regularly commit your code to a source control system like GitHub as you make progress. You are free to use your github repository as often as you like as you work on the assignment, however, if you need assistance from the course instructors we will ask that you provide us with a link to your GitHub repository and a running instance of your program first.</p>
+</div>
 </section>
 <section id="grading">
 <h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">#</a></h2>
-<p>Both parts of this assignment are mandatory and must be completed to pass the class.</p>
+<p>Your assignment will be given an overall grade that is based on the completeness of the following items:</p>
 <ul class="simple">
-<li><p>Join Zulip and introduce yourself: 1 pt</p></li>
-<li><p>Complete Canvas survey: 1 pt</p></li>
+<li><p>All materials submitted correctly and on time: 0.5 pts</p></li>
+<li><p>Documentation: 0.5 pts</p>
+<ul>
+<li><p>Is a screenshot of the widget and UI included?</p></li>
 </ul>
-<p>Total: 2 pts</p>
+</li>
+<li><p>Completeness of button widget : 3 pts</p>
+<ul>
+<li><p>Are all required widget features complete?</p></li>
+</ul>
+</li>
+</ul>
+<p>Total: 4 pts</p>
 </section>
 </section>
 
@@ -410,6 +615,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="a0.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">A0: Meet and Greet</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="t0.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">T0: Team and Project Overview</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
