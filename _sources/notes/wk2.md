@@ -18,3 +18,5 @@ Class recordings, handouts, and other materials will be posted here.
 ### Wednesday
 
 <a href="../resources/INF_134_s23_Week_2_Wed.pdf">Lecture Slides</a>
+
+[Assignment 1 Overview](https://uci.yuja.com/V/Video?v=7670432&node=32623477&a=148040308&autoplay=1)
