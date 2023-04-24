@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>A2: Five and Five &#8212; INF 134 Spring 2023</title>
+    <title>A2: Roll Your Own - Toolkit &#8212; INF 134 Spring 2023</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="T0: Team and Project Overview" href="t0.html" />
+    <link rel="prev" title="A1: Roll Your Own - Button" href="a1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -116,10 +118,42 @@ const thebe_selector_output = ".output, .cell_output"
   Individual Assignments
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="a0.html">
    Assignment 0
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="a1.html">
+   Assignment 1
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Assignment 2
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Team Assignments
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="t0.html">
+   Team Assignment 0
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="t1.html">
+   Team Assignment 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="t2.html">
+   Team Assignment 2
   </a>
  </li>
 </ul>
@@ -134,6 +168,21 @@ const thebe_selector_output = ".output, .cell_output"
    Week 1
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk2.html">
+   Week 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk3.html">
+   Week 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk4.html">
+   Week 4
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -141,11 +190,6 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../calendar.html">
-   Calendar
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../resources.html">
    Resources
@@ -292,18 +336,35 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#assignment-details">
    Assignment Details
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-requirements">
+   Assignment Requirements
+  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#getting-started">
-     Getting Started
+    <a class="reference internal nav-link" href="#additional-requirements">
+     Additional Requirements
     </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#evaluating-your-widgets">
-     Evaluating Your Widgets
-    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#theme">
+       Theme
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#demo-program">
+       Demo Program
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extra-credit">
+   Extra Credit
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#submission">
@@ -324,7 +385,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>A2: Five and Five</h1>
+                <h1>A2: Roll Your Own - Toolkit</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -343,18 +404,35 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#assignment-details">
    Assignment Details
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-requirements">
+   Assignment Requirements
+  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#getting-started">
-     Getting Started
+    <a class="reference internal nav-link" href="#additional-requirements">
+     Additional Requirements
     </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#evaluating-your-widgets">
-     Evaluating Your Widgets
-    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#theme">
+       Theme
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#demo-program">
+       Demo Program
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extra-credit">
+   Extra Credit
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#submission">
@@ -376,55 +454,136 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="a2-five-and-five">
-<h1>A2: Five and Five<a class="headerlink" href="#a2-five-and-five" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="a2-roll-your-own-toolkit">
+<h1>A2: Roll Your Own - Toolkit<a class="headerlink" href="#a2-roll-your-own-toolkit" title="Permalink to this headline">#</a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
-<p>You interact with widgets in a user interface nearly every day, but have you taken the time to understand what makes your interaction successful? Unsuccessful? To build usable interfaces, you must be able to assess what makes them usable. So, for this assignment, you will collect ten examples of physical or graphical widgets, five good and five bad, that you interact with through the interfaces that you use day to day.</p>
+<p>Now that you have had a chance to familiarize yourself with our SVG.js based graphical toolkit framework by building a button widget, it’s time to expand your toolkit to include some additional widgets.</p>
 </section>
 <section id="assignment-details">
 <h2>Assignment Details<a class="headerlink" href="#assignment-details" title="Permalink to this headline">#</a></h2>
-<section id="getting-started">
-<h3>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">#</a></h3>
-<p>You should get started on this assignment as soon as possible. If you try to rush through the requirements as the deadline approaches, you are not going to have the time to reflect on and evaluate your selected widgets effectively. The goal of this exercise is to build a foundational understanding about why some widgets work better than others, this takes time.</p>
-<p>The following example widgets should give you an idea of what to look out for:</p>
+<p>The details for this assignment are the same as <a class="reference internal" href="a1.html"><span class="doc std std-doc">assignment 1</span></a>. Rather than download a new repository, simply continue building your toolkit alongside your button widget.</p>
+</section>
+<section id="assignment-requirements">
+<h2>Assignment Requirements<a class="headerlink" href="#assignment-requirements" title="Permalink to this headline">#</a></h2>
+<p>Your toolkit must include the following 4 new widgets (visit Wikipedia’s <a class="reference external" href="https://en.wikipedia.org/wiki/Graphical_widget">Graphical widget</a> page detailed descriptions):</p>
+<ul class="simple">
+<li><p>Check Box</p></li>
+<li><p>Radio Button</p></li>
+<li><p>Scroll Bar</p></li>
+<li><p>Text Box</p></li>
+</ul>
+<p>Each widget must continue to make use of the state machine that you used to support state changes in your button widget. You are free to add as many features to your widgets as you like. In addition to matching the basic rules of these widgets (e.g., a button depresses, a scroll thumb slides, etc), to receive full credit your widgets must support the following features:</p>
 <dl class="simple myst">
-<dt>Tooltip</dt><dd><p>Unsuccessful - A tooltip has so much text that it can’t be read before the bounding window disappears, requiring the user to move the mouse outside the trigger area and back inside again to re-raise the tooltip.</p>
+<dt>Check Box</dt><dd><p>Visually support checked and unchecked states.</p>
 </dd>
-<dt>Cascading Menu</dt><dd><p>Unsuccessful - A cascading menu is too small and the structure too deep to accurately select sub-menu items, requiring multiple attempts to accurately select the desired item.</p>
+<dd><p>Expose a custom label property to set the text that appears to the <strong>right</strong> of the check box.</p>
 </dd>
-<dt>Toggle Button</dt><dd><p>Successful - The toggle widget used in Windows 10 settings makes it easy to quickly glance at an option and assess whether it is on or off, the background color of the widget changes to a highlight color when the toggle is on.</p>
+<dd><p>Expose an event handler that notifies consuming code when the checked state has changed.</p>
+</dd>
+<dt>Radio Button</dt><dd><p>Visually support checked and unchecked states.</p>
+</dd>
+<dd><p>Support 2 to <strong>n</strong> number of buttons, where <strong>n</strong> is set by the consuming code, with minimum of two, positioned vertically.</p>
+</dd>
+<dd><p>Ensure that only one button can be checked at a time.</p>
+</dd>
+<dd><p>Expose a custom label property to set the text that appears to the <strong>right</strong> of each button.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the checked state has changed and which <strong>n</strong> has been checked.</p>
+</dd>
+<dt>Scroll Bar</dt><dd><p>Include up and down buttons on either end of the scroll track that move the scroll thumb when clicked.</p>
+</dd>
+<dd><p>Support clicking the scroll track to move the scroll thumb. When clicked, the scroll thumb should jump to the clicked position.</p>
+</dd>
+<dd><p>Expose a custom property to set the height of the scroll bar.</p>
+</dd>
+<dd><p>Expose a custom property to get the position of the scroll thumb.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the scroll thumb has moved and in which direction.</p>
+</dd>
+<dt>Text Box</dt><dd><p>Visually support a caret <code class="docutils literal notranslate"><span class="pre">|</span></code> that informs the user about the position of the cursor. The caret should only be visually present when the widget has hover focus.</p>
+</dd>
+<dd><p>Expose a custom property to set default text.</p>
+</dd>
+<dd><p>Expose a custom property to get the text entered by the user.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the text has changed.</p>
 </dd>
 </dl>
-<p>Take a few moments to think about the individual widgets that make up the graphical interfaces on your computer, tablet, or smartphone and note whether or not you find the interaction successful. Once you have collected five successful and five unsuccessful widgets you are ready to move on to the next section.</p>
+<p>In addition to the features listed above, ALL widgets must implement the abstract methods required by the <strong><code class="docutils literal notranslate"><span class="pre">Widget</span></code></strong> class in the <strong><code class="docutils literal notranslate"><span class="pre">ui.ts</span></code></strong> file. For example, after implementing the <strong><code class="docutils literal notranslate"><span class="pre">move</span></code></strong> method, your widget should be positionable by consuming code (e.g., a programmer should be able to add your widget to a document and specify using X and Y coordinates where on the document it should be placed).</p>
+<section id="additional-requirements">
+<h3>Additional Requirements<a class="headerlink" href="#additional-requirements" title="Permalink to this headline">#</a></h3>
+<section id="theme">
+<h4>Theme<a class="headerlink" href="#theme" title="Permalink to this headline">#</a></h4>
+<p>You must create and apply a consistent theme to your toolkit. Your widgets, when rendered in the browser, should visually appear as if they belong together. Your design does not have to be groundbreaking! Your design skills are not going to be evaluated in this class, however, we are looking to see that you have thoughtfully applied the core principles of user centered design that you have been learning in your Informatics coursework. Spend some time to get to know the ins and outs of SVG.js. Learn its capabilities (pretty much anything you can do with vectors can be done with SVG.js) and decide what you want your theme to look like.</p>
 </section>
-<section id="evaluating-your-widgets">
-<h3>Evaluating Your Widgets<a class="headerlink" href="#evaluating-your-widgets" title="Permalink to this headline">#</a></h3>
-<p>At this point you <em>know</em> something about the widgets you collected, after all, you selected them for a reason, right? Either some step in your widget interaction caused a breakdown or your interaction was successful. Now you need to understand <em>why</em> and be able to explain it to others using common HCI evaluation methods.</p>
-<p>You have likely been asked to apply <a class="reference external" href="https://www.nngroup.com/articles/ten-usability-heuristics/">Jakob Nielsen’s 10 general principles for interaction design</a> to user interfaces in other classes. However, unlike your previous application of heuristics, for this assignment you will be solely focused on evaluating an individual widget rather than an entire user interface. So make sure that the interactions that you select are constrained to a single graphical widget.</p>
-<p>You will use the Usability Aspect Report (<a href="../resources/UAR_TEMPLATE.doc">UAR Template</a>) format developed by Brad A. Myers and Bonnie John to document each of your widgets. You should use one report per widget, but aggregate all reports into a single document.</p>
+<section id="demo-program">
+<h4>Demo Program<a class="headerlink" href="#demo-program" title="Permalink to this headline">#</a></h4>
+<p>Once your toolkit is complete, you will assemble all of your widgets into a single UI using the <strong><code class="docutils literal notranslate"><span class="pre">index.ts</span></code></strong> file included in your repository from assignment 1. This UI does not have to do anything in particular, it just needs to enable us to interact with your widgets. Your demo program should listen to all the exposed event handlers that you created for your widgets and output the information they pass to the browser console. When we grade your assignment, we will open the console and look for these messages to assess whether or not the feature has been implemented.</p>
+<div class="warning admonition">
+<p class="admonition-title">For Your Consideration</p>
+<p>There is a lot of work to complete here! Although things may look easy at first, pay attention to the details. To complete this assignment there are many small tasks that you must take into account. Get started early, and make incremental progress on your work every day. You have a lot of time to complete this assignment because we want you to be thoughtful in how you implement the required features. A task that appears obvious at first glance will likely give you trouble as you work on it, so even though you have a lot of time, do not wait until the last week.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="extra-credit">
+<h2>Extra Credit<a class="headerlink" href="#extra-credit" title="Permalink to this headline">#</a></h2>
+<p>If you are interested in expanding your toolkit even more, consider creating a progress bar that visually communicates the completness of an activity or process. You can learn more about the progress bar widget over on <a class="reference external" href="https://en.wikipedia.org/wiki/Progress_bar">Wikipedia</a>. To receive credit, your progress bar should include the following features:</p>
 <dl class="simple myst">
-<dt>Helpful Links:</dt><dd><p><a class="reference external" href="https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/">How To Rate Severity of Usability Problems</a></p>
+<dt>Progress Bar</dt><dd><p>Expose a custom method or property to set the height and width of the progress bar.</p>
 </dd>
-<dd><p><a href="../resources/uar_example.pdf" title="pdf document of sample UARs">Sample UARs</a></p>
+<dd><p>Expose a custom property to set the increment value of the progress bar.</p>
+</dd>
+<dd><p>Expose a custom property to get the increment value of the progress bar.</p>
+</dd>
+<dd><p>Expose a custom method to increment the value of the progress bar. The method should support an arbitrary numerical value between 0 and 100.</p>
+</dd>
+<dd><p>Expose an event handler that notifies consuming code when the progress bar has incremented.</p>
 </dd>
 </dl>
-</section>
 </section>
 <section id="submission">
 <h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">#</a></h2>
-<p>To submit your report, convert your final report into PDF format and submit to the Canvas assignment page.</p>
+<p>For this assignment you will submit the following items as a zip file to Canvas:</p>
+<ol class="simple">
+<li><p>Your completed widget <strong><code class="docutils literal notranslate"><span class="pre">.ts</span></code></strong> files along with the rest of the starter code as a zip file to Canvas.</p></li>
+<li><p>A revised index.ts that instantiates and arranges all of your widgets so they can be interacted with by a user.</p></li>
+<li><p>A screenshot of your widgets and UI as it is rendered in the browser. Name your screenshot <strong><code class="docutils literal notranslate"><span class="pre">toolkit_demo.png</span></code></strong> (or .jpg, .gif, etc) and place it in the root of your project folder.</p></li>
+</ol>
+<p>Remember to delete all generated files during the setup process (e.g., node_modules) to keep your file size small.</p>
+<div class="tip admonition">
+<p class="admonition-title">For Your Consideration</p>
+<p>A good practice to make habit is to regularly commit your code to a source control system like GitHub as you make progress. You are free to use your github repository as often as you like as you work on the assignment, however, if you need assistance from the course instructors we will ask that you provide us with a link to your GitHub repository and a running instance of your program first.</p>
+</div>
 </section>
 <section id="grading">
 <h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">#</a></h2>
-<p>You will be given an overall grade that is based on thoroughness and thoughtfulness of your story. It is fairly easy to identify rushed or poorly thought out work, so do not wait to the last minute to finalize your widgets.</p>
+<p>Your assignment will be given an overall grade that is based on the completeness of the following items:</p>
 <ul class="simple">
-<li><p>All materials submitted on time: 0.5 pts</p></li>
-<li><p>Submission format requirements met: 0.5 pts</p></li>
-<li><p>All requirements met for five successful widgets: 4.5 pts</p></li>
-<li><p>All requirements met for five unsuccessful widgets: 4.5 pts</p></li>
+<li><p>All materials submitted correctly with documentation: 0.25 pts</p>
+<ul>
+<li><p>Is a screenshot of the widget and UI included?</p></li>
 </ul>
-<p>Total: 10 pts</p>
+</li>
+<li><p>Demo: 0.25 pts</p>
+<ul>
+<li><p>Is the index.ts page completed so that a full demonstration of all widgets is available?</p></li>
+</ul>
+</li>
+<li><p>Theme: 0.5 pts</p>
+<ul>
+<li><p>Do all the widgets fit into a coherent visual theme?</p></li>
+</ul>
+</li>
+<li><p>Completeness of each widget : 4 pts (1 pt per widget)</p>
+<ul>
+<li><p>Are all required widget features complete?</p></li>
+</ul>
+</li>
+<li><p>Extra credit: 1 pt</p></li>
+</ul>
+<p>Total: 6/5 pts</p>
 </section>
 </section>
 
@@ -455,6 +614,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="a1.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">A1: Roll Your Own - Button</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="t0.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">T0: Team and Project Overview</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
