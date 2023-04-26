@@ -15,3 +15,6 @@ Class recordings, handouts, and other materials will be posted here.
 
 
 ### Wednesday
+
+<a href="../resources/INF_134_s23_Week_4_Wed.pdf">Lecture Slides</a>
+<a href="../resources/ui.zip">Toolkit Update</a>
