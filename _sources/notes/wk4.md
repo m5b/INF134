@@ -21,3 +21,7 @@ Class recordings, handouts, and other materials will be posted here.
 <br />
 
 <a href="../resources/ui.zip">Toolkit Update</a>
+
+<br />
+
+<a href="../resources/demo.zip">Demo Widget</a>
