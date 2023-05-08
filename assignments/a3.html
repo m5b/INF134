@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>A3: Custom Graphical Toolkit &#8212; INF 134 Spring 2023</title>
+    <title>A3: Roll Your Own - Novel Widget &#8212; INF 134 Spring 2023</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="T0: Team and Project Overview" href="t0.html" />
+    <link rel="prev" title="A2: Roll Your Own - Toolkit" href="a2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -116,10 +118,52 @@ const thebe_selector_output = ".output, .cell_output"
   Individual Assignments
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="a0.html">
    Assignment 0
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="a1.html">
+   Assignment 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="a2.html">
+   Assignment 2
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Assignment 3
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Team Assignments
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="t0.html">
+   Team Assignment 0
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="t1.html">
+   Team Assignment 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="t2.html">
+   Team Assignment 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="t3.html">
+   Team Assignment 3
   </a>
  </li>
 </ul>
@@ -134,6 +178,31 @@ const thebe_selector_output = ".output, .cell_output"
    Week 1
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk2.html">
+   Week 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk3.html">
+   Week 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk4.html">
+   Week 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk5.html">
+   Week 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk6.html">
+   Week 6
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -141,11 +210,6 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../calendar.html">
-   Calendar
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../resources.html">
    Resources
@@ -289,36 +353,9 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#assignment-introduction">
-   Assignment Introduction
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#assignment-details">
    Assignment Details
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#starter-code">
-     Starter Code
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#repository-structure">
-     Repository Structure
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#file-overview">
-     File Overview
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#setting-up-your-workspace">
-     Setting up your Workspace
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#assignment-requirements">
@@ -326,18 +363,18 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#additional-requirements">
-     Additional Requirements
+    <a class="reference internal nav-link" href="#design">
+     Design
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#implementation">
+     Implementation
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#theme">
-       Theme
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#state-tables">
-       State Tables
+      <a class="reference internal nav-link" href="#common-requirements">
+       Common Requirements
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
@@ -353,18 +390,6 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#submission">
    Submission
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#part-1">
-     Part 1
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#part-2">
-     Part 2
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#grading">
@@ -380,7 +405,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>A3: Custom Graphical Toolkit</h1>
+                <h1>A3: Roll Your Own - Novel Widget</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -396,36 +421,9 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#assignment-introduction">
-   Assignment Introduction
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#assignment-details">
    Assignment Details
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#starter-code">
-     Starter Code
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#repository-structure">
-     Repository Structure
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#file-overview">
-     File Overview
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#setting-up-your-workspace">
-     Setting up your Workspace
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#assignment-requirements">
@@ -433,18 +431,18 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#additional-requirements">
-     Additional Requirements
+    <a class="reference internal nav-link" href="#design">
+     Design
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#implementation">
+     Implementation
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#theme">
-       Theme
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#state-tables">
-       State Tables
+      <a class="reference internal nav-link" href="#common-requirements">
+       Common Requirements
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
@@ -460,18 +458,6 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#submission">
    Submission
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#part-1">
-     Part 1
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#part-2">
-     Part 2
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#grading">
@@ -488,241 +474,87 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="a3-custom-graphical-toolkit">
-<h1>A3: Custom Graphical Toolkit<a class="headerlink" href="#a3-custom-graphical-toolkit" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="a3-roll-your-own-novel-widget">
+<h1>A3: Roll Your Own - Novel Widget<a class="headerlink" href="#a3-roll-your-own-novel-widget" title="Permalink to this headline">#</a></h1>
+<p>Congrats! You now have a modest toolkit filled with some useful widgets. Now it’s time to get creative. For this assignment you will design and implement your own custom widget for your toolkit.</p>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
-<p>Today we have a vast ecosystem of toolkits and frameworks to draw (pun intended, sort of.) upon when building a software user interface. Frameworks like Angular and React rely upon layers of abstraction to render visual components to a particular viewstate. While these abstractions make it possible for us to quickly build powerful user interfaces, they mask the underlying logic required to perform the most basic interactions. In this assignment, we will be peeling back the layers to improve our understanding of the fundamental logic that make graphical widgets work.</p>
-</section>
-<section id="assignment-introduction">
-<h2>Assignment Introduction<a class="headerlink" href="#assignment-introduction" title="Permalink to this headline">#</a></h2>
-<p>When you build a user interface, you might decide that you need a button, a checkbox, a way to capture text input, or one of the many other widgets provided to you by your chosen toolkit. To accomplish this task, you will likely create that widget by writing some code similar to the following (assuming our toolkit of choice is HTML):</p>
-<div class="highlight-code notranslate"><div class="highlight"><pre><span></span> &lt;button type=&quot;button&quot;&gt;Click&lt;/button&gt; 
-</pre></div>
-</div>
-<p>When rendered in a browser we would see something similar to this:</p>
-<p><button type="button">Click</button></p>
-<p>Pretty straightforward, right? Write some code, build it, and view it. The end result is a nice graphical widget that changes in visual appearance when we interact with it using a mouse or keyboard. But how is this widget actually created?</p>
-<p>Clearly, it is a graphical element displayed on a screen, but the <code class="docutils literal notranslate"><span class="pre">button</span></code> HTML tag does not describe it’s shape, colors, and behaviors. What operations take place to compose a button into what we see and interact with on the screen? For this assignment you will answer these questions by building your own widget toolkit using drawing primitives.</p>
-<p>Although there are many tools available for building a widget toolkit, we will to use the Javascript library for Scalable Vector Graphics called <a class="reference external" href="https://svgjs.dev/docs/3.0/">SVG.js</a>. SVG.js provides us with the basic primitives that we need to create custom widgets. Our Widgets, therefore, will be rendered in a browser.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you are not sure where to start, review the week 5 lectures for an overview on SVG.js and getting started with a simple button.</p>
-</div>
+<p>At one point during the history of the graphical user interface every common widget we use today was novel. Many of the widgets you created for A2 were adopted from well known and understood interactors from the physical world. For example, the “radio button” metaphor was taken directly from the radio interfaces of the pre-computer era where only one button could be engaged at a time. Just because we have grown accustomed to a common set of widgets in the computer interfaces we interact with today doesn’t mean there’s no room left to novel points of interaction!</p>
 </section>
 <section id="assignment-details">
 <h2>Assignment Details<a class="headerlink" href="#assignment-details" title="Permalink to this headline">#</a></h2>
-<p>You must build 7 widgets (discussed below) using the starter framework provided below. You will write each of your widgets in its own TypeScript file, following the conventions established in the <strong><code class="docutils literal notranslate"><span class="pre">button.ts</span></code></strong> file.</p>
-<section id="starter-code">
-<h3>Starter Code<a class="headerlink" href="#starter-code" title="Permalink to this headline">#</a></h3>
-<p>A <a class="reference external" href="https://classroom.github.com/a/BLeOlYOJ">starter repository</a> has been created for you and is available on GitHub Classroom.</p>
-<p>If you are not familiar with how to use GitHub Classroom repositories, we will go over the setup process during the week 5 lecture.</p>
-</section>
-<section id="repository-structure">
-<h3>Repository Structure<a class="headerlink" href="#repository-structure" title="Permalink to this headline">#</a></h3>
-<p>The repository contains some basic files to help get you started. You are free to explore all of them, but you should only need to directly edit <strong><code class="docutils literal notranslate"><span class="pre">button.ts</span></code></strong> and the other widget files that you create.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>SVG.js has been through a few updates since this code was last written. Although we have tested the current code, it’s possible that we find a bug or two along the way. Any updates to the core code will be released via GitHub and announced here and on Zulip.</p>
-</div>
-</section>
-<section id="file-overview">
-<h3>File Overview<a class="headerlink" href="#file-overview" title="Permalink to this headline">#</a></h3>
-<dl class="simple myst">
-<dt>Files you do not have to edit</dt><dd><p><strong><code class="docutils literal notranslate"><span class="pre">dist/bundle.js</span></code></strong>: The bundled javascript that contains all code necessary to deploy your program. This file is autogenerated by webpack and won’t appear until you build.</p>
-</dd>
-<dd><p><strong><code class="docutils literal notranslate"><span class="pre">dist/index.html</span></code></strong>: The HTML page used to load your widgets into the browser. This simply provides an HTML wrapper for bundle.js, you should not have to edit (but you might want to if you think of a name for you toolkit).</p>
-</dd>
-<dd><p><strong><code class="docutils literal notranslate"><span class="pre">src/core.ts</span></code></strong>: The base classes required to build a widget. You will import from this file but you should not have to change it.</p>
-</dd>
-<dt>Files you do have to edit</dt><dd><p><strong><code class="docutils literal notranslate"><span class="pre">src/index.ts</span></code></strong>: This file is used to build your ‘GUI’. You will instantiate and use your widgets from this file.</p>
-</dd>
-<dd><p><strong><code class="docutils literal notranslate"><span class="pre">src/button.ts</span></code></strong>: A single button type widget. The <strong><code class="docutils literal notranslate"><span class="pre">button</span></code></strong> class in this file is incomplete, but we will walkthrough how to get it working together in class.</p>
-</dd>
-<dd><p><strong><code class="docutils literal notranslate"><span class="pre">src/[your_widget].ts</span></code></strong>: Consider ‘your_widget’ a placeholder for each of the widget files you will create. You will create six additional widgets to complete your toolkit.</p>
-</dd>
-</dl>
-</section>
-<section id="setting-up-your-workspace">
-<h3>Setting up your Workspace<a class="headerlink" href="#setting-up-your-workspace" title="Permalink to this headline">#</a></h3>
-<p>The repository makes use of <strong><code class="docutils literal notranslate"><span class="pre">npm</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">webpack</span></code></strong>, and <strong><code class="docutils literal notranslate"><span class="pre">TypeScript</span></code></strong> to function. So the first thing you will want to do after cloning the repository is install these tools. All of the config files are prepared for you, so you should only need to install the tools in order to run the project. We will install these tools using NPM. If you do not have NPM installed, follow these instructions to install npm: <a class="reference external" href="https://www.npmjs.com/get-npm">npm installation instructions</a>.</p>
-<p>After cloning the repository, open it up in your prefered code editing tool. If you are using an editor with a built-in terminal, then you can enter the following commands from within your tool. Otherwise, you will have to open your OS’s default terminal and CD into the directory where you placed the repository.</p>
-<p>First, install webpack. A detailed overview of getting started with webpack can be found at their website: <a class="reference external" href="https://webpack.js.org/guides/getting-started/">Getting Started | webpack</a></p>
-<div class="highlight-code notranslate"><div class="highlight"><pre><span></span>npm install webpack webpack-cli --save-dev
-</pre></div>
-</div>
-<p>If all goes well you should not see any critical errors in the post-installation output. If you do, reach out to your instructors for assistance. Next, install TypeScript and the TypeScript loader:</p>
-<div class="highlight-code notranslate"><div class="highlight"><pre><span></span>npm install typescript ts-loader --save-dev
-</pre></div>
-</div>
-<p>Again, you should not see any critical errors after install. Once complete, you should be able to run the project using <strong><code class="docutils literal notranslate"><span class="pre">npm</span></code></strong>:</p>
-<div class="highlight-code notranslate"><div class="highlight"><pre><span></span>npm run build
-</pre></div>
-</div>
-<p>This command might take a few seconds the first time you run it, but when complete you should see something similar to the following:</p>
-<div class="highlight-code notranslate"><div class="highlight"><pre><span></span>
-&gt; erasmas@1.0.0 build
-&gt; webpack
-
-asset bundle.js 510 KiB [compared for emit] (name: main)
-runtime modules 670 bytes 3 modules
-cacheable modules 186 KiB
-  ./src/index.ts 272 bytes [built] [code generated]
-  ./src/core.ts 6.54 KiB [built] [code generated]
-  ./src/button.ts 5.62 KiB [built] [code generated]
-  ./node_modules/@svgdotjs/svg.js/dist/svg.esm.js 173 KiB [built] [code generated]
-webpack 5.68.0 compiled successfully in 1973 ms
-</pre></div>
-</div>
-<p>You are now ready to run the program. The simplest way is to open the <strong><code class="docutils literal notranslate"><span class="pre">index.html</span></code></strong> file in the <strong><code class="docutils literal notranslate"><span class="pre">dist</span></code></strong> directory. However, you may prefer to setup a live server to host your program. We will cover how to do this in class, so if you miss it, please check the lecture recordings for week 5!</p>
-</section>
+<p>Your goal for this assignment will be to envision something different. This doesn’t mean that your widget must be original, but it should explore interaction in a way that can not be easily achieved with a standard widget toolkit (HTML, for example).</p>
+<p>To make sure you are on the right track, we will be breaking this assignment into two parts: design and implementation.</p>
 </section>
 <section id="assignment-requirements">
 <h2>Assignment Requirements<a class="headerlink" href="#assignment-requirements" title="Permalink to this headline">#</a></h2>
-<p>Your final toolkit must include the following 7 widgets (visit Wikipedia’s <a class="reference external" href="https://en.wikipedia.org/wiki/Graphical_widget">Graphical widget</a> page detailed descriptions):</p>
-<ul class="simple">
-<li><p>Button</p></li>
-<li><p>Check Box</p></li>
-<li><p>Radio Button</p></li>
-<li><p>Text Box</p></li>
-<li><p>Scroll Bar</p></li>
-<li><p>Progress Bar</p></li>
-<li><p>Custom (your choice, can be anything!)</p></li>
-</ul>
-<p>Each widget must also implement a basic state machine similar to the button example we covered in lecture. You may incorporate the starter code for the button widget provided in the repository and developed during class into your toolkit.</p>
-<p>You are free to add as many features to your widgets as you like. In addition to matching the basic rules of these widgets (e.g., a button depresses, a scroll thumb slides, etc), to receive full credit your widgets must support the following features:</p>
-<dl class="simple myst">
-<dt>Button</dt><dd><p>Visually change for at least three states (e.g., color change on hover).</p>
-</dd>
-<dd><p>Expose a custom label property to set the text on the button.</p>
-</dd>
-<dd><p>Expose an event handler that notifies consuming code when the button is clicked.</p>
-</dd>
-<dd><p>Expose an event handler that notifies consuming code when the widget state has changed.</p>
-</dd>
-<dt>Check Box</dt><dd><p>Visually support checked and unchecked states.</p>
-</dd>
-<dd><p>Expose a custom label property to set the text that appears to the <strong>right</strong> of the check box.</p>
-</dd>
-<dd><p>Expose an event handler that notifies consuming code when the checked state has changed.</p>
-</dd>
-<dd><p>Expose an event handler that notifies consuming code when the widget state has changed.</p>
-</dd>
-<dt>Radio Button</dt><dd><p>Visually support checked and unchecked states.</p>
-</dd>
-<dd><p>Support 2 to <strong>n</strong> number of buttons, where <strong>n</strong> is set by the consuming code, with minimum of two, positioned vertically.</p>
-</dd>
-<dd><p>Ensure that only one button can be checked at a time.</p>
-</dd>
-<dd><p>Expose a custom label property to set the text that appears to the <strong>right</strong> of each button.</p>
-</dd>
-<dd><p>Expose an event handler that notifies consuming code when the checked state has changed and which <strong>n</strong> has been checked.</p>
-</dd>
-<dd><p>Expose an event handler that notifies consuming code when the widget state has changed.</p>
-</dd>
-<dt>Text Box</dt><dd><p>Visually support a caret <code class="docutils literal notranslate"><span class="pre">|</span></code> that informs the user about the position of the cursor. The caret should only be visually present when the widget has hover focus.</p>
-</dd>
-<dd><p>Expose a custom property to get the text entered by the user.</p>
-</dd>
-<dd><p>Expose an event handler that notifies consuming code when the text has changed.</p>
-</dd>
-<dd><p>Expose an event handler that notifies consuming code when the widget state has changed.</p>
-</dd>
-<dt>Scroll Bar</dt><dd><p>Expose a custom property to set the height of the scroll bar.</p>
-</dd>
-<dd><p>Expose a custom property to get the position of the scroll thumb.</p>
-</dd>
-<dd><p>Expose an event handler that notifies consuming code when the scroll thumb has moved and in which direction.</p>
-</dd>
-<dd><p>Expose an event handler that notifies consuming code when the widget state has changed.</p>
-</dd>
-<dt>Progress Bar</dt><dd><p>Expose a custom property to set the width of the progress bar.</p>
-</dd>
-<dd><p>Expose a custom property to set the increment value of the progress bar.</p>
-</dd>
-<dd><p>Expose a custom property to get the increment value of the progress bar.</p>
-</dd>
-<dd><p>Expose a custom method to increment the value of the progress bar. The method should support an arbitrary numerical value from 0-100.</p>
-</dd>
-<dd><p>Expose an event handler that notifies consuming code when the progress bar has incremented.</p>
-</dd>
-<dd><p>Expose an event handler that notifies consuming code when the widget state has changed.</p>
-</dd>
-<dt>Custom (your choice)</dt><dd><p>There are no requirements for this widget. You are free to create anything you want. Model your custom widget after something that already exists or design something novel. A good approach here might be to reflect on your work for A2 to identify any bad widgets that you think you could improve. However, note in the grading rubric that we will be applying a ‘unique or novel’ score to your custom widget. Widgets that are variations on the required widgets or commonplace in most UI’s will likely get a lower score than something that suprises us. Feel free to inquire with the instructors if you are uncertain!</p>
-</dd>
-</dl>
-<p>In addition to the features listed above, ALL widgets must implement the abstract methods required by the <strong><code class="docutils literal notranslate"><span class="pre">Widget</span></code></strong> class in the <strong><code class="docutils literal notranslate"><span class="pre">core.js</span></code></strong> file. For example, after implementing the <strong><code class="docutils literal notranslate"><span class="pre">move</span></code></strong> method, your widget should be positionable by consuming code (e.g., a programmer should be able to add your widget to a document and specify using X and Y coordinates where on the document it should be placed).</p>
-<section id="additional-requirements">
-<h3>Additional Requirements<a class="headerlink" href="#additional-requirements" title="Permalink to this headline">#</a></h3>
-<section id="theme">
-<h4>Theme<a class="headerlink" href="#theme" title="Permalink to this headline">#</a></h4>
-<p>You must create and apply a consistent theme to your toolkit. Your widgets, when rendered in the browser, should visually appear as if they belong together. Your design does not have to be groundbreaking! Your design skills are not going to be evaluated in this class, however, we are looking to see that you have thoughtfully applied the core principles of user centered design that you have been learning in your Informatics coursework. Spend some time to get to know the ins and outs of SVG.js. Learn its capabilities (pretty much anything you can do with vectors can be done with SVG.js) and decide what you want your theme to look like.</p>
+<section id="design">
+<h3>Design<a class="headerlink" href="#design" title="Permalink to this headline">#</a></h3>
+<p>For the first part of the assignment, we want you to design your widget prior to implementation. Grab a piece of paper, use a drawing tool, or a pen and tablet to sketch out how your widget will function. Your sketch doesn’t have to be perfect, a back of the napkin style doodle should suffice. The goal is to communicate to the class what it is you intend to create.</p>
+<p>Sketches should be submitted to <strong>Slack</strong> no later than <strong>Monday, May 15th by 11:59 PM</strong>. We will be using your sketch to determine if the novel widget you plan to create meets the criteria of the assignment. The sooner you submit your sketch, the sooner you can feel safe to start on implementation. We will green check your sketch if it is good to go and reply in thread if we want to see more.</p>
 </section>
-<section id="state-tables">
-<h4>State Tables<a class="headerlink" href="#state-tables" title="Permalink to this headline">#</a></h4>
-<p>Since each widget is required to raise state change events, you will need to create a state machine for each widget. Your first step in creating a state machine is to identify and define the states and transitions required for each widget. The best way to record this information is through a state table, like the one we discussed in the week 3 lecture. You must include each of these state tables in your submission.</p>
+<section id="implementation">
+<h3>Implementation<a class="headerlink" href="#implementation" title="Permalink to this headline">#</a></h3>
+<p>Once your sketch is approved, it’s time to start writing the code. You will continue using the toolkit from A1 and A2. Just add a new <strong><code class="docutils literal notranslate"><span class="pre">.ts</span></code></strong> file to your <strong><code class="docutils literal notranslate"><span class="pre">widgets</span></code></strong> directory. By now you should have a solid understanding of what the core toolkit library can accomplish. So make sure you scope your design and implementation such that your vision can be carried out using the limitations of our toolkit.</p>
+<section id="common-requirements">
+<h4>Common Requirements<a class="headerlink" href="#common-requirements" title="Permalink to this headline">#</a></h4>
+<p>While there will be many different types of widgets created for this assignment, there are a few requirements that all widgets must fulfill:</p>
+<ol class="simple">
+<li><p>The widget must display information in some way and allow a user to act upon it (<em>e.g.,</em> a button has a label and can be clicked).</p></li>
+<li><p>The action a user takes should be communicated to calling code via a callback (<em>e.g.,</em> a button is clicked and raises an onClick event)</p></li>
+</ol>
 </section>
 <section id="demo-program">
 <h4>Demo Program<a class="headerlink" href="#demo-program" title="Permalink to this headline">#</a></h4>
-<p>Once your toolkit is complete, you will assemble all of your widgets into a single program to demonstrate their functionality. This program does not have to do anything in particular, it just needs to enable us to interact with your widgets. Your demo program should listen to all the exposed event handlers that you created for your widgets and output the information they pass to the browser console. When we grade your assignment, we will open the console and look for these messages to assess whether or not the feature has been implemented.</p>
-<div class="warning admonition">
-<p class="admonition-title">For Your Consideration</p>
-<p>There is a lot of work to complete here! Although things may look easy at first, pay attention to the details. To complete this assignment there are many small tasks that you must take into account. Get started early, and make incremental progress on your work every day. You have a lot of time to complete this assignment because we want you to be thoughtful in how you implement the required features. A task that appears obvious at first glance will likely give you trouble as you work on it, so even though you have a lot of time, do not wait until the last week.</p>
-</div>
+<p>Once your novel widget is complete, instantiate it and provide any necessary usage instructions in the <strong><code class="docutils literal notranslate"><span class="pre">index.ts</span></code></strong> file included in your repository from assignment 1. Your demo program should listen to all the exposed event handlers that you created for your widgets and output the information they pass to the browser console. When we grade your assignment, we will open the console and look for these messages to assess whether or not the feature has been implemented.</p>
 </section>
 </section>
 </section>
 <section id="submission">
 <h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">#</a></h2>
-<p>For this assignment you will submit your materials in two parts:</p>
-<section id="part-1">
-<h3>Part 1<a class="headerlink" href="#part-1" title="Permalink to this headline">#</a></h3>
+<p>For this assignment you will submit the following items as a zip file to Canvas:</p>
 <ol class="simple">
-<li><p>Your state tables should be listed by widget in a single document. Your state table document should have a cover page with your name, a brief description, and name of your toolkit.</p></li>
-<li><p>Your theme should, at the very least, be roughly sketched out before implementation. It does not have to have the polish of a visual designer, but should look consistent across all widgets.</p></li>
-<li><p>A description and sketch of your planned custom widget. Your description should include an explanation of why you selected the widget. Note: you will not be bound to this widget in your final submission, but if you do change, please let us know.</p></li>
+<li><p>Your completed widget <strong><code class="docutils literal notranslate"><span class="pre">.ts</span></code></strong> files along with the rest of the starter code as a zip file to Canvas.</p></li>
+<li><p>A revised index.ts that instantiates and arranges all of your widgets so they can be interacted with by a user.</p></li>
+<li><p>A screenshot of your widgets and UI as it is rendered in the browser. Name your screenshot <strong><code class="docutils literal notranslate"><span class="pre">toolkit_novel_widget.png</span></code></strong> (or .jpg, .gif, etc) and place it in the root of your project folder.</p></li>
 </ol>
-<p>Combine your state tables, theme, and custom widget selection into a single PDF document and submit by the deadline specified on Canvas.</p>
-</section>
-<section id="part-2">
-<h3>Part 2<a class="headerlink" href="#part-2" title="Permalink to this headline">#</a></h3>
-<ol class="simple">
-<li><p>Your final toolkit and demo program should be submitted as a single <strong><code class="docutils literal notranslate"><span class="pre">.zip</span></code></strong> file by the deadline specified on Canvas.</p></li>
-</ol>
+<p>Remember to delete all generated files during the setup process (e.g., node_modules) to keep your file size small.</p>
 <div class="tip admonition">
 <p class="admonition-title">For Your Consideration</p>
 <p>A good practice to make habit is to regularly commit your code to a source control system like GitHub as you make progress. You are free to use your github repository as often as you like as you work on the assignment, however, if you need assistance from the course instructors we will ask that you provide us with a link to your GitHub repository and a running instance of your program first.</p>
 </div>
 </section>
-</section>
 <section id="grading">
 <h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">#</a></h2>
 <p>Your assignment will be given an overall grade that is based on the completeness of the following items:</p>
 <ul class="simple">
-<li><p>All materials submitted on time: 0.5 pts</p></li>
-<li><p>Completeness of toolkit (2 pts/widget): 14 pts</p>
+<li><p>All materials submitted correctly with documentation: 0.25 pts</p>
 <ul>
-<li><p>Are all required widgets complete?</p></li>
-<li><p>Are all required widget features complete?</p></li>
+<li><p>Is a screenshot of the widget and UI included?</p></li>
 </ul>
 </li>
-<li><p>Toolkit and Demo program: 3.0 pts</p>
+<li><p>Demo: 0.25 pts</p>
 <ul>
-<li><p>Are all required program features complete?</p></li>
-<li><p>Are all widgets visually consistent?</p></li>
-<li><p>Does the custom widget apply principles of good design?</p></li>
-<li><p>Is the custom widget unique or novel in some way?</p></li>
+<li><p>Is the index.ts page completed so that a full demonstration of all widgets is available?</p></li>
 </ul>
 </li>
-<li><p>Documentation and Design: 2.5 pts</p>
+<li><p>Design: 0.5 pts</p>
 <ul>
-<li><p>Are all widgets supported by a state table?</p></li>
-<li><p>Is a widget theme clearly explained?</p></li>
-<li><p>Is a custom widget clearly explained?</p></li>
+<li><p>Was a sketch submitted to Slack by the deadline?</p></li>
+</ul>
+</li>
+<li><p>Completeness of widget : 2 pts</p>
+<ul>
+<li><p>Does the widget function as described?</p></li>
+</ul>
+</li>
+<li><p>Novelty of widget : 2 pts</p>
+<ul>
+<li><p>Is the widget novel or interesting in some way?</p></li>
 </ul>
 </li>
 </ul>
-<p>Total: 20 pts</p>
+<p>Total: 5/5 pts</p>
 </section>
 </section>
 
@@ -753,6 +585,20 @@ webpack 5.68.0 compiled successfully in 1973 ms
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="a2.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">A2: Roll Your Own - Toolkit</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="t0.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">T0: Team and Project Overview</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>

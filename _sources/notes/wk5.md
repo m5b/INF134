@@ -16,3 +16,4 @@ Class recordings, handouts, and other materials will be posted here.
 
 ### Wednesday
 
+Mid-quarter presentations. No lecture.

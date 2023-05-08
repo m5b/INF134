@@ -1,4 +1,4 @@
-Week 6 Notes
+Week 6
 ============================
 
 ```{note}
@@ -9,13 +9,11 @@ Keep an eye weekly pages as they might be updated throughout the week.
 
 Class recordings, handouts, and other materials will be posted here.
 
-### Tuesday
+### Monday
 
-[Live Recording](https://uci.zoom.us/rec/share/57nLtdmyZRP4k01rBJRpGotC07k_4FbA8bHpo1c3p9AzATrBth1L5IQPGuSbvQw.noPCGbCqx6I7tCmM?startTime=1644357531000)
+In class discussion. No slides
+: Introduction to [A3](./assignments/a3.md)
+: Class discussion and critique on custom interactions
 
+### Wednesday
 
-### Thursday
-
-[Live Recording](https://uci.zoom.us/rec/share/6Ym6noDxYc46XAgd_9m1D64RmMc-e4iorqi6WFShr6mpItHwINO1X1zngB2fBybr.AQvS5LcjHNDfd2Kf?startTime=1644529465000)
-
-<a href="../resources/INF_134_W22_Week_6_Th.pdf">Slides</a>
