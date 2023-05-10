@@ -17,3 +17,5 @@ In class discussion. No slides
 
 ### Wednesday
 
+<a href="../resources/INF_134_s23_Week_6_Wed.pdf">Lecture Slides</a>
+
