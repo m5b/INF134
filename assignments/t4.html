@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>A3: Roll Your Own - Novel Widget &#8212; INF 134 Spring 2023</title>
+    <title>T3: Development Check-In &#8212; INF 134 Spring 2023</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="T0: Team and Project Overview" href="t0.html" />
-    <link rel="prev" title="A2: Roll Your Own - Toolkit" href="a2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -118,7 +116,7 @@ const thebe_selector_output = ".output, .cell_output"
   Individual Assignments
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="a0.html">
    Assignment 0
@@ -134,8 +132,8 @@ const thebe_selector_output = ".output, .cell_output"
    Assignment 2
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="a3.html">
    Assignment 3
   </a>
  </li>
@@ -303,7 +301,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/assignments/a3.md"
+        <a href="../_sources/assignments/t4.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -366,35 +364,30 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#overview">
    Overview
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#assignment-details">
-   Assignment Details
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#assignment-requirements">
-   Assignment Requirements
-  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#design">
-     Design
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#implementation">
-     Implementation
+    <a class="reference internal nav-link" href="#part-3-user-evaluation">
+     Part 3: User Evaluation
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#common-requirements">
-       Common Requirements
+      <a class="reference internal nav-link" href="#task-planning">
+       Task Planning
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#demo-program">
-       Demo Program
+      <a class="reference internal nav-link" href="#data-collection">
+       Data Collection
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#analysis-of-results">
+       Analysis of Results
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#class-presentations">
+       Class Presentations
       </a>
      </li>
     </ul>
@@ -411,6 +404,16 @@ title="Print to PDF"
    Grading
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Submission
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Grading
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -420,7 +423,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>A3: Roll Your Own - Novel Widget</h1>
+                <h1>T3: Development Check-In</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -434,35 +437,30 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#overview">
    Overview
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#assignment-details">
-   Assignment Details
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#assignment-requirements">
-   Assignment Requirements
-  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#design">
-     Design
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#implementation">
-     Implementation
+    <a class="reference internal nav-link" href="#part-3-user-evaluation">
+     Part 3: User Evaluation
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#common-requirements">
-       Common Requirements
+      <a class="reference internal nav-link" href="#task-planning">
+       Task Planning
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#demo-program">
-       Demo Program
+      <a class="reference internal nav-link" href="#data-collection">
+       Data Collection
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#analysis-of-results">
+       Analysis of Results
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#class-presentations">
+       Class Presentations
       </a>
      </li>
     </ul>
@@ -479,6 +477,16 @@ title="Print to PDF"
    Grading
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Submission
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Grading
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -489,87 +497,123 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="a3-roll-your-own-novel-widget">
-<h1>A3: Roll Your Own - Novel Widget<a class="headerlink" href="#a3-roll-your-own-novel-widget" title="Permalink to this headline">#</a></h1>
-<p>Congrats! You now have a modest toolkit filled with some useful widgets. Now it’s time to get creative. For this assignment you will design and implement your own custom widget for your toolkit.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="t3-development-check-in">
+<h1>T3: Development Check-In<a class="headerlink" href="#t3-development-check-in" title="Permalink to this headline">#</a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
-<p>At one point during the history of the graphical user interface every common widget we use today was novel. Many of the widgets you created for A2 were adopted from well known and understood interactors from the physical world. For example, the “radio button” metaphor was taken directly from the radio interfaces of the pre-computer era where only one button could be engaged at a time. Just because we have grown accustomed to a common set of widgets in the computer interfaces we interact with today doesn’t mean there’s no room left to novel points of interaction!</p>
+<p>Every team has its ebbs and flows over the course of a project. There will be bursts of productivity where you come together as a team with clear thought and creativity to make progress. And there will be stretches of time where you are idle, stuck on a problem, or simply unable to find time to meet. Regardless of how much you have produced so far this quarter, we want to know how things are going. In addition to your mid-quarter and final reports, there will be two development check-ins this quarter. This is the first.</p>
+<section id="part-3-user-evaluation">
+<h3>Part 3: User Evaluation<a class="headerlink" href="#part-3-user-evaluation" title="Permalink to this headline">#</a></h3>
+<p>For the user evaluation you will be assessing the usability of the interface that you designed by conducting a study using the Think Aloud protocol discussed in lecture. Your study should be designed such that participants have an opportunity to interact with at least one aspect of your user interface.</p>
+<p>Each team member is responsible for arranging at least one participant for the study. All team members should participate in each study.</p>
+<p>For each participant you will collect the following demographics:</p>
+<ul class="simple">
+<li><p>Age</p></li>
+<li><p>Experience with software interfaces (novice, intermediate, or expert)</p></li>
+<li><p>Preferred web browser, computer operating system, and mobile operating system</p></li>
+<li><p>Recruiter (team member name)</p></li>
+</ul>
+<section id="task-planning">
+<h4>Task Planning<a class="headerlink" href="#task-planning" title="Permalink to this headline">#</a></h4>
+<p>You will plan a series of tasks for your user to complete using your program. Each task should have a clear description, goal, and end-point. You should write as many tasks as you feel are necessary to adequately evaluate the usability of your interface. Since this number will vary greatly depending on your scenario, it is difficult to predict how many each team will need. In general, if you have a sufficiently complex user interface and only prepare 1 or 2 tasks, then it is safe to say that you have not fully evaluated your user interface.</p>
 </section>
-<section id="assignment-details">
-<h2>Assignment Details<a class="headerlink" href="#assignment-details" title="Permalink to this headline">#</a></h2>
-<p>Your goal for this assignment will be to envision something different. This doesn’t mean that your widget must be original, but it should explore interaction in a way that can not be easily achieved with a standard widget toolkit (HTML, for example).</p>
-<p>To make sure you are on the right track, we will be breaking this assignment into two parts: design and implementation.</p>
+<section id="data-collection">
+<h4>Data Collection<a class="headerlink" href="#data-collection" title="Permalink to this headline">#</a></h4>
+<p>With your testing plan in hand, you will start conducting your usability tests. Present each participant with the exact same introduction (scope, purpose, session detail, etc.) and tasks. If you discover an error with your first participant, do not fix it for the remaining participants unless it is critical to the success of your study (more on this below).</p>
+<p>For each user evaluation session, you will collect the following data:</p>
+<ul class="simple">
+<li><p>Task completion results:</p>
+<ul>
+<li><p>Did the user successfully complete the task? If not, what happened?</p></li>
+</ul>
+</li>
+<li><p>Errors:</p>
+<ul>
+<li><p>Did the user make any mistakes during the task?</p></li>
+<li><p>Did the user encounter errors in the prototype during the task? If so, what happened?</p></li>
+</ul>
+</li>
+<li><p>Time per task:</p>
+<ul>
+<li><p>How long did it take the user to complete the task?</p></li>
+</ul>
+</li>
+<li><p>Notes from user reflection:</p>
+<ul>
+<li><p>Likes</p></li>
+<li><p>Dislikes</p></li>
+<li><p>Suggestions or recommendations for improving interface</p></li>
+<li><p>Any other subjective data you would like to collect from your user.</p></li>
+</ul>
+</li>
+</ul>
+<p>Finally, before you conduct your first study, be sure to run at least 1 pilot evaluation with your group. You want to be absolutely sure that everything will work as intended and consistently across all of your participants. A good approach is to pick a member to act as participant and guide them through each task. Try to think about the different ways that someone new to your work might interact with your prototype to ensure that all interactions work properly.</p>
 </section>
-<section id="assignment-requirements">
-<h2>Assignment Requirements<a class="headerlink" href="#assignment-requirements" title="Permalink to this headline">#</a></h2>
-<section id="design">
-<h3>Design<a class="headerlink" href="#design" title="Permalink to this headline">#</a></h3>
-<p>For the first part of the assignment, we want you to design your widget prior to implementation. Grab a piece of paper, use a drawing tool, or a pen and tablet to sketch out how your widget will function. Your sketch doesn’t have to be perfect, a back of the napkin style doodle should suffice. The goal is to communicate to the class what it is you intend to create.</p>
-<p>Sketches should be submitted to <strong>Slack</strong> no later than <strong>Monday, May 15th by 11:59 PM</strong>. We will be using your sketch to determine if the novel widget you plan to create meets the criteria of the assignment. The sooner you submit your sketch, the sooner you can feel safe to start on implementation. We will green check your sketch if it is good to go and reply in thread if we want to see more.</p>
-</section>
-<section id="implementation">
-<h3>Implementation<a class="headerlink" href="#implementation" title="Permalink to this headline">#</a></h3>
-<p>Once your sketch is approved, it’s time to start writing the code. You will continue using the toolkit from A1 and A2. Just add a new <strong><code class="docutils literal notranslate"><span class="pre">.ts</span></code></strong> file to your <strong><code class="docutils literal notranslate"><span class="pre">widgets</span></code></strong> directory. By now you should have a solid understanding of what the core toolkit library can accomplish. So make sure you scope your design and implementation such that your vision can be carried out using the limitations of our toolkit.</p>
-<section id="common-requirements">
-<h4>Common Requirements<a class="headerlink" href="#common-requirements" title="Permalink to this headline">#</a></h4>
-<p>While there will be many different types of widgets created for this assignment, there are a few requirements that all widgets must fulfill:</p>
+<section id="analysis-of-results">
+<h4>Analysis of Results<a class="headerlink" href="#analysis-of-results" title="Permalink to this headline">#</a></h4>
+<p>For your analysis, you will divide your results into two categories: quantitative and qualitative. Your quantitative results will include task completion results, errors, and time per task. These should fit nicely within a table or spreadsheet so that you can get a holistic view of your results across all participants. Once your data is aggregated, you will summarize the results using the following metrics:</p>
 <ol class="simple">
-<li><p>The widget must display information in some way and allow a user to act upon it (<em>e.g.,</em> a button has a label and can be clicked).</p></li>
-<li><p>The action a user takes should be communicated to calling code via a callback (<em>e.g.,</em> a button is clicked and raises an onClick event)</p></li>
+<li><p>Average time per task</p></li>
+<li><p>Task completion rate per user</p></li>
+<li><p>Average user error per task</p></li>
 </ol>
+<p>Your qualitative results will include your observation notes and reflection with each participant. Since this is qualitative data, you will need to use your expertise to develop insights about your user interface. Were there common points in your interface where participants stumbled? Was there a feature that participants liked or disliked? Did you observe any unexpected participant behavior that could be improved through changes to your UI? If so, summarize your qualitative analysis in one or two paragraphs and list out the changes you have decided to make. NOTE: You do not have to make these changes!</p>
 </section>
-<section id="demo-program">
-<h4>Demo Program<a class="headerlink" href="#demo-program" title="Permalink to this headline">#</a></h4>
-<p>Once your novel widget is complete, instantiate it and provide any necessary usage instructions in the <strong><code class="docutils literal notranslate"><span class="pre">index.ts</span></code></strong> file included in your repository from assignment 1. Your demo program should listen to all the exposed event handlers that you created for your widgets and output the information they pass to the browser console. When we grade your assignment, we will open the console and look for these messages to assess whether or not the feature has been implemented.</p>
+<section id="class-presentations">
+<h4>Class Presentations<a class="headerlink" href="#class-presentations" title="Permalink to this headline">#</a></h4>
+<p>Each team will present their final prototype and study results during the last week of class. We will discuss the process for these presentations in more detail as the quarter progresses.</p>
 </section>
 </section>
 </section>
 <section id="submission">
 <h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">#</a></h2>
-<p>For this assignment you will submit the following items as a zip file to Canvas:</p>
-<ol class="simple">
-<li><p>Your completed widget <strong><code class="docutils literal notranslate"><span class="pre">.ts</span></code></strong> files along with the rest of the starter code as a zip file to Canvas.</p></li>
-<li><p>A revised index.ts that instantiates and arranges all of your widgets so they can be interacted with by a user.</p></li>
-<li><p>A screenshot of your widgets and UI as it is rendered in the browser. Name your screenshot <strong><code class="docutils literal notranslate"><span class="pre">toolkit_novel_widget.png</span></code></strong> (or .jpg, .gif, etc) and place it in the root of your project folder.</p></li>
+<p>For this assignment you will submit your materials in two ways:</p>
+<ol>
+<li><p>All materials developed in <em>part 1, 2, and 3</em> combined into a single PDF document divided into three sections:</p>
+<dl class="simple myst">
+<dt>Medium Fidelity Prototypes</dt><dd><p>This section should include screenshots of all the materials you created. Each screenshot should have a caption that describes the interface. The section should conclude with a summary of the feedback you received during class critique.</p>
+</dd>
+<dt>Functional Prototype</dt><dd><p>This section should include a screenshot of your function prototype in the browser accompanied by a link to the live version of your prototype.</p>
+</dd>
+<dt>User Evaluation</dt><dd><p>This section should include all requirements outline in part 3.</p>
+</dd>
+</dl>
+<p>You must also include a cover page with the name of your team, scenario description, and team member names.</p>
+<p>You will submit this document to Canvas.</p>
+</li>
+<li><p>Your functional prototype must be hosted on a public web server that is accessible to the class.</p></li>
 </ol>
-<p>Remember to delete all generated files during the setup process (e.g., node_modules) to keep your file size small.</p>
-<div class="tip admonition">
-<p class="admonition-title">For Your Consideration</p>
-<p>A good practice to make habit is to regularly commit your code to a source control system like GitHub as you make progress. You are free to use your github repository as often as you like as you work on the assignment, however, if you need assistance from the course instructors we will ask that you provide us with a link to your GitHub repository and a running instance of your program first.</p>
-</div>
 </section>
 <section id="grading">
 <h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">#</a></h2>
-<p>Your assignment will be given an overall grade that is based on the completeness of the following items:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some portion of your team must participate during the critique and presentation class activities to get credit for this assignment. Those who actively participate during live class time will receive 4 participation points. If you are unable to attend, you will be able to make up participation points by creating your own presentation or critique videos and submitting them on Canvas.</p>
+</div>
+<p>The following criteria will be used to grade your final assignment.</p>
 <ul class="simple">
-<li><p>All materials submitted correctly with documentation: 0.25 pts</p>
-<ul>
-<li><p>Is a screenshot of the widget and UI included?</p></li>
+<li><p>All materials submitted on time: 0.5 pts</p></li>
+<li><p>Submission format requirements met: 0.5 pts</p></li>
+<li><p>All requirements for part 1 met: 5 pts</p></li>
+<li><p>All requirements for part 2 met: 10 pts</p></li>
+<li><p>All requirements for part 3 met: 4 pts</p></li>
 </ul>
-</li>
-<li><p>Demo: 0.25 pts</p>
-<ul>
-<li><p>Is the index.ts page completed so that a full demonstration of all widgets is available?</p></li>
+<p>Total: 20 pts</p>
+<p>You will also be required to individually complete a peer review survey to evaluate the contributions of each of your group members. If you receive a particularly low score, it will effect your participation grade for the course. So make sure that you are effectively contributing to all aspects of this assignment.</p>
+</section>
+<section id="id1">
+<h2>Submission<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<p>Submit your check-in as a single single PDF document with clear headings to differentitate each section.</p>
+<p>We won’t expect this document to fill more than a single page, but if you would like to include figures or diagrams (screenshots, code, pictures, etc.) then a few extra pages is fine.</p>
+</section>
+<section id="id2">
+<h2>Grading<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<p>The following criteria will be used to grade your final assignment.</p>
+<ul class="simple">
+<li><p>Submission format requirements met: 0.25 pts</p></li>
+<li><p>All requirements are met: 0.75 pts</p></li>
 </ul>
-</li>
-<li><p>Design: 0.5 pts</p>
-<ul>
-<li><p>Was a sketch submitted to Slack by the deadline?</p></li>
-</ul>
-</li>
-<li><p>Completeness of widget : 2 pts</p>
-<ul>
-<li><p>Does the widget function as described?</p></li>
-</ul>
-</li>
-<li><p>Novelty of widget : 2 pts</p>
-<ul>
-<li><p>Is the widget novel or interesting in some way?</p></li>
-</ul>
-</li>
-</ul>
-<p>Total: 5/5 pts</p>
+<p>Total: 1 pt</p>
 </section>
 </section>
 
@@ -600,20 +644,6 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="a2.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">A2: Roll Your Own - Toolkit</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="t0.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">T0: Team and Project Overview</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>
