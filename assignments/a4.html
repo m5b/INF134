@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>A4: Speculative Story &#8212; INF 134 Spring 2023</title>
+    <title>A4: Roll Your Own - Simple App &#8212; INF 134 Spring 2023</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="T0: Team and Project Overview" href="t0.html" />
+    <link rel="prev" title="A3: Roll Your Own - Novel Widget" href="a3.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -116,10 +118,67 @@ const thebe_selector_output = ".output, .cell_output"
   Individual Assignments
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="a0.html">
    Assignment 0
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="a1.html">
+   Assignment 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="a2.html">
+   Assignment 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="a3.html">
+   Assignment 3
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Assignment 4
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Team Assignments
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="t0.html">
+   Team Assignment 0
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="t1.html">
+   Team Assignment 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="t2.html">
+   Team Assignment 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="t3.html">
+   Team Assignment 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="t5.html">
+   Team Assignment 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="t6.html">
+   Team Assignment 6
   </a>
  </li>
 </ul>
@@ -134,6 +193,41 @@ const thebe_selector_output = ".output, .cell_output"
    Week 1
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk2.html">
+   Week 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk3.html">
+   Week 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk4.html">
+   Week 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk5.html">
+   Week 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk6.html">
+   Week 6
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk7.html">
+   Week 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk8.html">
+   Week 8
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -141,11 +235,6 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../calendar.html">
-   Calendar
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../resources.html">
    Resources
@@ -292,20 +381,15 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#assignment-details">
    Assignment Details
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-requirements">
+   Assignment Requirements
+  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#selecting-a-computational-system">
-     Selecting a Computational System
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#three-new-forms">
-     Three New Forms
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#documenting-your-concept">
-     Documenting your Concept
+    <a class="reference internal nav-link" href="#demo-program">
+     Demo Program
     </a>
    </li>
   </ul>
@@ -329,7 +413,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>A4: Speculative Story</h1>
+                <h1>A4: Roll Your Own - Simple App</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -348,20 +432,15 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#assignment-details">
    Assignment Details
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assignment-requirements">
+   Assignment Requirements
+  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#selecting-a-computational-system">
-     Selecting a Computational System
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#three-new-forms">
-     Three New Forms
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#documenting-your-concept">
-     Documenting your Concept
+    <a class="reference internal nav-link" href="#demo-program">
+     Demo Program
     </a>
    </li>
   </ul>
@@ -386,85 +465,74 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="a4-speculative-story">
-<h1>A4: Speculative Story<a class="headerlink" href="#a4-speculative-story" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="a4-roll-your-own-simple-app">
+<h1>A4: Roll Your Own - Simple App<a class="headerlink" href="#a4-roll-your-own-simple-app" title="Permalink to this headline">#</a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
-<p>We have spent a lot of time this quarter learning how software user interfaces are programmed, designed, and evaluated. When technological advances made the graphical user interface possible, a rush of innovative programming paradigms laid the foundation for the interfaces we interact with today. But user interfaces and the interactors that control them are no longer confined to a single screen. Our digital experiences continue to diversify across computational systems in ways that make the traditional widgets and toolkits we are familiar with insufficient for interaction.</p>
-<p>Once the only form of interaction, pointing, clicking, and touching have become the baseline for how humans interface with computation. As augmentation, virtualization, speech, motion, and even thought introduce new ways of interacting with digital information, we are once again in need of new interaction paradigms.</p>
+<p>Alright. The moment you have all been waiting for!!! Time to bring all of your widgets together into a (semi) functional app.</p>
 </section>
 <section id="assignment-details">
 <h2>Assignment Details<a class="headerlink" href="#assignment-details" title="Permalink to this headline">#</a></h2>
-<p>For this assignment, you will envision <em>three</em> new forms of interaction with a non-traditional computational system. You will present your work as a slide deck (Power Point, Keynote, Slides, etc.) using the ideation and prototyping techniques you have learned throughout the Informatics 13x course series as well as the learning outcomes from this class.</p>
-<section id="selecting-a-computational-system">
-<h3>Selecting a Computational System<a class="headerlink" href="#selecting-a-computational-system" title="Permalink to this headline">#</a></h3>
-<p>You are free to explore the interaction space of any non-traditional computational system. The only restriction is that you <em>cannot</em> use a desktop or mobile device as your primary system. You are allowed to integrate desktop or mobile devices in your final submission <em>if</em> they are used in support of your primary system. For example, you might choose to explore interaction with an augmented reality system. Naturally, this might require the use of a mobile device to render the augmented interactors to a user. Similarly, if you choose an on-body interaction interface, you may need a desktop or mobile device to interpret and process the output of your interactions.</p>
-<p>Some examples of non-traditional computational systems include, but are not limited to:</p>
-<ul class="simple">
-<li><p>Augmented reality</p></li>
-<li><p>Virtual reality</p></li>
-<li><p>Voice assistants</p></li>
-<li><p>Conversational agents</p></li>
-<li><p>Wearables (existing or novel)</p></li>
-<li><p>On-body interfaces (<em>e.g.,</em> using your body as input)</p></li>
-<li><p>Brain-computer interfaces (BCI)</p></li>
-<li><p>Projected displays</p></li>
-<li><p>many more (feel free to share ideas in Zulip if you are unsure)</p></li>
-</ul>
-<p>A good approach to selecting a system is to think about how you would like to interact with digital information that is currently not possible. Then, consider what would be required to make your interaction possible. If it can be accomplished using one of the systems listed above, then select that system. If not, you may need to envision an entirely new computational system!</p>
+<p>Now that your toolkit is complete, you will assemble all of your widgets into a single program to demonstrate their functionality. This program does not have to do anything in particular, but it does require that all of your widgets work together to serve a purpose. Generally, what will work best is to build an application around the novel widget that you created for A3. Use your other widgets to provide information, add interaction and interactivity, and support the goals of whatever you decide to create.</p>
 </section>
-<section id="three-new-forms">
-<h3>Three New Forms<a class="headerlink" href="#three-new-forms" title="Permalink to this headline">#</a></h3>
-<p>For <span class="xref myst">A3</span> you created six widgets to control information on a desktop computer (button, check box, radio button, text input, progress bar, and custom). These widgets represented the point of interaction between a user and system using a keyboard and mouse. For this assignment, you will <em>envision</em> three <s>unique</s> distinct points of interaction with your selected system. For example, if your system is a field of view display controlled by hand gestures, then you might create three different gesture sets (<em>e.g.,</em> thumbs up to increase volume) to control digital information. The three interactors you create will form the beginning of a toolkit for interfacing with your system.</p>
-<p>Your toolkit should build upon and incorporate the principles of software user interfaces that you have learned throughout this class:</p>
-<ul class="simple">
-<li><p>Bridging the gulfs of execution and evaluation</p></li>
-<li><p>Affordances</p></li>
-<li><p>Conceptual models</p></li>
-<li><p>State management</p></li>
-<li><p>Interactor (widget) implementation and application</p></li>
-<li><p>Accessibility and inclusive design</p></li>
-</ul>
-</section>
-<section id="documenting-your-concept">
-<h3>Documenting your Concept<a class="headerlink" href="#documenting-your-concept" title="Permalink to this headline">#</a></h3>
-<p>There is no programming requirement for this assignment. You will be describing the system and interactions you design using ideation and prototyping techniques like sketching, storyboarding, and mixed-fidelity prototypes. The selection of technique will depend on the system and interactions you decide to create. For example, a gesture-based interaction toolkit does not lend itself to wireframes using a prototyping tool like Figma very well. Rather, sketches, photographs, and storyboards are a much more suitable format for communicating functionality for this type of system. There is no hard requirement on how many or which techniques you use. You should focus on producing enough documentation to clearly communicate your idea (you might consider asking a friend or family member to review your slide deck for clarity before submission).</p>
-<p>You will assemble all of your assets in a slide deck using the presentation software of your choosing. A slide deck is a great tool for visually communicating ideas. So while you are required to write some descriptive explanations of your system, your deck should be primarily structured around a “show, don’t tell” approach.</p>
+<section id="assignment-requirements">
+<h2>Assignment Requirements<a class="headerlink" href="#assignment-requirements" title="Permalink to this headline">#</a></h2>
+<p>You are free to create whatever you want for this assignment. You do not have to get approval for your app idea. However, there are a few requirements that your app idea must fulfill.</p>
+<ol class="simple">
+<li><p>You must make real-world practical use of at least 3 of your common widgets (e.g., button, checkbox, radiobutton). You are free to use the heading widget that was provided in your starter repository, but it does not contribute to the three widget minimum.</p></li>
+<li><p>You must integrate your novel widget into the application in a meaningful way. Meaningful integration means that your widget (and supporting common widgets) actually <strong>do something</strong>. It’s not enough to just have each widget print to the console or change a heading or color when acted upon. They must all work together to serve a purpose within your application.</p></li>
+<li><p>You must make use of the grid-based layout engine <a class="reference internal" href="../notes/wk8.html"><span class="doc std std-doc">grid layout engine</span></a> discussed in class on Monday 5/22. Your entire application does not need to be laid out using the grid, but some portion of it should be. For example, you may choose to use absolute positioning to place your novel widget, but use the grid layout engine to arrange a button and textbox.</p></li>
+<li><p>All of the widgets used in your application must define the correct Aria roles. Remember, as we discussed in class, you will need to lookup the correct role type for each of your widgets and be sure they are assigned in your widget’s constructor. If an ARIA type does not exist in the toolkit for your widget, you will have to manually add it to the <strong><code class="docutils literal notranslate"><span class="pre">RoleType</span></code></strong> enum in your <strong><code class="docutils literal notranslate"><span class="pre">ui.ts</span></code></strong> file. A list of ARIA role types can be found at the <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles">Mozilla Developer Network</a>.</p></li>
+</ol>
+<p>That’s it! If you would like to brainstorm or discuss app ideas feel free to reach out to the course staff or open a dialog on Slack.</p>
+<section id="demo-program">
+<h3>Demo Program<a class="headerlink" href="#demo-program" title="Permalink to this headline">#</a></h3>
+<p>Your completed app should be fully functional when submitted. Zip up your entire project directory as usual, but make sure you keep all files in your <strong><code class="docutils literal notranslate"><span class="pre">/dist</span></code></strong> directory in place. If your app requires help or guidance of some sort to use, be sure to include documentation (readme, tooltips, help, etc.) so that others will know how to use it.</p>
 </section>
 </section>
 <section id="submission">
 <h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">#</a></h2>
-<p>To submit your speculative story, export your slide deck to PDF format and upload to Canvas. Your deck should start with a cover slide that includes your name and a brief description of your envisioned system.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We discussed the submission format in detail at the end of Thursday’s lecture of week 8. If you are unsure about how to prepare your slide deck, (re)watch the video. Some examples are provided along with some light Q&amp;A from the class.</p>
-</div>
+<p>For this assignment you will submit the following items as a zip file to Canvas:</p>
+<ol class="simple">
+<li><p>Your completed application <code class="docutils literal notranslate"><span class="pre">**.ts**</span></code> files along with the rest of the starter code as a zip file to Canvas.</p></li>
+<li><p>A revised index.ts or other file that contains your demo app.</p></li>
+<li><p>A screenshot of your app as it is rendered in the browser. Name your screenshot toolkit_myapp.png (or .jpg, .gif, etc) and place it in the root of your project folder.</p></li>
+</ol>
+<p>Remember to delete all generated files during the setup process (e.g., node_modules) to keep your file size small.</p>
 </section>
 <section id="grading">
 <h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">#</a></h2>
-<p>Your grade will be based on the criteria listed below. Remember, we do not grade on visual design in this course, so do not focus too much on the visual detail of the materials you produce. Your emphasis should be on the application of the learning outcomes from this course and the communication of your speculative toolkit through your prototypes.</p>
+<p>Your assignment will be given an overall grade that is based on the completeness of the following items:</p>
 <ul class="simple">
-<li><p>All materials submitted on time: 0.5 pts</p></li>
-<li><p>Submission format requirements met: 0.5 pts</p></li>
-<li><p>Application of course learning outcomes: 10 pts</p>
+<li><p>All materials submitted correctly with documentation: 0.25 pts</p>
 <ul>
-<li><p>Does the toolkit adhere to user-centered and inclusive design principles?</p></li>
-<li><p>Are toolkit interactors accessible?</p></li>
+<li><p>Is a screenshot of the widget and UI included?</p></li>
 </ul>
 </li>
-<li><p>Completeness of prototypes: 8 pts</p>
+<li><p>Demo: 0.25 pts</p>
 <ul>
-<li><p>Are all required interactors demonstrated through prototypes?</p></li>
-<li><p>Do prototypes clearly communicate intended functionality?</p></li>
+<li><p>Is an index.ts or other page completed so that a full demonstration of the app is available?</p></li>
+<li><p>Does the demo include documentation or otherwise intuitive to use?</p></li>
 </ul>
 </li>
-<li><p>Novelty and creativity of your interactors: 1 pts</p></li>
+<li><p>Completeness of app: 1.0 pts</p>
+<ul>
+<li><p>Does the app make use of 3 common widgets and 1 novel widget?</p></li>
+<li><p>Do the app widgets have appropriate ARIA role types assigned?</p></li>
 </ul>
-<p>Total: 20 pts</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Please note that this is a 20 point assignment designed to replace a traditional final exam. Therefore, you should bring to this assignment a clear demonstration of the knowledge you have gained in this course. You are strongly encouraged to get started on this assignment as soon as possible. Submissions that are rushed are obvious and will be graded accordingly.</p>
-</div>
+</li>
+<li><p>Design: 1.5 pts</p>
+<ul>
+<li><p>Does the app and all of its widgets work together to perform a common goal or set of actions?</p></li>
+</ul>
+</li>
+<li><p>Grid Layout: 2 pts</p>
+<ul>
+<li><p>Does the app make use of the provided grid layout engine?</p></li>
+</ul>
+</li>
+</ul>
+<p>Total: 5/5 pts</p>
 </section>
 </section>
 
@@ -495,6 +563,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="a3.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">A3: Roll Your Own - Novel Widget</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="t0.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">T0: Team and Project Overview</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
