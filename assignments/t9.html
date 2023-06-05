@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>T6: User Evaluations &#8212; INF 134 Spring 2023</title>
+    <title>T9: Final Project Report &#8212; INF 134 Spring 2023</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Week 1 Notes" href="../notes/wk1.html" />
+    <link rel="prev" title="T6: User Evaluations" href="t6.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -148,7 +150,7 @@ const thebe_selector_output = ".output, .cell_output"
   Team Assignments
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="t0.html">
    Team Assignment 0
@@ -177,6 +179,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="t6.html">
    Team Assignment 6
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Team Assignment 9
   </a>
  </li>
 </ul>
@@ -229,6 +236,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../notes/wk9.html">
    Week 9
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notes/wk10.html">
+   Week 10
   </a>
  </li>
 </ul>
@@ -379,20 +391,30 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#overview">
    Overview
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#requirements">
+   Requirements
+  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#task-planning">
-     Task Planning
+    <a class="reference internal nav-link" href="#introduction">
+     Introduction
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-collection">
-     Data Collection
+    <a class="reference internal nav-link" href="#journey">
+     Journey
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#analysis-of-results">
-     Analysis of Results
+    <a class="reference internal nav-link" href="#functional-prototype-and-demo-video">
+     Functional Prototype and Demo Video
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#future-work">
+     Future Work
     </a>
    </li>
   </ul>
@@ -416,7 +438,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>T6: User Evaluations</h1>
+                <h1>T9: Final Project Report</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -430,20 +452,30 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#overview">
    Overview
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#requirements">
+   Requirements
+  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#task-planning">
-     Task Planning
+    <a class="reference internal nav-link" href="#introduction">
+     Introduction
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-collection">
-     Data Collection
+    <a class="reference internal nav-link" href="#journey">
+     Journey
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#analysis-of-results">
-     Analysis of Results
+    <a class="reference internal nav-link" href="#functional-prototype-and-demo-video">
+     Functional Prototype and Demo Video
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#future-work">
+     Future Work
     </a>
    </li>
   </ul>
@@ -468,97 +500,71 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="t6-user-evaluations">
-<h1>T6: User Evaluations<a class="headerlink" href="#t6-user-evaluations" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="t9-final-project-report">
+<h1>T9: Final Project Report<a class="headerlink" href="#t9-final-project-report" title="Permalink to this headline">#</a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
-<p>By now you should be closing in on a user interface that is ready for evaluation. A good user evaluation is an invaluable tool for helping you identify aspects of your produce that your users might struggle to resolve. For the user evaluation you will be assessing the usability of the interface that you designed by conducting a study using the Think Aloud protocol discussed in lecture. Your study should be designed such that participants have an opportunity to interact with at least one aspect of your user interface.</p>
-<p>Each team member is responsible for arranging at least one participant for the study. A minimum of two team members should be available for all study sessions. All team members should participate in data analysis.</p>
-<p>For each participant you will collect the following demographics:</p>
-<ul class="simple">
-<li><p>Age</p></li>
-<li><p>Experience with software interfaces (novice, intermediate, or expert)</p></li>
-<li><p>Preferred web browser, computer operating system, and mobile operating system</p></li>
-<li><p>Recruiter (team member name)</p></li>
-</ul>
-<section id="task-planning">
-<h3>Task Planning<a class="headerlink" href="#task-planning" title="Permalink to this headline">#</a></h3>
-<p>You will plan a series of tasks for your user to complete using your program. Each task should have a clear description, goal, and end-point. You should write as many tasks as you feel are necessary to adequately evaluate the usability of your interface. Since this number will vary greatly depending on your scenario, it is difficult to predict how many each team will need. In general, if you have a sufficiently complex user interface and only prepare 1 or 2 tasks, then it is safe to say that you have not fully evaluated your user interface.</p>
+<p>Congratulations, you have finally reached the end of the team project for Software User Interfaces! By this point, you likely have completed all of the work necessary for your final submission. So this overview will serve as a brief guide to make sure you have everything packaged up in an easy to review format.</p>
 </section>
-<section id="data-collection">
-<h3>Data Collection<a class="headerlink" href="#data-collection" title="Permalink to this headline">#</a></h3>
-<p>With your testing plan in hand, you will start conducting your usability tests. Present each participant with the exact same introduction (scope, purpose, session detail, etc.) and tasks. If you discover an error with your first participant, do not fix it for the remaining participants unless it is critical to the success of your study (more on this below).</p>
-<p>For each user evaluation session, you will collect the following data:</p>
-<ul class="simple">
-<li><p>Task completion results:</p>
-<ul>
-<li><p>Did the user successfully complete the task? If not, what happened?</p></li>
-</ul>
-</li>
-<li><p>Errors:</p>
-<ul>
-<li><p>Did the user make any mistakes during the task?</p></li>
-<li><p>Did the user encounter errors in the prototype during the task? If so, what happened?</p></li>
-</ul>
-</li>
-<li><p>Time per task:</p>
-<ul>
-<li><p>How long did it take the user to complete the task?</p></li>
-</ul>
-</li>
-<li><p>Notes from user reflection:</p>
-<ul>
-<li><p>Likes</p></li>
-<li><p>Dislikes</p></li>
-<li><p>Suggestions or recommendations for improving interface</p></li>
-<li><p>Any other subjective data you would like to collect from your user.</p></li>
-</ul>
-</li>
-</ul>
-<p>Finally, before you conduct your first study, be sure to run at least 1 pilot evaluation with your group. You want to be absolutely sure that everything will work as intended and consistently across all of your participants. A good approach is to pick a member to act as participant and guide them through each task. Try to think about the different ways that someone new to your work might interact with your prototype to ensure that all interactions work properly.</p>
-</section>
-<section id="analysis-of-results">
-<h3>Analysis of Results<a class="headerlink" href="#analysis-of-results" title="Permalink to this headline">#</a></h3>
-<p>For your analysis, you will divide your results into two categories: quantitative and qualitative. Your quantitative results will include task completion results, errors, and time per task. These should fit nicely within a table or spreadsheet so that you can get a holistic view of your results across all participants. Once your data is aggregated, you will summarize the results using the following metrics:</p>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">#</a></h2>
+<p>Your final submission must include all of the following:</p>
 <ol class="simple">
-<li><p>Average time per task</p></li>
-<li><p>Task completion rate per user</p></li>
-<li><p>Average user error per task</p></li>
+<li><p>Introduction</p></li>
+<li><p>Journey</p></li>
+<li><p>Functional Prototype and Demo Video</p></li>
+<li><p>Future Work</p></li>
 </ol>
-<p>Your qualitative results will include your observation notes and reflection with each participant. Since this is qualitative data, you will need to use your expertise to develop insights about your user interface. Were there common points in your interface where participants stumbled? Was there a feature that participants liked or disliked? Did you observe any unexpected participant behavior that could be improved through changes to your UI? If so, summarize your qualitative analysis in one or two paragraphs and list out the changes you have decided to make. NOTE: You do not have to make these changes!</p>
+<p>All items should be prepared using either Microsoft PowerPoint or Google Slides. If you use Google Slides, you must generate a PDF version for submission with a link to your live deck in the introduction.</p>
+<section id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h3>
+<p>For your introduction start with an overview that includes the name of your product, team members and roles, your problem statement, and a brief description of the product you designed to address your problem.</p>
+</section>
+<section id="journey">
+<h3>Journey<a class="headerlink" href="#journey" title="Permalink to this headline">#</a></h3>
+<p>Your journey should cover all relevant assets and artifacts created that led to your final product. Unlike earlier assignments, you do not need to include everything you created. Rather, focus on telling a story by taking the reader through the most poignant moments that influenced the direction of your product. So, for example, if you created three storyboards but only one of them is representative of your final work, then you only need to include the most relevant one.</p>
+<p>A key part of your journey should include your user evaluations. In addition to your assets and artifacts, you should explain to the user how the data from your evaluations led to your final product. Again, this is not a rehash of your user evaluation assignment, but rather a thoughtful synthesis of how the analysis of your evaluation data shaped the product you created.</p>
+</section>
+<section id="functional-prototype-and-demo-video">
+<h3>Functional Prototype and Demo Video<a class="headerlink" href="#functional-prototype-and-demo-video" title="Permalink to this headline">#</a></h3>
+<p>Since most of you will be building out your product using a variety of different tooling you will need to create a recording of all aspects of your final product. Even though you will submit your code, we will likely not run it directly unless there is a need to explore something more deeply than your video allows. Therefore, your video should provide a thorough and detailed view of your final product. Each feature that you demonstrate should be accompanied with either captions or voice explanations so we can map the output back to your journey.</p>
+</section>
+<section id="future-work">
+<h3>Future Work<a class="headerlink" href="#future-work" title="Permalink to this headline">#</a></h3>
+<p>Your report should conclude with a summary and look to the future. In one or two slides, discuss the work that remains to finish your product and what you think your product will look like in the near future. You should have some fun with this section as it requires quite a bit of speculation.</p>
 </section>
 </section>
 <section id="submission">
 <h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">#</a></h2>
-<p>Combine all materials developed into a single PDF document divided into three sections:</p>
+<p>Combine your report, demo video, and functional prototype code into a single zip file. Organize each file into their own directories so that when we unzip your submission we see the following structure:</p>
 <dl class="simple myst">
-<dt>Participants</dt><dd><p>A list of all participants used for the evaluation (deidentified!)</p>
+<dt>[TEAM_PROJECT].zip</dt><dd><p>/report/[NAME_OF_YOUR_REPORT].pdf (or pptx)</p>
 </dd>
-<dt>Tasks and Intervention</dt><dd><p>A list of the tasks given to each participant</p>
+<dd><p>/demo/[NAME_OF_YOUR_DEMO_VIDEO]</p>
 </dd>
-<dd><p>Screenshots of the intervention for which the tasks were carried out</p>
-</dd>
-<dt>Data</dt><dd><p>All of the raw data that you collected across all participants</p>
-</dd>
-<dt>Analysis of Results</dt><dd><p>A report on your findings</p>
+<dd><p>/prototype/[NAME_OF_YOUR_PROTOTYPE]</p>
 </dd>
 </dl>
-<p>You must also include a cover page with the name of your team, scenario description, and team member names.</p>
-<p>You will submit this document to Canvas.</p>
+<p>Note that all files required to run your code should be placed within the ‘prototype’ directory. Please remove all unnecessary files (e.g., node_modules) required to build and run your project to keep your file size down.</p>
+<p>Take care to record your video with a codec or compression that is not gigabytes in size or you will have trouble uploading to Canvas. If you prefer to upload your video to YouTube or YUJA feel free, just be sure to include a readme file in your demo directory that contains a link to your final video.</p>
+<p>Once all required materials are in place and compressed, submit to Canvas. NOTE: We will not make special accommodations for those of you who fail to structure and organize your submission properly. There simply is not enough time to circle back and forth with you to ensure we have the right files. So be sure to test your submission before uploading.</p>
 </section>
 <section id="grading">
 <h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">#</a></h2>
 <p>The following criteria will be used to grade your final assignment.</p>
 <ul class="simple">
-<li><p>All materials submitted on time: 0.25 pts</p></li>
-<li><p>Submission format requirements met: 0.25 pts</p></li>
-<li><p>Minimum participant total met: 1 pt</p></li>
-<li><p>Sufficient tasks for designed intervention: 1 pt</p></li>
-<li><p>Analysis of quantitative data: 1 pt</p></li>
-<li><p>Analysis of qualitative data: 1 pt</p></li>
-<li><p>Summary of changes to final product: 0.5 pt</p></li>
+<li><p>All materials submitted on time: 5 pts</p></li>
+<li><p>Submission format requirements met: 2.5 pts</p></li>
+<li><p>Quality and professionalism of slide deck: 7.5 pts</p></li>
+<li><p>Functional prototype that explores novel user interaction: 15 pts</p>
+<ul>
+<li><p>Novelty of user interface and interactions: 5 pts</p></li>
+<li><p>Functional prototype functions as expected: 5 pts</p></li>
+<li><p>Overall completeness of product (compared to other projects): 5 pts</p></li>
 </ul>
-<p>Total: 5 pts</p>
+</li>
+</ul>
+<p>Total: 30 pts</p>
 </section>
 </section>
 
@@ -589,6 +595,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="t6.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">T6: User Evaluations</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../notes/wk1.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Week 1 Notes</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
